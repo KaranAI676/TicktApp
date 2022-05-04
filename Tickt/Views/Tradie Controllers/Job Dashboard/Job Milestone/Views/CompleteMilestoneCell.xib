@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayLight.ttf">
+            <string>NeueHaasDisplay-Light</string>
+        </array>
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CompleteMilestoneCell" rowHeight="180" id="jA8-qo-uT7" customClass="CompleteMilestoneCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jA8-qo-uT7" id="iBv-Wz-K73">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOd-xt-ARl">
+                        <rect key="frame" x="24" y="2" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="N6k-zY-F45"/>
+                            <constraint firstAttribute="height" constant="40" id="Npo-f6-qZQ"/>
+                        </constraints>
+                        <state key="normal" image="checkBoxUnselected"/>
+                        <state key="selected" image="icCheck"/>
+                        <connections>
+                            <action selector="selectButton:" destination="jA8-qo-uT7" eventType="touchUpInside" id="fWQ-G0-AAf"/>
+                        </connections>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="WF3-CX-S7g">
+                        <rect key="frame" x="70" y="8" width="284" height="48"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="15" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrival on site" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sc-ts-imn" customClass="CustomMediumLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="284" height="16"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="16"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Photo evidence required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjo-ZN-kwp" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="18" width="284" height="14"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Light" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="May 13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EN-Fx-smH" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="34" width="284" height="14"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Light" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2d-5e-XKD" customClass="DashView" customModule="Tickt" customModuleProvider="target">
+                        <rect key="frame" x="43.5" y="46" width="1" height="114"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="Gab-tv-7rB"/>
+                            <constraint firstAttribute="width" constant="1" id="Iv6-yz-f9G"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="WF3-CX-S7g" secondAttribute="bottom" constant="20" id="7sa-AZ-eRL"/>
+                    <constraint firstAttribute="trailing" secondItem="WF3-CX-S7g" secondAttribute="trailing" constant="24" id="Ffd-a7-R27"/>
+                    <constraint firstItem="fOd-xt-ARl" firstAttribute="top" secondItem="iBv-Wz-K73" secondAttribute="top" constant="2" id="IDa-r7-oPZ"/>
+                    <constraint firstAttribute="bottom" secondItem="Y2d-5e-XKD" secondAttribute="bottom" constant="20" id="QWF-5P-Qnl"/>
+                    <constraint firstItem="WF3-CX-S7g" firstAttribute="leading" secondItem="fOd-xt-ARl" secondAttribute="trailing" constant="6" id="ZNM-oV-C0o"/>
+                    <constraint firstItem="WF3-CX-S7g" firstAttribute="top" secondItem="iBv-Wz-K73" secondAttribute="top" constant="8" id="crP-ZD-LWA"/>
+                    <constraint firstItem="Y2d-5e-XKD" firstAttribute="top" secondItem="fOd-xt-ARl" secondAttribute="bottom" constant="4" id="i1w-nl-N0T"/>
+                    <constraint firstItem="Y2d-5e-XKD" firstAttribute="centerX" secondItem="fOd-xt-ARl" secondAttribute="centerX" id="kLW-HQ-AHu"/>
+                    <constraint firstItem="fOd-xt-ARl" firstAttribute="leading" secondItem="iBv-Wz-K73" secondAttribute="leading" constant="24" id="krV-pq-jse"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="G0g-4V-6Md"/>
+            <connections>
+                <outlet property="dashView" destination="Y2d-5e-XKD" id="AS9-yl-hUO"/>
+                <outlet property="dateLabel" destination="0EN-Fx-smH" id="4Bl-nF-PyJ"/>
+                <outlet property="nameLabel" destination="7Sc-ts-imn" id="lHo-du-4lQ"/>
+                <outlet property="photoEvidenceLabel" destination="vjo-ZN-kwp" id="prS-VN-R2R"/>
+                <outlet property="selectButton" destination="fOd-xt-ARl" id="LIt-ru-81w"/>
+            </connections>
+            <point key="canvasLocation" x="128.98550724637681" y="131.25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkBoxUnselected" width="24" height="24"/>
+        <image name="icCheck" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

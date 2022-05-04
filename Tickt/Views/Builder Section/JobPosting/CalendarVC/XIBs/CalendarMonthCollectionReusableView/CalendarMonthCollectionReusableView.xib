@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="CalendarMonthCollectionReusableView" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBT-CS-G0s">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June 2020" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzM-Fl-T8P">
+                            <rect key="frame" x="0.0" y="29" width="84.5" height="36"/>
+                            <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="18"/>
+                            <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tze-hd-RJL">
+                            <rect key="frame" x="0.0" y="82" width="320" height="14"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBY-cS-5Cx">
+                                    <rect key="frame" x="0.0" y="0.0" width="45.5" height="14"/>
+                                    <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                    <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbA-5S-323">
+                                    <rect key="frame" x="45.5" y="0.0" width="46" height="14"/>
+                                    <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                    <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEx-rQ-6Tf">
+                                    <rect key="frame" x="91.5" y="0.0" width="45.5" height="14"/>
+                                    <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                    <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96W-PE-isB">
+                                    <rect key="frame" x="137" y="0.0" width="46" height="14"/>
+                                    <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                    <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACo-2d-MQL">
+                                    <rect key="frame" x="183" y="0.0" width="45.5" height="14"/>
+                                    <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                    <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjG-U9-E6C">
+                                    <rect key="frame" x="228.5" y="0.0" width="46" height="14"/>
+                                    <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                    <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kx-hB-SbA">
+                                    <rect key="frame" x="274.5" y="0.0" width="45.5" height="14"/>
+                                    <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                    <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="mzM-Fl-T8P" firstAttribute="top" secondItem="oBT-CS-G0s" secondAttribute="top" constant="29" id="4QS-Y8-aOw"/>
+                        <constraint firstItem="tze-hd-RJL" firstAttribute="top" secondItem="mzM-Fl-T8P" secondAttribute="bottom" constant="17" id="BAw-Zf-4UP"/>
+                        <constraint firstAttribute="trailing" secondItem="tze-hd-RJL" secondAttribute="trailing" id="OK5-SY-BSa"/>
+                        <constraint firstItem="tze-hd-RJL" firstAttribute="leading" secondItem="oBT-CS-G0s" secondAttribute="leading" id="WCO-ZL-gQV"/>
+                        <constraint firstItem="mzM-Fl-T8P" firstAttribute="leading" secondItem="oBT-CS-G0s" secondAttribute="leading" id="oaZ-FI-bnN"/>
+                        <constraint firstAttribute="bottom" secondItem="tze-hd-RJL" secondAttribute="bottom" constant="11" id="qlv-ao-gfV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="oBT-CS-G0s" secondAttribute="bottom" id="8Bd-RV-QCg"/>
+                <constraint firstAttribute="trailing" secondItem="oBT-CS-G0s" secondAttribute="trailing" id="L0N-Tu-67y"/>
+                <constraint firstItem="oBT-CS-G0s" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="k14-a3-ArK"/>
+                <constraint firstItem="oBT-CS-G0s" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="xhU-RF-3ce"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="friLabel" destination="ACo-2d-MQL" id="pVJ-ji-Jcq"/>
+                <outlet property="monLabel" destination="TBY-cS-5Cx" id="W0W-Sq-T70"/>
+                <outlet property="monthTitleLabel" destination="mzM-Fl-T8P" id="sv3-e4-o4Z"/>
+                <outlet property="satLabel" destination="pjG-U9-E6C" id="QVX-3x-CIx"/>
+                <outlet property="sunLabel" destination="9kx-hB-SbA" id="6wC-LL-Rei"/>
+                <outlet property="thuLabel" destination="96W-PE-isB" id="1gq-X9-P1O"/>
+                <outlet property="tueLabel" destination="kbA-5S-323" id="q0q-s4-dCR"/>
+                <outlet property="wedLabel" destination="YEx-rQ-6Tf" id="lx2-T7-v7G"/>
+            </connections>
+            <point key="canvasLocation" x="126" y="93"/>
+        </collectionReusableView>
+    </objects>
+</document>

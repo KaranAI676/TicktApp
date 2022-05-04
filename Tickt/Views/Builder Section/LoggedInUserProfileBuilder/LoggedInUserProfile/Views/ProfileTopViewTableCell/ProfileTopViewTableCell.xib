@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="381" id="KGk-i7-Jjw" customClass="ProfileTopViewTableCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="520" height="381"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="520" height="381"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKY-8K-IdY">
+                        <rect key="frame" x="0.0" y="98" width="520" height="79"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="IhE-JC-FWz">
+                        <rect key="frame" x="220" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="DDB-uD-NGt"/>
+                            <constraint firstAttribute="width" constant="80" id="ETt-aI-bHz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="40"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1I-SK-ZFX">
+                        <rect key="frame" x="220" y="10" width="80" height="80"/>
+                        <connections>
+                            <action selector="buttontapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="itc-JZ-sHl"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUe-1G-zG2">
+                        <rect key="frame" x="276" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Tjv-lr-nD5"/>
+                            <constraint firstAttribute="width" constant="24" id="hGb-n9-2dj"/>
+                        </constraints>
+                        <state key="normal" image="camera"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="buttontapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cJb-67-fuN"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Po1-by-aLd">
+                        <rect key="frame" x="24" y="106" width="472" height="0.0"/>
+                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="18"/>
+                        <color key="textColor" red="0.086274509803921567" green="0.11372549019607843" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkh-tw-3Ze">
+                        <rect key="frame" x="224" y="110" width="72" height="26"/>
+                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                        <state key="normal" title="View profile">
+                            <color key="titleColor" red="0.043137254901960784" green="0.24705882352941178" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="buttontapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hDk-vP-IHo"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GrL-OP-hRJ">
+                        <rect key="frame" x="66.5" y="156" width="387.5" height="21"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete your profile to find tradies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDo-uT-4ET" customClass="TTTAttributedLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="274" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q09-6D-Vh3" customClass="HorizontalProgressBar" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="286" y="6.5" width="67" height="8"/>
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.8980392157" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="oV2-Xc-hVr"/>
+                                    <constraint firstAttribute="height" constant="8" id="u18-es-umh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.043137254899999998" green="0.25490196079999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="44%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKs-Vh-iRM">
+                                <rect key="frame" x="363" y="0.0" width="24.5" height="21"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="12"/>
+                                <color key="textColor" red="0.086274509803921567" green="0.11372549019607843" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eKs-Vh-iRM" secondAttribute="trailing" id="9ut-If-fcN"/>
+                            <constraint firstItem="tDo-uT-4ET" firstAttribute="top" secondItem="GrL-OP-hRJ" secondAttribute="top" id="CfA-Yq-knE"/>
+                            <constraint firstItem="Q09-6D-Vh3" firstAttribute="leading" secondItem="tDo-uT-4ET" secondAttribute="trailing" constant="12" id="Eld-Gy-4mJ"/>
+                            <constraint firstItem="Q09-6D-Vh3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tDo-uT-4ET" secondAttribute="trailing" constant="12" id="R6e-lt-zio"/>
+                            <constraint firstItem="Q09-6D-Vh3" firstAttribute="centerY" secondItem="tDo-uT-4ET" secondAttribute="centerY" id="Vft-Gj-NvF"/>
+                            <constraint firstAttribute="bottom" secondItem="eKs-Vh-iRM" secondAttribute="bottom" id="W4v-vr-K3e"/>
+                            <constraint firstItem="eKs-Vh-iRM" firstAttribute="top" secondItem="GrL-OP-hRJ" secondAttribute="top" id="b3b-yV-px8"/>
+                            <constraint firstAttribute="bottom" secondItem="tDo-uT-4ET" secondAttribute="bottom" id="fUc-dg-dRu"/>
+                            <constraint firstItem="eKs-Vh-iRM" firstAttribute="leading" secondItem="Q09-6D-Vh3" secondAttribute="trailing" constant="10" id="jQu-jc-s0u"/>
+                            <constraint firstItem="tDo-uT-4ET" firstAttribute="leading" secondItem="GrL-OP-hRJ" secondAttribute="leading" id="jnL-JW-lla"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="t1I-SK-ZFX" firstAttribute="leading" secondItem="IhE-JC-FWz" secondAttribute="leading" id="1z3-V9-Mi8"/>
+                    <constraint firstItem="IhE-JC-FWz" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="7Zq-Y7-ahR"/>
+                    <constraint firstItem="Tkh-tw-3Ze" firstAttribute="top" secondItem="Po1-by-aLd" secondAttribute="bottom" constant="4" id="898-lJ-hRe"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GrL-OP-hRJ" secondAttribute="bottom" id="AVr-gI-Vyx"/>
+                    <constraint firstItem="Po1-by-aLd" firstAttribute="top" secondItem="IhE-JC-FWz" secondAttribute="bottom" constant="16" id="B8D-SQ-l34"/>
+                    <constraint firstAttribute="trailing" secondItem="Po1-by-aLd" secondAttribute="trailing" constant="24" id="Foc-qq-CC9"/>
+                    <constraint firstItem="t1I-SK-ZFX" firstAttribute="bottom" secondItem="IhE-JC-FWz" secondAttribute="bottom" id="GhG-GE-5rK"/>
+                    <constraint firstItem="GrL-OP-hRJ" firstAttribute="centerX" secondItem="Tkh-tw-3Ze" secondAttribute="centerX" id="SXv-4o-LNP"/>
+                    <constraint firstAttribute="trailing" secondItem="eKY-8K-IdY" secondAttribute="trailing" id="TDm-pG-ZCc"/>
+                    <constraint firstItem="t1I-SK-ZFX" firstAttribute="trailing" secondItem="IhE-JC-FWz" secondAttribute="trailing" id="adD-za-zIU"/>
+                    <constraint firstItem="eKY-8K-IdY" firstAttribute="top" secondItem="Po1-by-aLd" secondAttribute="top" constant="-8" id="bst-jS-VcF"/>
+                    <constraint firstItem="Po1-by-aLd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="buf-ck-moy"/>
+                    <constraint firstItem="IhE-JC-FWz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cOv-0e-yCu"/>
+                    <constraint firstItem="eKY-8K-IdY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fAV-jU-03c"/>
+                    <constraint firstItem="GrL-OP-hRJ" firstAttribute="top" secondItem="Tkh-tw-3Ze" secondAttribute="bottom" constant="20" id="nfS-Cg-9aO"/>
+                    <constraint firstItem="Po1-by-aLd" firstAttribute="centerX" secondItem="IhE-JC-FWz" secondAttribute="centerX" id="oLH-fp-mby"/>
+                    <constraint firstItem="t1I-SK-ZFX" firstAttribute="top" secondItem="IhE-JC-FWz" secondAttribute="top" id="pKu-qE-uFt"/>
+                    <constraint firstItem="Tkh-tw-3Ze" firstAttribute="centerX" secondItem="Po1-by-aLd" secondAttribute="centerX" id="quB-9x-1yo"/>
+                    <constraint firstItem="VUe-1G-zG2" firstAttribute="top" secondItem="IhE-JC-FWz" secondAttribute="top" id="tHK-YT-SdC"/>
+                    <constraint firstItem="eKY-8K-IdY" firstAttribute="bottom" secondItem="GrL-OP-hRJ" secondAttribute="bottom" id="yY9-WW-Ze4"/>
+                    <constraint firstItem="VUe-1G-zG2" firstAttribute="trailing" secondItem="IhE-JC-FWz" secondAttribute="trailing" id="ysF-84-afr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bottomTitleLabel" destination="tDo-uT-4ET" id="JMu-at-4p4"/>
+                <outlet property="bottomView" destination="GrL-OP-hRJ" id="nKA-2k-VV0"/>
+                <outlet property="editProfileBUtton" destination="VUe-1G-zG2" id="mje-Ia-bsY"/>
+                <outlet property="mainCOntainerView" destination="H2p-sc-9uM" id="kFA-NX-2Wu"/>
+                <outlet property="percentageLabel" destination="eKs-Vh-iRM" id="Qus-Kc-W3n"/>
+                <outlet property="profilePreviewButton" destination="t1I-SK-ZFX" id="XRc-ab-7vG"/>
+                <outlet property="progressBarView" destination="Q09-6D-Vh3" id="8ef-rd-TjB"/>
+                <outlet property="userImageView" destination="IhE-JC-FWz" id="aBd-QB-KFi"/>
+                <outlet property="userNameLabel" destination="Po1-by-aLd" id="hDS-o7-gfO"/>
+                <outlet property="viewProfileButton" destination="Tkh-tw-3Ze" id="Ozr-1V-ZCV"/>
+            </connections>
+            <point key="canvasLocation" x="250.72463768115944" y="216.62946428571428"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="tDo-uT-4ET">
+            <size key="intrinsicContentSize" width="274" height="20.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Placeholder" width="40" height="40"/>
+        <image name="camera" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

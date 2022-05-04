@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JobCell" id="gTV-IL-0wX" customClass="JobCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="189" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="189" height="44"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9M-7g-i4G">
+                        <rect key="frame" x="4" y="4" width="181" height="36"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Residential" translatesAutoresizingMaskIntoConstraints="NO" id="fwa-YF-CM3">
+                                <rect key="frame" x="6" y="8" width="0.0" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="3IX-9Y-aF6"/>
+                                    <constraint firstAttribute="height" constant="20" id="QLA-a1-MFw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Residential" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5y-Wa-zLF" customClass="CustomMediumLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="10" y="4" width="161" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450980392156863" green="0.89803921568627454" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="b5y-Wa-zLF" firstAttribute="top" secondItem="W9M-7g-i4G" secondAttribute="top" constant="4" id="0sz-hS-8Eo"/>
+                            <constraint firstItem="fwa-YF-CM3" firstAttribute="centerY" secondItem="W9M-7g-i4G" secondAttribute="centerY" id="45M-Ze-iTM"/>
+                            <constraint firstAttribute="bottom" secondItem="b5y-Wa-zLF" secondAttribute="bottom" constant="4" id="5XW-pe-rhF"/>
+                            <constraint firstItem="b5y-Wa-zLF" firstAttribute="leading" secondItem="fwa-YF-CM3" secondAttribute="trailing" constant="4" id="gLb-5a-Pxf"/>
+                            <constraint firstItem="fwa-YF-CM3" firstAttribute="leading" secondItem="W9M-7g-i4G" secondAttribute="leading" constant="6" id="ooY-sH-de2"/>
+                            <constraint firstAttribute="trailing" secondItem="b5y-Wa-zLF" secondAttribute="trailing" constant="10" id="oqS-KP-pmu"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="W9M-7g-i4G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="4UT-Zr-GV1"/>
+                <constraint firstItem="W9M-7g-i4G" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="U27-6q-OT9"/>
+                <constraint firstAttribute="trailing" secondItem="W9M-7g-i4G" secondAttribute="trailing" constant="4" id="Uyy-2o-Q2a"/>
+                <constraint firstAttribute="bottom" secondItem="W9M-7g-i4G" secondAttribute="bottom" constant="4" id="mtV-UY-Yck"/>
+            </constraints>
+            <size key="customSize" width="189" height="44"/>
+            <connections>
+                <outlet property="jobImageView" destination="fwa-YF-CM3" id="duS-xF-ax3"/>
+                <outlet property="jobTypeLabel" destination="b5y-Wa-zLF" id="VWL-XI-6kq"/>
+            </connections>
+            <point key="canvasLocation" x="113.768115942029" y="91.741071428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Residential" width="12" height="12"/>
+    </resources>
+</document>

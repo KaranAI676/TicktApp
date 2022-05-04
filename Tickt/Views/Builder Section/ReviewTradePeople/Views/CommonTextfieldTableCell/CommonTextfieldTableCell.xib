@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="236" id="KGk-i7-Jjw" customClass="CommonTextfieldTableCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="570" height="236"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="570" height="236"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Jx-J9-9v7">
+                        <rect key="frame" x="24" y="10" width="522" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Prf-bD-oif">
+                                <rect key="frame" x="0.0" y="0.0" width="522" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Px7-CD-f7v">
+                                        <rect key="frame" x="15" y="0.0" width="492" height="50"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Px7-CD-f7v" firstAttribute="top" secondItem="Prf-bD-oif" secondAttribute="top" id="3P8-YW-CqT"/>
+                                    <constraint firstAttribute="bottom" secondItem="Px7-CD-f7v" secondAttribute="bottom" id="WAe-bq-7uD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Px7-CD-f7v" secondAttribute="trailing" constant="15" id="eSP-UQ-7EA"/>
+                                    <constraint firstItem="Px7-CD-f7v" firstAttribute="leading" secondItem="Prf-bD-oif" secondAttribute="leading" constant="15" id="hyr-0r-My0"/>
+                                    <constraint firstAttribute="height" constant="50" id="vVj-cd-Ckh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.85490196080000003" green="0.84313725490000002" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ua-Kf-FzZ">
+                                <rect key="frame" x="522" y="0.0" width="55" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="Maq-5d-0px"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <state key="normal" title="Change">
+                                    <color key="titleColor" red="0.070588235294117646" green="0.24705882352941178" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iZZ-Zf-IwW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0Jx-J9-9v7" secondAttribute="trailing" constant="24" id="ADB-4o-7C6"/>
+                    <constraint firstItem="0Jx-J9-9v7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="WXn-Q9-POg"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0Jx-J9-9v7" secondAttribute="bottom" id="hbN-EK-vjN"/>
+                    <constraint firstItem="0Jx-J9-9v7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="w6S-Ui-PqG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="changeButton" destination="4ua-Kf-FzZ" id="nSM-Ao-oHl"/>
+                <outlet property="commonTextFiled" destination="Px7-CD-f7v" id="1XG-zr-m7V"/>
+                <outlet property="topConstraint" destination="w6S-Ui-PqG" id="Db3-Mj-vqs"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="168.08035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

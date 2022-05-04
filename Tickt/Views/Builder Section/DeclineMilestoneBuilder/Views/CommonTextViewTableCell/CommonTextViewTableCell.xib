@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="342" id="KGk-i7-Jjw" customClass="CommonTextViewTableCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="551" height="342"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="551" height="342"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecU-en-U0g">
+                        <rect key="frame" x="24" y="5" width="503" height="170"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qaw-s0-m5t">
+                                <rect key="frame" x="10" y="10" width="483" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="dmE-kp-oF7"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qaw-s0-m5t" secondAttribute="bottom" constant="10" id="GX1-bj-xHx"/>
+                            <constraint firstItem="qaw-s0-m5t" firstAttribute="leading" secondItem="ecU-en-U0g" secondAttribute="leading" constant="10" id="UcD-wN-9sF"/>
+                            <constraint firstAttribute="trailing" secondItem="qaw-s0-m5t" secondAttribute="trailing" constant="10" id="eW4-lM-PBu"/>
+                            <constraint firstItem="qaw-s0-m5t" firstAttribute="top" secondItem="ecU-en-U0g" secondAttribute="top" constant="10" id="yxl-GT-WX6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.87450980392156863" green="0.89803921568627454" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ecU-en-U0g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="RHF-AM-5ht"/>
+                    <constraint firstAttribute="trailing" secondItem="ecU-en-U0g" secondAttribute="trailing" constant="24" id="eGI-dy-TNK"/>
+                    <constraint firstItem="ecU-en-U0g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="mxr-xe-o56"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ecU-en-U0g" secondAttribute="bottom" id="zpv-lf-sJb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mainContainerView" destination="H2p-sc-9uM" id="tRh-lz-46Q"/>
+                <outlet property="textViewBackView" destination="ecU-en-U0g" id="MRC-qf-wj6"/>
+                <outlet property="textViewHeightConstraint" destination="dmE-kp-oF7" id="q70-8E-xCD"/>
+                <outlet property="textViewOutlet" destination="qaw-s0-m5t" id="4R4-ia-yws"/>
+            </connections>
+            <point key="canvasLocation" x="283.33333333333337" y="203.57142857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

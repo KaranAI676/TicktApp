@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayBold.ttf">
+            <string>NeueHaasDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CancelJobView" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4w-By-BWF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJ5-K2-qY8">
+                    <rect key="frame" x="30" y="264" width="354" height="368"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="16" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rejection reason" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wg2-Vl-bOD" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
+                            <rect key="frame" x="16" y="24" width="135" height="21"/>
+                            <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="18"/>
+                            <color key="textColor" name="ThemeBlue"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="16" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Please write your reason" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCX-Q1-0Uo" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
+                            <rect key="frame" x="16" y="61" width="322" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="15" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ke0-QG-p0P" customClass="CustomRomanTextView" customModule="Tickt" customModuleProvider="target">
+                            <rect key="frame" x="16" y="92.5" width="322" height="161.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Text"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                    <color key="value" red="0.59999999999999998" green="0.64313725489999995" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="ThemeGray"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                        <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CK-Tw-P2g" customClass="CustomBoldButton" customModule="Tickt" customModuleProvider="target">
+                            <rect key="frame" x="16" y="294" width="162" height="50"/>
+                            <color key="backgroundColor" red="0.99607843139999996" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="e3b-BC-hNd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="itL-Bb-VaJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRA-Tf-6ge" customClass="CustomBoldButton" customModule="Tickt" customModuleProvider="target">
+                            <rect key="frame" x="194" y="294" width="144" height="50"/>
+                            <color key="backgroundColor" name="ThemeGray"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="6sd-mK-pGH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="tC6-Xh-Fbr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Wg2-Vl-bOD" firstAttribute="top" secondItem="XJ5-K2-qY8" secondAttribute="top" constant="24" id="02K-kC-rFH"/>
+                        <constraint firstItem="KCX-Q1-0Uo" firstAttribute="top" secondItem="Wg2-Vl-bOD" secondAttribute="bottom" constant="16" id="09R-Ag-hBo"/>
+                        <constraint firstAttribute="trailing" secondItem="KCX-Q1-0Uo" secondAttribute="trailing" constant="16" id="4Qe-Ve-294"/>
+                        <constraint firstItem="1CK-Tw-P2g" firstAttribute="leading" secondItem="XJ5-K2-qY8" secondAttribute="leading" constant="16" id="5mx-m7-r0u"/>
+                        <constraint firstItem="wRA-Tf-6ge" firstAttribute="width" secondItem="1CK-Tw-P2g" secondAttribute="width" multiplier="0.891304" id="6Hj-UD-W43"/>
+                        <constraint firstItem="KCX-Q1-0Uo" firstAttribute="leading" secondItem="XJ5-K2-qY8" secondAttribute="leading" constant="16" id="A0z-6m-Gr8"/>
+                        <constraint firstItem="ke0-QG-p0P" firstAttribute="top" secondItem="KCX-Q1-0Uo" secondAttribute="bottom" constant="12" id="JWL-W8-dsp"/>
+                        <constraint firstItem="wRA-Tf-6ge" firstAttribute="leading" secondItem="1CK-Tw-P2g" secondAttribute="trailing" constant="16" id="PMT-Tf-OPf"/>
+                        <constraint firstAttribute="bottom" secondItem="1CK-Tw-P2g" secondAttribute="bottom" constant="24" id="R7x-le-ats"/>
+                        <constraint firstItem="Wg2-Vl-bOD" firstAttribute="leading" secondItem="XJ5-K2-qY8" secondAttribute="leading" constant="16" id="aIw-0P-FPq"/>
+                        <constraint firstItem="ke0-QG-p0P" firstAttribute="leading" secondItem="XJ5-K2-qY8" secondAttribute="leading" constant="16" id="i6h-ww-Xsr"/>
+                        <constraint firstAttribute="trailing" secondItem="wRA-Tf-6ge" secondAttribute="trailing" constant="16" id="pd8-yF-E5q"/>
+                        <constraint firstAttribute="trailing" secondItem="ke0-QG-p0P" secondAttribute="trailing" constant="16" id="qbi-4E-8lr"/>
+                        <constraint firstAttribute="bottom" secondItem="wRA-Tf-6ge" secondAttribute="bottom" constant="24" id="qut-I2-ZR5"/>
+                        <constraint firstItem="1CK-Tw-P2g" firstAttribute="top" secondItem="ke0-QG-p0P" secondAttribute="bottom" constant="40" id="xFi-lf-yJS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XJ5-K2-qY8" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" multiplier="0.45" id="36S-25-Uzz"/>
+                <constraint firstItem="XJ5-K2-qY8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3Kw-oY-oFr"/>
+                <constraint firstItem="R4w-By-BWF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ESE-mt-WUM"/>
+                <constraint firstItem="R4w-By-BWF" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="MSy-ve-sCa"/>
+                <constraint firstItem="XJ5-K2-qY8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="UDH-V7-oLf"/>
+                <constraint firstAttribute="bottom" secondItem="R4w-By-BWF" secondAttribute="bottom" id="V7c-9B-ZyW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XJ5-K2-qY8" secondAttribute="trailing" constant="30" id="bKM-dk-LfL"/>
+                <constraint firstItem="R4w-By-BWF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="icq-rZ-0UM"/>
+                <constraint firstItem="XJ5-K2-qY8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uXd-AN-KjQ"/>
+            </constraints>
+            <connections>
+                <outlet property="cancelButton" destination="wRA-Tf-6ge" id="5pw-L4-dqe"/>
+                <outlet property="containerView" destination="XJ5-K2-qY8" id="rw2-IL-crx"/>
+                <outlet property="doneButton" destination="1CK-Tw-P2g" id="bM1-Cx-rny"/>
+                <outlet property="reasonTextView" destination="ke0-QG-p0P" id="zh9-pI-nia"/>
+            </connections>
+            <point key="canvasLocation" x="89.855072463768124" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="ThemeBlue">
+            <color red="0.086274509803921567" green="0.11372549019607843" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemeGray">
+            <color red="0.87450980392156863" green="0.89803921568627454" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

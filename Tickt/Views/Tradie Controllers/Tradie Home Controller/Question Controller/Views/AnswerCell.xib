@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayBold.ttf">
+            <string>NeueHaasDisplay-Bold</string>
+        </array>
+        <array key="NeueHaasDisplayLight.ttf">
+            <string>NeueHaasDisplay-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AnswerCell" rowHeight="272" id="N6Q-BM-o5J" customClass="AnswerCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N6Q-BM-o5J" id="9v1-zW-UkG">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="272"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZ9-Av-L6C">
+                        <rect key="frame" x="40" y="12" width="295" height="248"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ACt-Rh-dhM">
+                                <rect key="frame" x="12" y="12" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.8980392157" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eqm-Bb-xOY"/>
+                                    <constraint firstAttribute="width" constant="40" id="sw5-gC-Tim"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheryl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7up-JS-WGO" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="64" y="12" width="219" height="26"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="12 Aug 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXf-EG-HWL" customClass="CustomRegularLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="64" y="38" width="219" height="14"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Light" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1A-VK-BbP" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="12" y="62" width="271" height="176"/>
+                                <string key="text">Don’t usually go for Global Industries boards but my go to longboard was in the shop being repaired. Compared to my usual this one isn’t as grippy but the weight and speed really made up for it.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.19215686274509802" green="0.23921568627450979" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7up-JS-WGO" firstAttribute="leading" secondItem="ACt-Rh-dhM" secondAttribute="trailing" constant="12" id="0QH-J9-z9u"/>
+                            <constraint firstItem="HXf-EG-HWL" firstAttribute="top" secondItem="7up-JS-WGO" secondAttribute="bottom" id="9A4-5T-htN"/>
+                            <constraint firstItem="HXf-EG-HWL" firstAttribute="trailing" secondItem="7up-JS-WGO" secondAttribute="trailing" id="GRF-y6-j5q"/>
+                            <constraint firstAttribute="trailing" secondItem="7up-JS-WGO" secondAttribute="trailing" constant="12" id="Jfo-xX-PzF"/>
+                            <constraint firstItem="ACt-Rh-dhM" firstAttribute="top" secondItem="pZ9-Av-L6C" secondAttribute="top" constant="12" id="V2t-pp-2Sk"/>
+                            <constraint firstItem="ACt-Rh-dhM" firstAttribute="leading" secondItem="pZ9-Av-L6C" secondAttribute="leading" constant="12" id="W1Q-qx-w0A"/>
+                            <constraint firstItem="X1A-VK-BbP" firstAttribute="leading" secondItem="pZ9-Av-L6C" secondAttribute="leading" constant="12" id="c1N-nT-AFh"/>
+                            <constraint firstItem="HXf-EG-HWL" firstAttribute="bottom" secondItem="ACt-Rh-dhM" secondAttribute="bottom" id="k25-dZ-x0F"/>
+                            <constraint firstItem="X1A-VK-BbP" firstAttribute="top" secondItem="ACt-Rh-dhM" secondAttribute="bottom" constant="10" id="osy-mu-VMj"/>
+                            <constraint firstAttribute="bottom" secondItem="X1A-VK-BbP" secondAttribute="bottom" constant="10" id="s2j-fx-E4P"/>
+                            <constraint firstItem="7up-JS-WGO" firstAttribute="top" secondItem="pZ9-Av-L6C" secondAttribute="top" constant="12" id="y75-Sf-NL2"/>
+                            <constraint firstAttribute="trailing" secondItem="X1A-VK-BbP" secondAttribute="trailing" constant="12" id="yeg-3g-l3X"/>
+                            <constraint firstItem="HXf-EG-HWL" firstAttribute="leading" secondItem="7up-JS-WGO" secondAttribute="leading" id="ylE-Y0-W28"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pZ9-Av-L6C" secondAttribute="trailing" constant="40" id="8oY-yK-Hkt"/>
+                    <constraint firstAttribute="bottom" secondItem="pZ9-Av-L6C" secondAttribute="bottom" constant="12" id="Mvn-iW-VP8"/>
+                    <constraint firstItem="pZ9-Av-L6C" firstAttribute="leading" secondItem="9v1-zW-UkG" secondAttribute="leading" constant="40" id="PyQ-vV-j0d"/>
+                    <constraint firstItem="pZ9-Av-L6C" firstAttribute="top" secondItem="9v1-zW-UkG" secondAttribute="top" constant="12" id="zFY-J5-Syf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="kTw-Wj-nqY"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="answerLabel" destination="X1A-VK-BbP" id="jVU-cb-sOm"/>
+                <outlet property="dateLabel" destination="HXf-EG-HWL" id="wUF-gY-wrA"/>
+                <outlet property="nameLabel" destination="7up-JS-WGO" id="xle-gK-2hz"/>
+                <outlet property="userImage" destination="ACt-Rh-dhM" id="ISL-Zn-Fkk"/>
+            </connections>
+            <point key="canvasLocation" x="59" y="138"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Placeholder" width="40" height="40"/>
+    </resources>
+</document>

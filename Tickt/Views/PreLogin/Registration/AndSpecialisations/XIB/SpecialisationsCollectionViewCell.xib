@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SpecialisationsCollectionViewCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="174"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="174"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ouc-RN-6iu">
+                        <rect key="frame" x="0.0" y="16" width="333" height="158"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="251" text="Test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvr-dI-V40" customClass="CustomMediumLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="333" height="158"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Gvr-dI-V40" secondAttribute="bottom" id="0dk-bh-hi5"/>
+                            <constraint firstItem="Gvr-dI-V40" firstAttribute="top" secondItem="ouc-RN-6iu" secondAttribute="top" id="6dW-PB-63Q"/>
+                            <constraint firstItem="Gvr-dI-V40" firstAttribute="leading" secondItem="ouc-RN-6iu" secondAttribute="leading" id="WTe-Gg-4Zg"/>
+                            <constraint firstAttribute="trailing" secondItem="Gvr-dI-V40" secondAttribute="trailing" id="XsY-fl-B8t"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ouc-RN-6iu" secondAttribute="bottom" id="Fvd-Gc-mIy"/>
+                <constraint firstItem="ouc-RN-6iu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hd7-Rl-o5f"/>
+                <constraint firstItem="ouc-RN-6iu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="tJh-2b-wpN"/>
+                <constraint firstAttribute="trailing" secondItem="ouc-RN-6iu" secondAttribute="trailing" constant="12" id="uh6-qY-Exg"/>
+            </constraints>
+            <size key="customSize" width="345" height="174"/>
+            <connections>
+                <outlet property="backView" destination="ouc-RN-6iu" id="0H2-AL-2wN"/>
+                <outlet property="rightConstrint" destination="uh6-qY-Exg" id="adm-N0-lnd"/>
+                <outlet property="spelisationNameLabel" destination="Gvr-dI-V40" id="pzI-un-ZmH"/>
+                <outlet property="topConstraint" destination="tJh-2b-wpN" id="zhh-9S-lk9"/>
+            </connections>
+            <point key="canvasLocation" x="351.44927536231887" y="161.38392857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

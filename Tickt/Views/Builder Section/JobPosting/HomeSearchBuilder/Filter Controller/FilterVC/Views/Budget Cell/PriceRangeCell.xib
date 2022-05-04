@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Bold.ttf">
+            <string>DMSans-Bold</string>
+        </array>
+        <array key="NeueHaasDisplayBold.ttf">
+            <string>NeueHaasDisplay-Bold</string>
+        </array>
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PriceRangeCell" rowHeight="275" id="f6V-cP-HvR" customClass="PriceRangeCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f6V-cP-HvR" id="drF-Vb-2gb">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBB-GJ-fzi">
+                        <rect key="frame" x="20" y="24" width="335" height="32.5"/>
+                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="18"/>
+                        <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="16" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="0-0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UN8-8c-lr8" customClass="CustomMediumLabel" customModule="Tickt" customModuleProvider="target">
+                        <rect key="frame" x="24" y="152.5" width="27.5" height="18.5"/>
+                        <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="14"/>
+                        <color key="textColor" name="ThemeBlue"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gye-Tk-6AI">
+                        <rect key="frame" x="20" y="187" width="335" height="30"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="zM5-Et-jce"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="UHf-Vg-7ux">
+                        <rect key="frame" x="24" y="64.5" width="327" height="76"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDl-W8-9vT">
+                                <rect key="frame" x="0.0" y="0.0" width="327" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZI-sE-jCq">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="WQs-3z-HSx"/>
+                                        </constraints>
+                                        <state key="normal" image="checkBoxUnselected"/>
+                                        <state key="selected" image="bulletSelection"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="f6V-cP-HvR" eventType="touchUpInside" id="mvF-Gx-0Hf"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Per hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1o-oZ-iHd">
+                                        <rect key="frame" x="53" y="0.0" width="274" height="35"/>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="16"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="w1o-oZ-iHd" secondAttribute="bottom" id="5Q7-yN-Yv2"/>
+                                    <constraint firstAttribute="trailing" secondItem="w1o-oZ-iHd" secondAttribute="trailing" id="8o3-r6-jxn"/>
+                                    <constraint firstItem="FZI-sE-jCq" firstAttribute="top" secondItem="sDl-W8-9vT" secondAttribute="top" id="Blt-Sh-wfT"/>
+                                    <constraint firstAttribute="bottom" secondItem="FZI-sE-jCq" secondAttribute="bottom" id="Clv-ke-DGU"/>
+                                    <constraint firstItem="FZI-sE-jCq" firstAttribute="leading" secondItem="sDl-W8-9vT" secondAttribute="leading" id="Fny-Cc-V70"/>
+                                    <constraint firstAttribute="height" constant="35" id="I35-SE-EMz"/>
+                                    <constraint firstItem="w1o-oZ-iHd" firstAttribute="top" secondItem="FZI-sE-jCq" secondAttribute="top" id="P6k-Sf-Y5y"/>
+                                    <constraint firstItem="w1o-oZ-iHd" firstAttribute="leading" secondItem="FZI-sE-jCq" secondAttribute="trailing" constant="13" id="v3e-Wg-H0Z"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COV-Sg-jxR">
+                                <rect key="frame" x="0.0" y="41" width="327" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zw-T4-T3q">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Nn5-wm-iP6"/>
+                                        </constraints>
+                                        <state key="normal" image="checkBoxUnselected"/>
+                                        <state key="selected" image="bulletSelection"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="f6V-cP-HvR" eventType="touchUpInside" id="S4A-wb-49c"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Fixed price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYe-aW-cT3">
+                                        <rect key="frame" x="53" y="0.0" width="274" height="35"/>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="16"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="5It-qn-RJB"/>
+                                    <constraint firstItem="9zw-T4-T3q" firstAttribute="top" secondItem="COV-Sg-jxR" secondAttribute="top" id="7lv-iF-QGd"/>
+                                    <constraint firstItem="TYe-aW-cT3" firstAttribute="leading" secondItem="9zw-T4-T3q" secondAttribute="trailing" constant="13" id="9Tq-St-Yez"/>
+                                    <constraint firstAttribute="bottom" secondItem="9zw-T4-T3q" secondAttribute="bottom" id="BW3-Rb-X3d"/>
+                                    <constraint firstAttribute="bottom" secondItem="TYe-aW-cT3" secondAttribute="bottom" id="GRN-8f-PaN"/>
+                                    <constraint firstItem="TYe-aW-cT3" firstAttribute="top" secondItem="9zw-T4-T3q" secondAttribute="top" id="M8m-FR-wus"/>
+                                    <constraint firstItem="9zw-T4-T3q" firstAttribute="leading" secondItem="COV-Sg-jxR" secondAttribute="leading" id="ScM-pf-cUn"/>
+                                    <constraint firstAttribute="trailing" secondItem="TYe-aW-cT3" secondAttribute="trailing" id="osC-My-WCq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qBB-GJ-fzi" firstAttribute="top" secondItem="drF-Vb-2gb" secondAttribute="top" constant="24" id="0u5-Qz-9ku"/>
+                    <constraint firstItem="UHf-Vg-7ux" firstAttribute="top" secondItem="qBB-GJ-fzi" secondAttribute="bottom" constant="8" id="1pK-fK-7i3"/>
+                    <constraint firstItem="UN8-8c-lr8" firstAttribute="top" secondItem="UHf-Vg-7ux" secondAttribute="bottom" constant="12" id="2EO-Op-TkX"/>
+                    <constraint firstAttribute="bottom" secondItem="Gye-Tk-6AI" secondAttribute="bottom" constant="8" id="8pM-g6-uNM"/>
+                    <constraint firstItem="UHf-Vg-7ux" firstAttribute="leading" secondItem="drF-Vb-2gb" secondAttribute="leading" constant="24" id="GCu-z1-oIh"/>
+                    <constraint firstAttribute="trailing" secondItem="UHf-Vg-7ux" secondAttribute="trailing" constant="24" id="HNL-PO-H5Y"/>
+                    <constraint firstItem="qBB-GJ-fzi" firstAttribute="leading" secondItem="drF-Vb-2gb" secondAttribute="leading" constant="20" id="JRW-Yt-2un"/>
+                    <constraint firstAttribute="trailing" secondItem="Gye-Tk-6AI" secondAttribute="trailing" constant="20" id="Jc1-i7-Ekp"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UN8-8c-lr8" secondAttribute="trailing" constant="24" id="Ldi-rZ-ASa"/>
+                    <constraint firstItem="UN8-8c-lr8" firstAttribute="leading" secondItem="drF-Vb-2gb" secondAttribute="leading" constant="24" id="ZNw-fB-S53"/>
+                    <constraint firstItem="Gye-Tk-6AI" firstAttribute="top" secondItem="UN8-8c-lr8" secondAttribute="bottom" constant="16" id="qHW-cO-zdt"/>
+                    <constraint firstAttribute="trailing" secondItem="qBB-GJ-fzi" secondAttribute="trailing" constant="20" id="sYV-GZ-YLA"/>
+                    <constraint firstItem="Gye-Tk-6AI" firstAttribute="leading" secondItem="drF-Vb-2gb" secondAttribute="leading" constant="20" id="xGw-AI-Exr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fixedPriceButton" destination="9zw-T4-T3q" id="bF2-7g-mNO"/>
+                <outlet property="perhourButton" destination="FZI-sE-jCq" id="96z-UB-FZM"/>
+                <outlet property="sliderContainerView" destination="Gye-Tk-6AI" id="WV7-sf-ZCU"/>
+                <outlet property="titleLabel" destination="UN8-8c-lr8" id="nRf-eq-jKY"/>
+            </connections>
+            <point key="canvasLocation" x="113.768115942029" y="148.99553571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bulletSelection" width="24" height="24"/>
+        <image name="checkBoxUnselected" width="24" height="24"/>
+        <namedColor name="ThemeBlue">
+            <color red="0.086274509803921567" green="0.11372549019607843" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

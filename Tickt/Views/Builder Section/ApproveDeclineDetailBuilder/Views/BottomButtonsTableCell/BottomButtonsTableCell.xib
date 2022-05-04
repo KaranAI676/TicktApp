@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="245" id="KGk-i7-Jjw" customClass="BottomButtonsTableCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="498" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="498" height="245"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Wxh-5F-Cju">
+                        <rect key="frame" x="24" y="30" width="450" height="140"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GT-rS-IjZ">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="58"/>
+                                <color key="backgroundColor" red="0.99607843137254903" green="0.90196078431372551" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="ZLN-6Y-WF6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <state key="normal" title="Approve">
+                                    <color key="titleColor" red="0.086274509803921567" green="0.11372549019607843" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0la-dh-4tn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSn-N6-mcd">
+                                <rect key="frame" x="0.0" y="82" width="450" height="58"/>
+                                <color key="backgroundColor" red="0.87450980392156863" green="0.89803921568627454" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="K61-xb-IHC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <state key="normal" title="Decline">
+                                    <color key="titleColor" red="0.086274509803921567" green="0.11372549019607843" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZpT-Lk-bJV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wxh-5F-Cju" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="OXw-QH-0rR"/>
+                    <constraint firstItem="Wxh-5F-Cju" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="Uxz-Jr-rEM"/>
+                    <constraint firstAttribute="trailing" secondItem="Wxh-5F-Cju" secondAttribute="trailing" constant="24" id="m2i-U7-KWa"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Wxh-5F-Cju" secondAttribute="bottom" id="oIE-mS-kgp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="firstButton" destination="1GT-rS-IjZ" id="tca-k6-RZy"/>
+                <outlet property="mainContainerView" destination="H2p-sc-9uM" id="kJX-fN-GSb"/>
+                <outlet property="secondButton" destination="YSn-N6-mcd" id="z17-ok-tQk"/>
+                <outlet property="stackView" destination="Wxh-5F-Cju" id="PDH-mH-7bL"/>
+                <outlet property="topConstraint" destination="OXw-QH-0rR" id="Ye2-aX-BmX"/>
+            </connections>
+            <point key="canvasLocation" x="250.72463768115944" y="157.03125"/>
+        </tableViewCell>
+    </objects>
+</document>

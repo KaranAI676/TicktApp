@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ActiveRevenueJobCell" rowHeight="84" id="XRX-66-Ayr" customClass="ActiveRevenueJobCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XRX-66-Ayr" id="fqK-OW-jOn">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IA0-6M-PFq">
+                        <rect key="frame" x="0.0" y="0.0" width="378" height="84"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEX-Ww-wqL">
+                                <rect key="frame" x="24" y="16" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.8980392157" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="wcZ-4h-mnO"/>
+                                    <constraint firstAttribute="width" constant="40" id="z4m-5O-IGe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="15" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheryl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7u-j2-HYq" customClass="CustomMediumLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="76" y="16" width="278" height="23"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <color key="textColor" name="ThemeBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Active" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2d-uJ-cwi" customClass="CustomMediumLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="76" y="43" width="50" height="25"/>
+                                <color key="backgroundColor" red="0.83529411764705885" green="0.89803921568627454" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="MWK-Uz-HiT"/>
+                                    <constraint firstAttribute="height" constant="25" id="koJ-k8-Hw1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="13"/>
+                                <color key="textColor" name="ThemeBlue"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="$1,000/$3,000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcX-BP-Oxh" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="257" y="50.5" width="97" height="17.5"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="15"/>
+                                <color key="textColor" name="ThemeBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZEX-Ww-wqL" firstAttribute="leading" secondItem="IA0-6M-PFq" secondAttribute="leading" constant="24" id="4ih-ss-gzx"/>
+                            <constraint firstItem="c7u-j2-HYq" firstAttribute="top" secondItem="IA0-6M-PFq" secondAttribute="top" constant="16" id="Aff-fT-3AO"/>
+                            <constraint firstAttribute="trailing" secondItem="CcX-BP-Oxh" secondAttribute="trailing" constant="24" id="Fpq-kU-YR1"/>
+                            <constraint firstItem="ZEX-Ww-wqL" firstAttribute="top" secondItem="IA0-6M-PFq" secondAttribute="top" constant="16" id="THf-Wo-Lir"/>
+                            <constraint firstItem="s2d-uJ-cwi" firstAttribute="top" secondItem="c7u-j2-HYq" secondAttribute="bottom" constant="4" id="e49-4F-h1B"/>
+                            <constraint firstItem="c7u-j2-HYq" firstAttribute="leading" secondItem="ZEX-Ww-wqL" secondAttribute="trailing" constant="12" id="o1x-JP-Rf4"/>
+                            <constraint firstItem="s2d-uJ-cwi" firstAttribute="leading" secondItem="c7u-j2-HYq" secondAttribute="leading" id="tan-JX-Pda"/>
+                            <constraint firstItem="CcX-BP-Oxh" firstAttribute="bottom" secondItem="s2d-uJ-cwi" secondAttribute="bottom" id="tbA-V9-Qf8"/>
+                            <constraint firstAttribute="bottom" secondItem="s2d-uJ-cwi" secondAttribute="bottom" constant="16" id="uNn-m5-wmH"/>
+                            <constraint firstAttribute="trailing" secondItem="c7u-j2-HYq" secondAttribute="trailing" constant="24" id="xTG-1R-yj3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="IA0-6M-PFq" secondAttribute="trailing" id="DCa-DB-cUP"/>
+                    <constraint firstItem="IA0-6M-PFq" firstAttribute="top" secondItem="fqK-OW-jOn" secondAttribute="top" id="aUn-78-IIh"/>
+                    <constraint firstItem="IA0-6M-PFq" firstAttribute="leading" secondItem="fqK-OW-jOn" secondAttribute="leading" id="g0k-ii-7pA"/>
+                    <constraint firstAttribute="bottom" secondItem="IA0-6M-PFq" secondAttribute="bottom" id="nVN-xJ-i86"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="gyT-Go-dOa"/>
+            <connections>
+                <outlet property="amountLabel" destination="CcX-BP-Oxh" id="fjO-JN-Ceg"/>
+                <outlet property="jobImageView" destination="ZEX-Ww-wqL" id="cJZ-8U-6qn"/>
+                <outlet property="jobNameLabel" destination="c7u-j2-HYq" id="7U5-4c-ZvF"/>
+            </connections>
+            <point key="canvasLocation" x="128.98550724637681" y="-16.741071428571427"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="ThemeBlue">
+            <color red="0.086274509803921567" green="0.11372549019607843" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

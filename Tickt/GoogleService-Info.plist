@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>795502342919-18chok9djsvkeosprp029e0emn5fikr1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.795502342919-18chok9djsvkeosprp029e0emn5fikr1</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>795502342919-3r51pvacu1ca90485gjdsipm7ufql1o0.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDKFFrKp0D_5gBsA_oztQUhrrgpKnUpyPo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>795502342919</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.tickt.app</string>
+	<key>PROJECT_ID</key>
+	<string>tickt-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tickt-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:795502342919:ios:9a3d6e51313bf2d8d30ba2</string>
+</dict>
+</plist>

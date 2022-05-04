@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayBold.ttf">
+            <string>NeueHaasDisplay-Bold</string>
+        </array>
+        <array key="NeueHaasDisplayLight.ttf">
+            <string>NeueHaasDisplay-Light</string>
+        </array>
+        <array key="NeueHaasGroteskTextPro55Roman.ttf">
+            <string>NHaasGroteskTXPro-55Rg</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="210" id="KGk-i7-Jjw" customClass="QuestionListingHeaderTblCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="195"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="195"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2L-CR-dYa">
+                        <rect key="frame" x="20" y="0.0" width="350" height="185"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="o3R-8A-er6">
+                                <rect key="frame" x="16" y="12" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.8980392157" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="bgV-A8-kkK"/>
+                                    <constraint firstAttribute="height" constant="40" id="eqN-sY-H2I"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheryl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3o-up-9Ps">
+                                <rect key="frame" x="68" y="12" width="266" height="26"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="12 Aug 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zol-OW-DqY">
+                                <rect key="frame" x="68" y="38" width="266" height="14"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Light" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ALR-37-cR4">
+                                <rect key="frame" x="16" y="68" width="318" height="107"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Don't" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJ8-8Q-Dzd">
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="27"/>
+                                        <fontDescription key="fontDescription" name="NHaasGroteskTXPro-55Rg" family="NHaasGroteskTXPro-55Rg" pointSize="14"/>
+                                        <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvG-Fi-5kC">
+                                        <rect key="frame" x="0.0" y="37" width="318" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wic-NI-eeC">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="0LG-Ag-CKY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                                <state key="normal" title="Answer">
+                                                    <color key="titleColor" red="0.070588235289999995" green="0.2470588235" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="answerBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CKx-Eb-rHB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="wic-NI-eeC" firstAttribute="top" secondItem="fvG-Fi-5kC" secondAttribute="top" id="Vce-Ki-qok"/>
+                                            <constraint firstAttribute="bottom" secondItem="wic-NI-eeC" secondAttribute="bottom" id="WGF-ZT-ztb"/>
+                                            <constraint firstAttribute="height" constant="30" id="nU3-pE-8ID"/>
+                                            <constraint firstItem="wic-NI-eeC" firstAttribute="leading" secondItem="fvG-Fi-5kC" secondAttribute="leading" id="nbs-JX-v2d"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" clipsSubviews="YES" tag="14" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INN-A6-Kxj">
+                                        <rect key="frame" x="0.0" y="77" width="318" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="r9t-AU-5q2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                        <state key="normal" title="Show answer">
+                                            <color key="titleColor" red="0.070588235289999995" green="0.2470588235" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnShowAnswerTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qqy-Ra-paC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zol-OW-DqY" firstAttribute="leading" secondItem="K3o-up-9Ps" secondAttribute="leading" id="9Sc-Sg-2bP"/>
+                            <constraint firstItem="ALR-37-cR4" firstAttribute="leading" secondItem="o3R-8A-er6" secondAttribute="leading" id="BIE-Nd-R3R"/>
+                            <constraint firstItem="o3R-8A-er6" firstAttribute="top" secondItem="z2L-CR-dYa" secondAttribute="top" constant="12" id="Q44-mf-mRk"/>
+                            <constraint firstItem="K3o-up-9Ps" firstAttribute="top" secondItem="o3R-8A-er6" secondAttribute="top" id="Qfm-Tf-NqI"/>
+                            <constraint firstAttribute="bottom" secondItem="ALR-37-cR4" secondAttribute="bottom" constant="10" id="TeV-XI-K7e"/>
+                            <constraint firstAttribute="trailing" secondItem="K3o-up-9Ps" secondAttribute="trailing" constant="16" id="Vjl-N1-jMM"/>
+                            <constraint firstItem="o3R-8A-er6" firstAttribute="leading" secondItem="z2L-CR-dYa" secondAttribute="leading" constant="16" id="Weq-AY-Wlg"/>
+                            <constraint firstItem="ALR-37-cR4" firstAttribute="top" secondItem="o3R-8A-er6" secondAttribute="bottom" constant="16" id="emv-0R-8WH"/>
+                            <constraint firstAttribute="trailing" secondItem="ALR-37-cR4" secondAttribute="trailing" constant="16" id="hUS-vh-xU2"/>
+                            <constraint firstItem="K3o-up-9Ps" firstAttribute="leading" secondItem="o3R-8A-er6" secondAttribute="trailing" constant="12" id="src-EX-MFP"/>
+                            <constraint firstItem="Zol-OW-DqY" firstAttribute="top" secondItem="K3o-up-9Ps" secondAttribute="bottom" id="tfg-uA-eKQ"/>
+                            <constraint firstItem="Zol-OW-DqY" firstAttribute="trailing" secondItem="K3o-up-9Ps" secondAttribute="trailing" id="vTx-L1-7ra"/>
+                            <constraint firstItem="Zol-OW-DqY" firstAttribute="bottom" secondItem="o3R-8A-er6" secondAttribute="bottom" id="xZK-Bx-LvG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="z2L-CR-dYa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0eN-sH-uVf"/>
+                    <constraint firstAttribute="bottom" secondItem="z2L-CR-dYa" secondAttribute="bottom" constant="10" id="6DO-eo-4vw"/>
+                    <constraint firstAttribute="trailing" secondItem="z2L-CR-dYa" secondAttribute="trailing" constant="20" id="JUD-19-poi"/>
+                    <constraint firstItem="z2L-CR-dYa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="sgL-2G-C6U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnAnswer" destination="wic-NI-eeC" id="eXq-MI-nyF"/>
+                <outlet property="btnShowAnswer" destination="INN-A6-Kxj" id="yOB-lb-YYk"/>
+                <outlet property="lblDate" destination="Zol-OW-DqY" id="z2J-ax-bhA"/>
+                <outlet property="lblName" destination="K3o-up-9Ps" id="16G-M4-THe"/>
+                <outlet property="lblQuestion" destination="hJ8-8Q-Dzd" id="Giq-rK-5oM"/>
+                <outlet property="uerImageView" destination="o3R-8A-er6" id="v2l-S1-8Nv"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="2"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Placeholder" width="40" height="40"/>
+    </resources>
+</document>

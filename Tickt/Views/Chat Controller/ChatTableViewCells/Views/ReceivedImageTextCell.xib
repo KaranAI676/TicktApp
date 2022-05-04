@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Regular.ttf">
+            <string>DMSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReceivedImageTextCell" rowHeight="217" id="KGk-i7-Jjw" customClass="ReceivedImageTextCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yl-xP-RDB" customClass="ReceivedImageMessageView" customModule="Tickt" customModuleProvider="target">
+                        <rect key="frame" x="20" y="10" width="150" height="150"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Oq-Vd-1Ld">
+                                <rect key="frame" x="15" y="25" width="120" height="110"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4c-IY-oLF">
+                                <rect key="frame" x="57" y="62" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="81T-NT-ELy"/>
+                                    <constraint firstAttribute="height" constant="36" id="inE-EZ-h6R"/>
+                                </constraints>
+                                <state key="normal" image="videoPlayIcon"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="3Fr-rF-jwg"/>
+                            <constraint firstItem="b4c-IY-oLF" firstAttribute="centerX" secondItem="9Oq-Vd-1Ld" secondAttribute="centerX" id="78S-tI-fB0"/>
+                            <constraint firstAttribute="trailing" secondItem="9Oq-Vd-1Ld" secondAttribute="trailing" constant="15" id="GHV-g3-Z8T"/>
+                            <constraint firstItem="b4c-IY-oLF" firstAttribute="centerY" secondItem="9Oq-Vd-1Ld" secondAttribute="centerY" id="KjY-af-3pW"/>
+                            <constraint firstAttribute="height" constant="150" id="gFD-fI-FIG"/>
+                            <constraint firstItem="9Oq-Vd-1Ld" firstAttribute="top" secondItem="1yl-xP-RDB" secondAttribute="top" constant="25" id="ge7-tf-SIu"/>
+                            <constraint firstAttribute="bottom" secondItem="9Oq-Vd-1Ld" secondAttribute="bottom" constant="15" id="iBD-Q4-UPN"/>
+                            <constraint firstItem="9Oq-Vd-1Ld" firstAttribute="leading" secondItem="1yl-xP-RDB" secondAttribute="leading" constant="15" id="wQU-7B-DaZ"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfN-Bc-qxM" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
+                        <rect key="frame" x="172.5" y="146" width="75" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="uvv-3R-XHR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="12"/>
+                        <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TfN-Bc-qxM" firstAttribute="leading" secondItem="1yl-xP-RDB" secondAttribute="trailing" constant="2.5" id="3eU-xI-VOp"/>
+                    <constraint firstItem="1yl-xP-RDB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="I9p-S0-OuM"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1yl-xP-RDB" secondAttribute="bottom" constant="16" id="Syx-Gb-Drn"/>
+                    <constraint firstItem="1yl-xP-RDB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="h9v-Y6-eBE"/>
+                    <constraint firstItem="TfN-Bc-qxM" firstAttribute="bottom" secondItem="1yl-xP-RDB" secondAttribute="bottom" id="ywE-lS-QcY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="messageTimeReceivedLabel" destination="TfN-Bc-qxM" id="ghG-ko-3pv"/>
+                <outlet property="playButton" destination="b4c-IY-oLF" id="JAZ-0f-kDM"/>
+                <outlet property="receiveImageView" destination="9Oq-Vd-1Ld" id="XHi-Ve-E76"/>
+            </connections>
+            <point key="canvasLocation" x="15.942028985507248" y="92.745535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="videoPlayIcon" width="15.5" height="20"/>
+    </resources>
+</document>

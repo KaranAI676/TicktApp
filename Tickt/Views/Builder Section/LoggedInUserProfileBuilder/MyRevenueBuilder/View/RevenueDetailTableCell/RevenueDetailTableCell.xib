@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="185" id="KGk-i7-Jjw" customClass="RevenueDetailTableCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="509" height="185"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="509" height="185"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7g-FN-mAF">
+                        <rect key="frame" x="24" y="14" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="5AD-wn-oDj"/>
+                            <constraint firstAttribute="width" constant="24" id="MlO-Zu-Bh1"/>
+                        </constraints>
+                        <state key="normal" image="checkBoxUnselected"/>
+                        <state key="selected" image="icCheck"/>
+                        <connections>
+                            <action selector="buttonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aaf-k3-NyA"/>
+                        </connections>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="akd-X0-MfA">
+                        <rect key="frame" x="60" y="14" width="425" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91a-1v-N0q">
+                                <rect key="frame" x="0.0" y="0.0" width="425" height="16"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="16"/>
+                                <color key="textColor" red="0.086274509803921567" green="0.11372549019607843" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo evidence required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3f-e8-tMN">
+                                <rect key="frame" x="0.0" y="21" width="425" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.19215686274509802" green="0.23921568627450979" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5wb-WJ-aS1">
+                                <rect key="frame" x="0.0" y="43" width="425" height="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Label ekbcksdbckcsakdcnsadcnsncnasdkcndsncsandcknaskdncaskdc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37j-mP-Tyf">
+                                        <rect key="frame" x="0.0" y="0.0" width="395" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnA-EP-7z1">
+                                        <rect key="frame" x="405" y="0.0" width="20" height="17"/>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="16"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="akd-X0-MfA" firstAttribute="top" secondItem="k7g-FN-mAF" secondAttribute="top" id="5r9-1k-EcL"/>
+                    <constraint firstItem="k7g-FN-mAF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="617-x7-VTf"/>
+                    <constraint firstItem="k7g-FN-mAF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="F7C-aK-Wh7"/>
+                    <constraint firstItem="akd-X0-MfA" firstAttribute="leading" secondItem="k7g-FN-mAF" secondAttribute="trailing" constant="12" id="Jzw-fj-Bl1"/>
+                    <constraint firstAttribute="trailing" secondItem="akd-X0-MfA" secondAttribute="trailing" constant="24" id="eYa-JT-wOc"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="akd-X0-MfA" secondAttribute="bottom" constant="15" id="qt4-tt-uto"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonOutlet" destination="k7g-FN-mAF" id="8A9-0h-npK"/>
+                <outlet property="containerView" destination="H2p-sc-9uM" id="iqo-Pd-Jgo"/>
+                <outlet property="dateLabel" destination="37j-mP-Tyf" id="AAZ-B3-QkR"/>
+                <outlet property="nameLabel" destination="91a-1v-N0q" id="efD-dx-qqx"/>
+                <outlet property="photoEvidenceLabel" destination="U3f-e8-tMN" id="zj8-OS-zbn"/>
+                <outlet property="priceLabel" destination="hnA-EP-7z1" id="FSj-PF-NaW"/>
+            </connections>
+            <point key="canvasLocation" x="244" y="95"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkBoxUnselected" width="24" height="24"/>
+        <image name="icCheck" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchHeaderView" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmj-tX-Y8L">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
+                    <color key="backgroundColor" red="0.87450980392156863" green="0.89803921568627454" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" tag="22" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jobs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exf-WE-9rs" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
+                    <rect key="frame" x="20" y="12" width="374" height="75"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.086274509803921567" green="0.11372549019607843" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="xmj-tX-Y8L" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3iU-YA-Lbh"/>
+                <constraint firstAttribute="bottom" secondItem="xmj-tX-Y8L" secondAttribute="bottom" id="7pn-Bm-VAO"/>
+                <constraint firstItem="Exf-WE-9rs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="VNp-dc-yOt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Exf-WE-9rs" secondAttribute="bottom" constant="12" id="VVS-Uk-cEJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xmj-tX-Y8L" secondAttribute="trailing" id="c37-bB-u9Y"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Exf-WE-9rs" secondAttribute="trailing" constant="20" id="iuD-1R-2wg"/>
+                <constraint firstItem="Exf-WE-9rs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="vGo-iW-vlM"/>
+                <constraint firstItem="xmj-tX-Y8L" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ys9-yo-RBl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backView" destination="xmj-tX-Y8L" id="XDd-TZ-LOT"/>
+                <outlet property="headerLabel" destination="Exf-WE-9rs" id="Nvn-RP-0rK"/>
+            </connections>
+            <point key="canvasLocation" x="-197.10144927536234" y="-26.450892857142858"/>
+        </view>
+    </objects>
+</document>

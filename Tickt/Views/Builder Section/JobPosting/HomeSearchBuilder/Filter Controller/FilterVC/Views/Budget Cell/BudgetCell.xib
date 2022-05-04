@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayBold.ttf">
+            <string>NeueHaasDisplay-Bold</string>
+        </array>
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BudgetCell" rowHeight="125" id="KGk-i7-Jjw" customClass="BudgetCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum Budget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yed-MT-JmH">
+                        <rect key="frame" x="24" y="24" width="272" height="27"/>
+                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="18"/>
+                        <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcy-Pp-fWk">
+                        <rect key="frame" x="164" y="113" width="132" height="0.0"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mbZ-Cs-JBL">
+                                <rect key="frame" x="0.0" y="0.0" width="132" height="0.0"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKX-Fv-zSy">
+                                        <rect key="frame" x="0.0" y="0.0" width="132" height="26"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="7je-OH-qDB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                        <state key="normal" title="Per hour">
+                                            <color key="titleColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonActions:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aaR-hU-i3v"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciG-1W-X1C">
+                                        <rect key="frame" x="0.0" y="-26" width="132" height="26"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="45" id="oaL-B1-JZ8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                        <state key="normal" title="Fixed price">
+                                            <color key="titleColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonActions:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HZq-Mj-Sa8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="31b-dV-Ihi"/>
+                            <constraint firstAttribute="bottom" secondItem="mbZ-Cs-JBL" secondAttribute="bottom" id="4qR-oJ-KPZ"/>
+                            <constraint firstItem="mbZ-Cs-JBL" firstAttribute="top" secondItem="kcy-Pp-fWk" secondAttribute="top" id="L6m-Ph-fuH"/>
+                            <constraint firstItem="mbZ-Cs-JBL" firstAttribute="leading" secondItem="kcy-Pp-fWk" secondAttribute="leading" id="rPt-cX-Iw5"/>
+                            <constraint firstAttribute="trailing" secondItem="mbZ-Cs-JBL" secondAttribute="trailing" id="rzq-be-uHh"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WFn-W8-q1S">
+                        <rect key="frame" x="24" y="63" width="272" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoC-aw-uKc">
+                                <rect key="frame" x="0.0" y="0.0" width="132" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PjI-zJ-ZZb" customClass="CustomMediumField">
+                                        <rect key="frame" x="15" y="0.0" width="102" height="50"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DBJ-aF-3Ey"/>
+                                    <constraint firstItem="PjI-zJ-ZZb" firstAttribute="top" secondItem="aoC-aw-uKc" secondAttribute="top" id="hF6-oU-kx6"/>
+                                    <constraint firstAttribute="trailing" secondItem="PjI-zJ-ZZb" secondAttribute="trailing" constant="15" id="iOj-DN-lvJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="PjI-zJ-ZZb" secondAttribute="bottom" id="wRa-wQ-Si0"/>
+                                    <constraint firstItem="PjI-zJ-ZZb" firstAttribute="leading" secondItem="aoC-aw-uKc" secondAttribute="leading" constant="15" id="zZM-JM-Bra"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.87450980389999999" green="0.8980392157" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRF-wV-u2h">
+                                <rect key="frame" x="140" y="0.0" width="132" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Per hour" placeholder="Choose" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hPY-5h-AQ7">
+                                        <rect key="frame" x="10" y="0.0" width="78" height="50"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="checkMarkEnabled" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedRowColor">
+                                                <color key="value" red="0.99607843139999996" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowSize">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="handleKeyboard" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="VwK-dk-SqU">
+                                        <rect key="frame" x="88" y="13" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="eRo-bB-fVn"/>
+                                            <constraint firstAttribute="height" constant="24" id="v53-cc-7Bi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkU-wo-L8e">
+                                        <rect key="frame" x="0.0" y="0.0" width="132" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="buttonActions:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Gvq-cX-R6c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.8980392157" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hPY-5h-AQ7" firstAttribute="leading" secondItem="jRF-wV-u2h" secondAttribute="leading" constant="10" id="06y-XC-XtB"/>
+                                    <constraint firstItem="qkU-wo-L8e" firstAttribute="leading" secondItem="jRF-wV-u2h" secondAttribute="leading" id="0Pq-JN-8ju"/>
+                                    <constraint firstAttribute="bottom" secondItem="qkU-wo-L8e" secondAttribute="bottom" id="1Tt-Oe-HwI"/>
+                                    <constraint firstAttribute="height" constant="50" id="3ee-uP-Yah"/>
+                                    <constraint firstItem="VwK-dk-SqU" firstAttribute="leading" secondItem="hPY-5h-AQ7" secondAttribute="trailing" id="676-s3-Sjt"/>
+                                    <constraint firstItem="VwK-dk-SqU" firstAttribute="centerY" secondItem="jRF-wV-u2h" secondAttribute="centerY" id="9b9-55-pNK"/>
+                                    <constraint firstAttribute="bottom" secondItem="hPY-5h-AQ7" secondAttribute="bottom" id="9vI-eu-xuc"/>
+                                    <constraint firstItem="hPY-5h-AQ7" firstAttribute="top" secondItem="jRF-wV-u2h" secondAttribute="top" id="JwP-lm-EAa"/>
+                                    <constraint firstItem="qkU-wo-L8e" firstAttribute="top" secondItem="jRF-wV-u2h" secondAttribute="top" id="mM0-9J-BVf"/>
+                                    <constraint firstAttribute="trailing" secondItem="qkU-wo-L8e" secondAttribute="trailing" id="pKf-cD-CYm"/>
+                                    <constraint firstAttribute="trailing" secondItem="VwK-dk-SqU" secondAttribute="trailing" constant="20" id="qla-17-Nuc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.87450980389999999" green="0.8980392157" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WFn-W8-q1S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="KcC-WA-Lbz"/>
+                    <constraint firstAttribute="trailing" secondItem="yed-MT-JmH" secondAttribute="trailing" constant="24" id="Rs4-JQ-Eff"/>
+                    <constraint firstAttribute="trailing" secondItem="kcy-Pp-fWk" secondAttribute="trailing" constant="24" id="Yoq-aq-QC2"/>
+                    <constraint firstAttribute="bottom" secondItem="kcy-Pp-fWk" secondAttribute="bottom" constant="12" id="ZQ1-sm-kIZ"/>
+                    <constraint firstItem="yed-MT-JmH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="ZvT-TB-Oqh"/>
+                    <constraint firstItem="kcy-Pp-fWk" firstAttribute="top" secondItem="WFn-W8-q1S" secondAttribute="bottom" id="Zzc-Lb-PgO"/>
+                    <constraint firstAttribute="trailing" secondItem="WFn-W8-q1S" secondAttribute="trailing" constant="24" id="dXB-Hv-gIT"/>
+                    <constraint firstItem="kcy-Pp-fWk" firstAttribute="width" secondItem="jRF-wV-u2h" secondAttribute="width" id="peT-X4-tLq"/>
+                    <constraint firstItem="WFn-W8-q1S" firstAttribute="top" secondItem="yed-MT-JmH" secondAttribute="bottom" constant="12" id="u3j-UF-iHI"/>
+                    <constraint firstItem="yed-MT-JmH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="v4J-gq-FYB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arrowImage" destination="VwK-dk-SqU" id="2dJ-SK-2WT"/>
+                <outlet property="bottomListViewContainer" destination="kcy-Pp-fWk" id="tYh-jv-ayL"/>
+                <outlet property="detailTextField" destination="PjI-zJ-ZZb" id="rhc-8T-exv"/>
+                <outlet property="dropDownTextField" destination="hPY-5h-AQ7" id="5QI-qr-KC6"/>
+                <outlet property="fixedPriceButton" destination="ciG-1W-X1C" id="5wM-Ur-Tin"/>
+                <outlet property="heightConstraint" destination="31b-dV-Ihi" id="dQw-ar-BrS"/>
+                <outlet property="perHourButton" destination="YKX-Fv-zSy" id="hQl-LP-gCE"/>
+                <outlet property="selectionButton" destination="qkU-wo-L8e" id="GPN-Mh-R2V"/>
+                <outlet property="titleLabel" destination="yed-MT-JmH" id="kMx-gg-ces"/>
+            </connections>
+            <point key="canvasLocation" x="-13.043478260869566" y="227.34375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dropdown" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

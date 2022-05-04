@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Cancel Job BuilderVC-->
+        <scene sceneID="8z7-bH-upY">
+            <objects>
+                <viewController storyboardIdentifier="CancelJobBuilderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9Ga-nY-KqV" customClass="CancelJobBuilderVC" customModule="Tickt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9aU-PU-hBv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCk-fU-7x4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxL-jf-agx">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="63"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smc-cx-8AL">
+                                                <rect key="frame" x="32" y="19.5" width="24" height="24"/>
+                                                <color key="tintColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="backDarkIcon"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="9Ga-nY-KqV" eventType="touchUpInside" id="04d-AZ-Xnb"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QWERTYU" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbu-Y9-sci">
+                                                <rect key="frame" x="66" y="23.5" width="77" height="16"/>
+                                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="16"/>
+                                                <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="63" id="23B-JD-0uG"/>
+                                            <constraint firstItem="smc-cx-8AL" firstAttribute="leading" secondItem="wxL-jf-agx" secondAttribute="leading" constant="32" id="72g-ua-7oK"/>
+                                            <constraint firstItem="qbu-Y9-sci" firstAttribute="leading" secondItem="smc-cx-8AL" secondAttribute="trailing" constant="10" id="OSJ-sj-1Kk"/>
+                                            <constraint firstItem="qbu-Y9-sci" firstAttribute="centerY" secondItem="smc-cx-8AL" secondAttribute="centerY" id="ny8-V4-1p8"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qbu-Y9-sci" secondAttribute="trailing" constant="20" id="t3U-Je-NPS"/>
+                                            <constraint firstItem="smc-cx-8AL" firstAttribute="centerY" secondItem="wxL-jf-agx" secondAttribute="centerY" id="utO-Rz-Lq7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wxL-jf-agx" secondAttribute="bottom" id="QnB-zG-gNf"/>
+                                    <constraint firstItem="wxL-jf-agx" firstAttribute="leading" secondItem="XCk-fU-7x4" secondAttribute="leading" id="WFH-SY-bKC"/>
+                                    <constraint firstAttribute="trailing" secondItem="wxL-jf-agx" secondAttribute="trailing" id="Yl3-0M-ZPk"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your reason for canceling job" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QO-Eq-rYh">
+                                <rect key="frame" x="26" y="107" width="364" height="64"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="32"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ev3-9s-r08">
+                                <rect key="frame" x="0.0" y="222.5" width="414" height="536.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let the tradesperson and Tickt know why you are cancelling the job." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgS-D9-VxH">
+                                <rect key="frame" x="24" y="179" width="366" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcB-tv-g5v">
+                                <rect key="frame" x="24" y="769" width="366" height="58"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="p0X-Zr-TIL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="9Ga-nY-KqV" eventType="touchUpInside" id="iZV-AK-O3w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sU0-fx-G2y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IgS-D9-VxH" firstAttribute="leading" secondItem="sU0-fx-G2y" secondAttribute="leading" constant="24" id="41Z-3x-ZG5"/>
+                            <constraint firstItem="wxL-jf-agx" firstAttribute="top" secondItem="sU0-fx-G2y" secondAttribute="top" id="Bme-Mn-Jck"/>
+                            <constraint firstItem="XCk-fU-7x4" firstAttribute="leading" secondItem="sU0-fx-G2y" secondAttribute="leading" id="Cca-SV-6HL"/>
+                            <constraint firstItem="XCk-fU-7x4" firstAttribute="top" secondItem="9aU-PU-hBv" secondAttribute="top" id="QRB-j2-bUE"/>
+                            <constraint firstItem="QcB-tv-g5v" firstAttribute="leading" secondItem="sU0-fx-G2y" secondAttribute="leading" constant="24" id="SfC-y9-C6G"/>
+                            <constraint firstItem="ev3-9s-r08" firstAttribute="leading" secondItem="sU0-fx-G2y" secondAttribute="leading" id="XXC-FD-VPs"/>
+                            <constraint firstItem="sU0-fx-G2y" firstAttribute="trailing" secondItem="IgS-D9-VxH" secondAttribute="trailing" constant="24" id="YBd-tg-arq"/>
+                            <constraint firstItem="ev3-9s-r08" firstAttribute="top" secondItem="IgS-D9-VxH" secondAttribute="bottom" constant="10" id="Ygp-VW-vt0"/>
+                            <constraint firstItem="IgS-D9-VxH" firstAttribute="top" secondItem="0QO-Eq-rYh" secondAttribute="bottom" constant="8" id="cTi-zJ-ssJ"/>
+                            <constraint firstItem="sU0-fx-G2y" firstAttribute="trailing" secondItem="ev3-9s-r08" secondAttribute="trailing" id="ekN-87-9NE"/>
+                            <constraint firstItem="0QO-Eq-rYh" firstAttribute="top" secondItem="XCk-fU-7x4" secondAttribute="bottom" id="ev0-rI-fPC"/>
+                            <constraint firstItem="0QO-Eq-rYh" firstAttribute="leading" secondItem="sU0-fx-G2y" secondAttribute="leading" constant="26" id="fJD-me-hiA"/>
+                            <constraint firstItem="QcB-tv-g5v" firstAttribute="top" secondItem="ev3-9s-r08" secondAttribute="bottom" constant="10" id="hNV-ji-Jn2"/>
+                            <constraint firstItem="sU0-fx-G2y" firstAttribute="trailing" secondItem="QcB-tv-g5v" secondAttribute="trailing" constant="24" id="pB4-mf-J6u"/>
+                            <constraint firstItem="XCk-fU-7x4" firstAttribute="trailing" secondItem="sU0-fx-G2y" secondAttribute="trailing" id="pRR-7a-xsL"/>
+                            <constraint firstItem="sU0-fx-G2y" firstAttribute="trailing" secondItem="0QO-Eq-rYh" secondAttribute="trailing" constant="24" id="v5u-2d-VDV"/>
+                            <constraint firstItem="sU0-fx-G2y" firstAttribute="bottom" secondItem="QcB-tv-g5v" secondAttribute="bottom" constant="35" id="wlf-dU-V3d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="smc-cx-8AL" id="65D-74-whF"/>
+                        <outlet property="continueButton" destination="QcB-tv-g5v" id="80s-am-3wT"/>
+                        <outlet property="descriptionLabel" destination="IgS-D9-VxH" id="wds-kv-naK"/>
+                        <outlet property="navBarView" destination="wxL-jf-agx" id="XuH-sf-Ype"/>
+                        <outlet property="navBehindView" destination="XCk-fU-7x4" id="qAg-CN-VSG"/>
+                        <outlet property="navTitleLabel" destination="qbu-Y9-sci" id="tIP-6c-d1u"/>
+                        <outlet property="screenTitleLabel" destination="0QO-Eq-rYh" id="Qpv-zV-DMZ"/>
+                        <outlet property="tableViewOutlet" destination="ev3-9s-r08" id="fyB-o0-i1b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IMG-uM-bur" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2207.2463768115945" y="831.69642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backDarkIcon" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jey-VD-po1">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+        <array key="NeueHaasGroteskTextPro55Roman.ttf">
+            <string>NHaasGroteskTXPro-55Rg</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--IntroVC-->
+        <scene sceneID="Ohg-qH-jQp">
+            <objects>
+                <viewController storyboardIdentifier="IntroVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o5D-SL-gxq" customClass="IntroVC" customModule="Tickt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ORC-lW-bGn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bip-48-YWD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="sBX-eK-mwJ">
+                                    <size key="itemSize" width="348" height="619"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IntrolCell" id="WXR-zv-gg7" customClass="IntrolCell" customModule="Tickt" customModuleProvider="target">
+                                        <rect key="frame" x="13.5" y="0.0" width="348" height="619"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hun-Zx-Xn8">
+                                            <rect key="frame" x="0.0" y="0.0" width="348" height="619"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="introBlank_1" translatesAutoresizingMaskIntoConstraints="NO" id="Rb9-oM-zZQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="348" height="619"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find quality work that grows your business" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYh-jD-WZe">
+                                                    <rect key="frame" x="24" y="243" width="276" height="96"/>
+                                                    <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="32"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="RYh-jD-WZe" secondAttribute="bottom" id="3WG-kW-P2j"/>
+                                                <constraint firstItem="RYh-jD-WZe" firstAttribute="top" secondItem="hun-Zx-Xn8" secondAttribute="top" constant="243" id="OFy-0G-UBf"/>
+                                                <constraint firstItem="Rb9-oM-zZQ" firstAttribute="leading" secondItem="hun-Zx-Xn8" secondAttribute="leading" id="Pm4-du-iNs"/>
+                                                <constraint firstItem="Rb9-oM-zZQ" firstAttribute="top" secondItem="hun-Zx-Xn8" secondAttribute="top" id="QQ4-o3-JYa"/>
+                                                <constraint firstItem="RYh-jD-WZe" firstAttribute="leading" secondItem="hun-Zx-Xn8" secondAttribute="leading" constant="24" id="X6z-Ay-eva"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rb9-oM-zZQ" secondAttribute="trailing" id="aMm-of-X4K"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rb9-oM-zZQ" secondAttribute="bottom" id="tiN-9k-UJZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="RYh-jD-WZe" secondAttribute="trailing" constant="48" id="z4U-Eb-2vd"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="348" height="619"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="RYh-jD-WZe" id="WFx-AW-NWO"/>
+                                            <outlet property="introImageView" destination="Rb9-oM-zZQ" id="sYv-nu-HHu"/>
+                                            <outlet property="topConstraint" destination="OFy-0G-UBf" id="bd4-DK-dJp"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="o5D-SL-gxq" id="iRS-gl-fex"/>
+                                    <outlet property="delegate" destination="o5D-SL-gxq" id="M8i-da-z5p"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpP-8n-Yhq">
+                                <rect key="frame" x="25" y="20" width="40" height="40"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="signupButtonAction:" destination="o5D-SL-gxq" eventType="touchUpInside" id="2dD-bR-SKA"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-tickt" translatesAutoresizingMaskIntoConstraints="NO" id="dz9-hF-gIo">
+                                <rect key="frame" x="35" y="55" width="70" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="9yv-GS-7By"/>
+                                    <constraint firstAttribute="height" constant="35" id="Kf4-0q-8ju"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FE0-Qw-qLt">
+                                <rect key="frame" x="20" y="497" width="335" height="50"/>
+                                <color key="backgroundColor" red="0.99607843137254903" green="0.90196078431372551" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VLO-Yb-Qan"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="17"/>
+                                <state key="normal" title="Get started">
+                                    <color key="titleColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signupButtonAction:" destination="o5D-SL-gxq" eventType="touchUpInside" id="egW-wJ-YTa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2s-qP-qrG">
+                                <rect key="frame" x="20" y="577" width="335" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7N7-xB-YKt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="17"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" red="0.086274509803921567" green="0.11372549019607843" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="o5D-SL-gxq" eventType="touchUpInside" id="myt-lV-eBH"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="nY3-oZ-3AA">
+                                <rect key="frame" x="126.5" y="429.5" width="122.5" height="27.5"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BEO-Nb-tss"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bip-48-YWD" firstAttribute="leading" secondItem="BEO-Nb-tss" secondAttribute="leading" id="5p4-Tn-FXD"/>
+                            <constraint firstItem="dz9-hF-gIo" firstAttribute="leading" secondItem="fpP-8n-Yhq" secondAttribute="leading" constant="10" id="72G-iB-zdF"/>
+                            <constraint firstItem="dz9-hF-gIo" firstAttribute="top" secondItem="fpP-8n-Yhq" secondAttribute="bottom" constant="-5" id="824-zj-s3k"/>
+                            <constraint firstAttribute="bottom" secondItem="Bip-48-YWD" secondAttribute="bottom" id="Ejl-4X-9dh"/>
+                            <constraint firstItem="BEO-Nb-tss" firstAttribute="bottom" secondItem="H2s-qP-qrG" secondAttribute="bottom" constant="40" id="LdP-p6-KSb"/>
+                            <constraint firstItem="FE0-Qw-qLt" firstAttribute="leading" secondItem="BEO-Nb-tss" secondAttribute="leading" constant="20" id="Lkh-su-oRs"/>
+                            <constraint firstItem="fpP-8n-Yhq" firstAttribute="leading" secondItem="BEO-Nb-tss" secondAttribute="leading" constant="25" id="OOm-uA-U74"/>
+                            <constraint firstItem="fpP-8n-Yhq" firstAttribute="top" secondItem="BEO-Nb-tss" secondAttribute="top" constant="20" id="Ty3-ns-kIX"/>
+                            <constraint firstItem="Bip-48-YWD" firstAttribute="trailing" secondItem="BEO-Nb-tss" secondAttribute="trailing" id="XVC-fM-Nwr"/>
+                            <constraint firstItem="BEO-Nb-tss" firstAttribute="trailing" secondItem="FE0-Qw-qLt" secondAttribute="trailing" constant="20" id="fb5-oO-YoR"/>
+                            <constraint firstItem="nY3-oZ-3AA" firstAttribute="centerX" secondItem="ORC-lW-bGn" secondAttribute="centerX" id="iEo-7q-RKR"/>
+                            <constraint firstItem="BEO-Nb-tss" firstAttribute="trailing" secondItem="H2s-qP-qrG" secondAttribute="trailing" constant="20" id="mjS-SO-NPV"/>
+                            <constraint firstItem="H2s-qP-qrG" firstAttribute="top" secondItem="FE0-Qw-qLt" secondAttribute="bottom" constant="30" id="n04-T8-fhl"/>
+                            <constraint firstItem="Bip-48-YWD" firstAttribute="top" secondItem="ORC-lW-bGn" secondAttribute="top" id="sOb-Ei-q0G"/>
+                            <constraint firstItem="H2s-qP-qrG" firstAttribute="leading" secondItem="BEO-Nb-tss" secondAttribute="leading" constant="20" id="u1y-2x-b4J"/>
+                            <constraint firstItem="FE0-Qw-qLt" firstAttribute="top" secondItem="nY3-oZ-3AA" secondAttribute="bottom" constant="40" id="u9k-9I-vTr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yIF-jg-hfb"/>
+                    <connections>
+                        <outlet property="backButton" destination="fpP-8n-Yhq" id="EVl-h0-AzS"/>
+                        <outlet property="introCollectionView" destination="Bip-48-YWD" id="9l3-Ht-8OG"/>
+                        <outlet property="pageControl" destination="nY3-oZ-3AA" id="pqx-4S-kae"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5h5-Ae-Udg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550.72463768115949" y="120.53571428571428"/>
+        </scene>
+        <!--Select UserVC-->
+        <scene sceneID="MQO-6E-oz8">
+            <objects>
+                <viewController storyboardIdentifier="SelectUserVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jey-VD-po1" customClass="SelectUserVC" customModule="Tickt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KL1-uP-5Cl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="JNH-CM-5R7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="32" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Tickt" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8a-6S-1pS" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="20" y="267.5" width="335" height="32"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="18" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Australia's fastest growing network for builders and tradespeople." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCc-M3-Arr" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="20" y="319.5" width="244" height="63"/>
+                                <fontDescription key="fontDescription" name="NHaasGroteskTXPro-55Rg" family="NHaasGroteskTXPro-55Rg" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-tickt" translatesAutoresizingMaskIntoConstraints="NO" id="rJc-t1-sQu">
+                                <rect key="frame" x="25" y="25" width="70" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="14v-cT-axp"/>
+                                    <constraint firstAttribute="height" constant="35" id="EQg-nI-cVg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mq-NK-xwR">
+                                <rect key="frame" x="20" y="497" width="335" height="50"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="saA-Tf-P5X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="17"/>
+                                <state key="normal" title="I'm a builder">
+                                    <color key="titleColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="builderButtonAction:" destination="Jey-VD-po1" eventType="touchUpInside" id="Vxi-Mp-490"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxc-Ra-xXi">
+                                <rect key="frame" x="20" y="577" width="335" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="c1T-J3-djb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="17"/>
+                                <state key="normal" title="I’m a tradesperson">
+                                    <color key="titleColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tradieButtonAction:" destination="Jey-VD-po1" eventType="touchUpInside" id="vJo-76-Cdw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Qs-Lv-Yn7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2mq-NK-xwR" firstAttribute="leading" secondItem="9Qs-Lv-Yn7" secondAttribute="leading" constant="20" id="0NG-v3-kGE"/>
+                            <constraint firstItem="JNH-CM-5R7" firstAttribute="top" secondItem="KL1-uP-5Cl" secondAttribute="top" id="5FT-Kb-qCB"/>
+                            <constraint firstItem="HCc-M3-Arr" firstAttribute="width" secondItem="KL1-uP-5Cl" secondAttribute="width" multiplier="0.65" id="5zM-Zh-f9U"/>
+                            <constraint firstItem="HCc-M3-Arr" firstAttribute="leading" secondItem="9Qs-Lv-Yn7" secondAttribute="leading" constant="20" id="B29-vX-Pzd"/>
+                            <constraint firstItem="9Qs-Lv-Yn7" firstAttribute="trailing" secondItem="Qxc-Ra-xXi" secondAttribute="trailing" constant="20" id="E7h-iI-kJg"/>
+                            <constraint firstItem="rJc-t1-sQu" firstAttribute="leading" secondItem="9Qs-Lv-Yn7" secondAttribute="leading" constant="25" id="ItG-Qg-JaS"/>
+                            <constraint firstItem="JNH-CM-5R7" firstAttribute="leading" secondItem="KL1-uP-5Cl" secondAttribute="leading" id="KnP-dt-f13"/>
+                            <constraint firstItem="9Qs-Lv-Yn7" firstAttribute="trailing" secondItem="2mq-NK-xwR" secondAttribute="trailing" constant="20" id="PxM-9f-gt8"/>
+                            <constraint firstItem="Qxc-Ra-xXi" firstAttribute="leading" secondItem="9Qs-Lv-Yn7" secondAttribute="leading" constant="20" id="Wkv-ol-f1W"/>
+                            <constraint firstItem="Qxc-Ra-xXi" firstAttribute="top" secondItem="2mq-NK-xwR" secondAttribute="bottom" constant="30" id="YqY-PM-BfE"/>
+                            <constraint firstItem="9Qs-Lv-Yn7" firstAttribute="trailing" secondItem="X8a-6S-1pS" secondAttribute="trailing" constant="20" id="dlX-v1-GsY"/>
+                            <constraint firstItem="rJc-t1-sQu" firstAttribute="top" secondItem="9Qs-Lv-Yn7" secondAttribute="top" constant="25" id="eTL-zP-Rlf"/>
+                            <constraint firstItem="X8a-6S-1pS" firstAttribute="leading" secondItem="9Qs-Lv-Yn7" secondAttribute="leading" constant="20" id="fYz-X1-gsV"/>
+                            <constraint firstItem="HCc-M3-Arr" firstAttribute="leading" secondItem="9Qs-Lv-Yn7" secondAttribute="leading" constant="20" id="g2H-pP-g37"/>
+                            <constraint firstItem="HCc-M3-Arr" firstAttribute="top" secondItem="X8a-6S-1pS" secondAttribute="bottom" constant="20" id="k45-5e-gfO"/>
+                            <constraint firstAttribute="bottom" secondItem="JNH-CM-5R7" secondAttribute="bottom" id="oFe-mz-bIO"/>
+                            <constraint firstItem="9Qs-Lv-Yn7" firstAttribute="trailing" secondItem="JNH-CM-5R7" secondAttribute="trailing" id="piH-nf-R7i"/>
+                            <constraint firstItem="9Qs-Lv-Yn7" firstAttribute="bottom" secondItem="Qxc-Ra-xXi" secondAttribute="bottom" constant="40" id="ps7-Xa-GGp"/>
+                            <constraint firstItem="X8a-6S-1pS" firstAttribute="centerY" secondItem="KL1-uP-5Cl" secondAttribute="centerY" constant="-50" id="sZS-gx-iIz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Dh-sQ-qde" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.37681159420291" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="40" height="40"/>
+        <image name="introBlank_1" width="187.5" height="406"/>
+        <image name="logo-tickt" width="122" height="60"/>
+        <image name="welcome" width="287" height="621"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

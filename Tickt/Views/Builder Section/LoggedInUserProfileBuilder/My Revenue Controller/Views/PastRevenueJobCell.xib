@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayLight.ttf">
+            <string>NeueHaasDisplay-Light</string>
+        </array>
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PastRevenueJobCell" rowHeight="66" id="Ifc-7o-hoc" customClass="PastRevenueJobCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ifc-7o-hoc" id="eO6-QK-hlj">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0z-Ks-b5V">
+                        <rect key="frame" x="0.0" y="0.0" width="378" height="66"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8O-uK-GSK">
+                                <rect key="frame" x="24" y="16" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.8980392157" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7qN-XJ-cVJ"/>
+                                    <constraint firstAttribute="width" constant="40" id="VhO-YL-MS0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="15" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheryl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbn-pb-Nky" customClass="CustomMediumLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="76" y="16" width="222" height="19"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="May 24 - Aug 26" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQk-VG-ODF" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="76" y="36" width="222" height="14"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Light" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="$1400" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtG-m7-2YV" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="308" y="34" width="46" height="16"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="16"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TtG-m7-2YV" firstAttribute="bottom" secondItem="bQk-VG-ODF" secondAttribute="bottom" id="5Ko-TA-IGe"/>
+                            <constraint firstAttribute="bottom" secondItem="bQk-VG-ODF" secondAttribute="bottom" constant="16" id="8co-iX-Cms"/>
+                            <constraint firstItem="h8O-uK-GSK" firstAttribute="top" secondItem="G0z-Ks-b5V" secondAttribute="top" constant="16" id="Hjy-ay-AsD"/>
+                            <constraint firstItem="bQk-VG-ODF" firstAttribute="top" secondItem="mbn-pb-Nky" secondAttribute="bottom" constant="1" id="Kzk-ah-abX"/>
+                            <constraint firstItem="bQk-VG-ODF" firstAttribute="leading" secondItem="mbn-pb-Nky" secondAttribute="leading" id="R73-sL-HIA"/>
+                            <constraint firstItem="mbn-pb-Nky" firstAttribute="leading" secondItem="h8O-uK-GSK" secondAttribute="trailing" constant="12" id="X97-IM-pVw"/>
+                            <constraint firstItem="TtG-m7-2YV" firstAttribute="leading" secondItem="bQk-VG-ODF" secondAttribute="trailing" constant="10" id="YaF-Tp-eh1"/>
+                            <constraint firstItem="h8O-uK-GSK" firstAttribute="leading" secondItem="G0z-Ks-b5V" secondAttribute="leading" constant="24" id="arW-Kc-tNv"/>
+                            <constraint firstItem="mbn-pb-Nky" firstAttribute="top" secondItem="G0z-Ks-b5V" secondAttribute="top" constant="16" id="cPa-K3-NG7"/>
+                            <constraint firstAttribute="trailing" secondItem="TtG-m7-2YV" secondAttribute="trailing" constant="24" id="nVK-CF-4cA"/>
+                            <constraint firstItem="bQk-VG-ODF" firstAttribute="trailing" secondItem="mbn-pb-Nky" secondAttribute="trailing" id="r7A-mP-e1N"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="G0z-Ks-b5V" secondAttribute="trailing" id="0L4-I1-5O1"/>
+                    <constraint firstItem="G0z-Ks-b5V" firstAttribute="leading" secondItem="eO6-QK-hlj" secondAttribute="leading" id="6GO-5s-bV4"/>
+                    <constraint firstAttribute="bottom" secondItem="G0z-Ks-b5V" secondAttribute="bottom" id="GVX-qw-gKx"/>
+                    <constraint firstItem="G0z-Ks-b5V" firstAttribute="top" secondItem="eO6-QK-hlj" secondAttribute="top" id="Lvb-TL-aGj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Eba-4L-1LJ"/>
+            <connections>
+                <outlet property="amountLabel" destination="TtG-m7-2YV" id="Tzd-3e-2UB"/>
+                <outlet property="dateLabel" destination="bQk-VG-ODF" id="nrL-53-IdS"/>
+                <outlet property="jobImageView" destination="h8O-uK-GSK" id="3TF-uR-iAA"/>
+                <outlet property="jobNameLabel" destination="mbn-pb-Nky" id="PLY-u7-CpV"/>
+            </connections>
+            <point key="canvasLocation" x="128.98550724637681" y="-11.383928571428571"/>
+        </tableViewCell>
+    </objects>
+</document>

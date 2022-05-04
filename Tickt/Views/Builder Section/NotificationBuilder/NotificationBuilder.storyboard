@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Notification BuilderVC-->
+        <scene sceneID="VLX-ax-RaH">
+            <objects>
+                <viewController storyboardIdentifier="NotificationBuilderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="l3q-lm-c2M" customClass="NotificationBuilderVC" customModule="Tickt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JTS-ZE-qDI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFQ-cA-I4T">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Jo-D1-IhU">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="63"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3p-w9-F3S">
+                                                <rect key="frame" x="32" y="19.5" width="24" height="24"/>
+                                                <color key="tintColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="backDarkIcon"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="l3q-lm-c2M" eventType="touchUpInside" id="gFo-bH-pM1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbC-lc-634" customClass="CustomBoldButton" customModule="Tickt" customModuleProvider="target">
+                                                <rect key="frame" x="290" y="0.0" width="108" height="63"/>
+                                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="16"/>
+                                                <state key="normal" title="Mark all as read">
+                                                    <color key="titleColor" red="0.070588235294117646" green="0.24705882352941178" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="l3q-lm-c2M" eventType="touchUpInside" id="RQ6-h8-2dy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ZbC-lc-634" firstAttribute="top" secondItem="2Jo-D1-IhU" secondAttribute="top" id="29C-nE-Bko"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZbC-lc-634" secondAttribute="bottom" id="I8y-QV-Le4"/>
+                                            <constraint firstItem="x3p-w9-F3S" firstAttribute="leading" secondItem="2Jo-D1-IhU" secondAttribute="leading" constant="32" id="coo-1w-EGy"/>
+                                            <constraint firstAttribute="height" constant="63" id="d00-oj-48X"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZbC-lc-634" secondAttribute="trailing" constant="16" id="pFK-QI-iSB"/>
+                                            <constraint firstItem="x3p-w9-F3S" firstAttribute="centerY" secondItem="2Jo-D1-IhU" secondAttribute="centerY" id="tQH-Kk-9ux"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="2Jo-D1-IhU" secondAttribute="bottom" id="6nW-Mv-bwT"/>
+                                    <constraint firstItem="2Jo-D1-IhU" firstAttribute="leading" secondItem="EFQ-cA-I4T" secondAttribute="leading" id="ZZ7-E8-3HC"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Jo-D1-IhU" secondAttribute="trailing" id="doT-nJ-lUs"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T3l-Qy-0hJ">
+                                <rect key="frame" x="0.0" y="149" width="414" height="713"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUI-ps-1qp">
+                                <rect key="frame" x="26" y="107" width="178.5" height="32"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="32"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3WJ-eY-txP"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3WJ-eY-txP" firstAttribute="trailing" secondItem="T3l-Qy-0hJ" secondAttribute="trailing" id="4bb-ja-AnB"/>
+                            <constraint firstItem="T3l-Qy-0hJ" firstAttribute="leading" secondItem="3WJ-eY-txP" secondAttribute="leading" id="G2o-VK-r3e"/>
+                            <constraint firstItem="3WJ-eY-txP" firstAttribute="bottom" secondItem="T3l-Qy-0hJ" secondAttribute="bottom" id="M2w-tg-2hF"/>
+                            <constraint firstItem="EFQ-cA-I4T" firstAttribute="top" secondItem="JTS-ZE-qDI" secondAttribute="top" id="SUT-kf-WcF"/>
+                            <constraint firstItem="kUI-ps-1qp" firstAttribute="top" secondItem="EFQ-cA-I4T" secondAttribute="bottom" id="UVJ-vQ-lfo"/>
+                            <constraint firstItem="T3l-Qy-0hJ" firstAttribute="top" secondItem="kUI-ps-1qp" secondAttribute="bottom" constant="10" id="Viy-dY-O0d"/>
+                            <constraint firstItem="EFQ-cA-I4T" firstAttribute="leading" secondItem="3WJ-eY-txP" secondAttribute="leading" id="XX9-b0-mdS"/>
+                            <constraint firstItem="2Jo-D1-IhU" firstAttribute="top" secondItem="3WJ-eY-txP" secondAttribute="top" id="k6v-VD-JLN"/>
+                            <constraint firstItem="kUI-ps-1qp" firstAttribute="leading" secondItem="3WJ-eY-txP" secondAttribute="leading" constant="26" id="oKl-fV-NbN"/>
+                            <constraint firstItem="EFQ-cA-I4T" firstAttribute="trailing" secondItem="3WJ-eY-txP" secondAttribute="trailing" id="suW-x2-9cf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="x3p-w9-F3S" id="JTP-EB-G8z"/>
+                        <outlet property="navBarView" destination="2Jo-D1-IhU" id="ujV-nB-I8J"/>
+                        <outlet property="navBehindView" destination="EFQ-cA-I4T" id="KxU-tX-5nW"/>
+                        <outlet property="readAllButton" destination="ZbC-lc-634" id="QdY-Tv-Vte"/>
+                        <outlet property="screenTitleLabel" destination="kUI-ps-1qp" id="O5I-Ub-fpu"/>
+                        <outlet property="tableViewOutlet" destination="T3l-Qy-0hJ" id="aUV-oY-qUa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k33-PW-qfG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="832"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backDarkIcon" width="24" height="24"/>
+    </resources>
+</document>

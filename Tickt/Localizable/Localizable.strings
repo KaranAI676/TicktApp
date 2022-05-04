@@ -1,0 +1,382 @@
+/* 
+  Localizable.strings
+  Tickt
+
+  Created by Admin on 07/03/21.
+  
+*/
+
+"airHireMe" = "Airhire Me";
+
+// MARK: - UIViewController Extension
+//=================================
+"ChooseOptions" = "Choose Options";
+"Camera" = "Camera";
+"addImage" = "Add Image";
+"CameraNotAvailable" = "Camera not available";
+"ChooseImage" = "Choose image";
+"ChooseFromGallery" = "Choose from Gallery";
+"TakePhoto" = "Take photo";
+"Cancel" = "Cancel";
+"Alert" = "Alert";
+"ok" = "Ok";
+"or" = "Or";
+"osClaimsItsMemoryByReleasing" = "OS claims it's memory by releasing ";
+"openCamera" = "Open Camera";
+"chooseImage" = "ChooseImage";
+"appleMap" = "Maps";
+"googleMap" = "Google Maps";
+"restrictedFromUsingCamera" = "You have been restricted from using the camera on this device without camera access this feature wont work.";
+"changePrivacySettingAndAllowAccessToCamera" = "Please change your privacy setting from the Settings app and allow access to camera for your app.";
+"restrictedFromUsingLibrary" = "You have been restricted from using the photo library on this device Without camera access this feature wont work.";
+"changePrivacySettingAndAllowAccessToLibrary" = "Please change your privacy setting from the Settings app and allow access to library for your app.";
+"changePrivacySettingAndAllowAccessToLocation" = "Please change your privacy setting from the Settings app and allow access to location for your app.";
+"userNameWithWhiteSpace" = "Username: ";
+"passwordWithWhiteSpace" = "Password: ";
+"keychainCredentialReceived" = "Keychain Credential Received";
+"noInternetConnection" = "No Internet Connection";
+"apiTimeOut" = "The request timed out.";
+"theInternetAppearsOffline" = "The Internet connection appears to be offline.";
+"pleaseWriteComment" = "Comment can not be allowed to be empty";
+"selectedCredentialFromKeychain" = "The app has received your selected credential from the keychain.";
+"youCanNotChangeStartTimeAsEventHasAlreadyBeenStarted" = "You can not change start time as event has already been started";
+"settings" = "Settings";
+"termsCondition" = "Terms & Conditions";
+"privacyPolicy" = "Privacy Policy";
+"congratulations" = "Congratulations!";
+"emailVerifiedMessage" = "Your email has been verified. You can now login with your verified email.";
+"operationNotCompletedAlert" = "The operation couldn’t be completed.";
+"userCancelledSignInFLow" = "The user canceled the sign-in flow.";
+"userCancelledSignUpFLow" = "The user canceled the sign-up flow.";
+"cameraAccessRequired" = "Camera access required for capturing photos!";
+"allowCamera" = "Allow Camera";
+"imageCaptureError" = "Image capture error";
+"youAreOnSimulator" = "You are on simulator";
+"openSettingsToChangeLocation" = "Kindly allow location permissions to fetch your current location. To proceed press Settings.";
+"locationIsNotEnabled" = "Location is not enabled";
+
+//MARK: - Onboarding
+//==================
+"searchForEquipment" = "Search for\nequipment ...";
+"andFindImpressions" = "... and find\nimpressions";
+"boostYourBusinessAndMakeSomeCash" = "Boost your\nbusiness and make\nsome cash";
+"enterEmailAddress" = "Enter email";
+"enterPassword" = "Enter password";
+"password" = "Password";
+"enterReferralCode" = "Enter referral code";
+"facebook" = "Facebook";
+"google" = "Google";
+"apple" = "Apple";
+"dismiss" = "Dismiss";
+"pleaseCheckYourInternetConnection" = "Please check your internet connection and try again";
+"pleaseEnterEmailAddress" = "Please enter email address";
+"pleaseEnterValidEmailAddress" = "Please enter a valid email address";
+"pleaseAcceptTermsAndPrivacyPolicy" = "Please accept Terms & Conditions and Privacy Policy";
+"pleaseEnterPassword" = "Please enter password";
+"passwordMustBe8CharLong" = "Password must be at least 8 characters long and include at least one upper case letter, one lower case letter, and one numeric digit";
+"pleaseEnterAValidReferralCode" = "Please enter a valid 10 digit referral code";
+"iAgreeToTheAirhireMePrivacyPolicyAndTermsConditions" = "I agree to the Tickt Privacy Policy and\nTerms & Conditions";
+"oopsWeDidNotReceiveYourEmailFromSocialAccount" = "Oops! We did not receive you email from social account.";
+"forgottenYourPassword" = "Forgotten your password?";
+"signIn" = "Sign in";
+"signUp" = "Sign up";
+"getStarted" = "Get started";
+"enterPhoneNumber" = "Enter phone number";
+"enterYourNewPhoneNumber" = "Enter your new phone number";
+"pleaseEnterPhoneNumber" = "Please enter phone number";
+"phoneNumberShouldHaveMinimum6Digits" = "Phone number should have minimum 6 digits";
+
+//MARK: - OTP
+//===========
+"dontRcvCode" = "Don’t you receive any codes?";
+"reSendCode" = "Re-send code";
+"next" = "Next";
+"pleaseEnterOTP" = "Please enter otp";
+"pleaseEnterValidOTP" = "Please enter 5 digits OTP";
+
+//MARK: - Almost Done
+//===================
+"enterFirstName" = "Enter first name";
+"enterLastName" = "Enter last name";
+"enterAddress" = "Enter address";
+"addYourID" = "Add your ID";
+"yourIDsAdded" = "Your IDs added";
+"verifyYourID" = "Verify your ID";
+"yourIDIsVerified" = "Your ID is verified";
+"done" = "Done";
+"dontWorryNobodyWillSeeYourID" = "Don’t worry, nobody will see your ID. This is for verification only!";
+"pleaseEnterFirstName" = "Please enter first name";
+"pleaseEnterValidFirstName" = "Please enter valid first name";
+"firstNameShouldBeGreaterThan3Charecters" = "First name should be greater than 3 charecters";
+"lastNameShouldBeGreaterThan3Charecters" = "Last name should be greater than 3 charecters";
+"pleaseEnterLastName" = "Please enter last name";
+"pleaseEnterValidLastName" = "Please enter valid last name";
+"pleaseEnterYourAddress" = "Please enter your address";
+"pleaseAddYourID" = "Please add your ID";
+"pleaseAddYourFrontID" = "Please add your ID's front picture";
+"pleaseAddYourBackID" = "Please add your ID's back picture";
+"pleaseAddYourFace" = "Please add your face picture";
+"idsFrontImage" = "ID's front picture (optional)";
+"idsBackImage" = "ID's back picture (optional)";
+"yourFacePicture" = "Your face picture (optional)";
+"searchWithThreeDot" = "Search...";
+"addPhoneNumber" = "Add phone\nnumber";
+"enterYourPhoneNumberForVerification" = "Enter your phone number for verification.";
+"phoneNumber" = "Phone Number";
+
+//MARK: - Add ID Screen
+//=====================
+"theBackPartOfID" = "the back\npart of ID";
+"theFrontPartOfID" = "the front\npart of ID";
+"makeSureThatTheLightIsGoodAndPutTheBackPart" = "Make sure that the light is good and put the back\npart of ID into the frame and then click Take a\nPhoto";
+"makeSureThatTheLightIsGoodAndPutTheFrontPart" = "Make sure that the light is good and put the front\npart of ID into the frame and then click Take a\nPhoto";
+"weCompareThePhotoOfYourFaceWithThePhotoOnTheDocuments" = "We compare the photo of your face with the\nphoto on the documents";
+"takeAPhoto" = "Take a Photo";
+"uploadFromGallery" = "Upload from Gallery";
+"confirm" = "Confirm";
+"tryAgain" = "Try again";
+"idFrontPictureUploadedSuccessfully" = "ID's front picture uploaded successfully";
+"idBackPictureUploadedSuccessfully" = "ID's back picture uploaded successfully";
+"faceIDPictureUploadedSuccessfully" = "Face ID picture uploaded successfully";
+
+//MARK:- Categories
+"pleaseSelectAtLeastOneCategory" = "Please select at least one category";
+
+//MARK: - Tutorials
+//=================
+"checkNotificationsAndAlweysStayUpdated" = "Check notifications and \nalways stay updated";
+"hereWillBeAllYourBookings" = "Here will be all your\nbookings";
+"hi" = "Hi";
+"welcomeDiscoverEquipmentsHereAndFindTheBestToHaveGreatTime" = "welcome discover\nequipments here and find\nthe best to have great time";
+"hiJohnWelcomeDiscoverEquipmentsHereAndFindTheBestToHaveGreatTime" = "Hi John, welcome discover\nequipments here and find\nthe best to have great time";
+"addItemsAndStartEarnMoney" = "Add items and start\nearn money";
+"hereIsThePalceToChatWithOthers" = "Here is the palce\nto chat with others";
+"yourProfile" = "Your profile";
+"skip" = "Skip";
+
+//MARK: - Home
+//============
+"searchHere" = "Search here...";
+"whatDoYouWantToDo" = "What do you want to do?";
+"logout" = "Logout";
+"areYouSureWantToLogout" = "Are you sure you want to logout?";
+"uploading" = "uploading";
+"pleaseWaitImageIsUploading" = "Please wait image is uploading";
+"banner" = "Banner";
+"categories" = "Categories";
+"yourSavedItems" = "Your saved items";
+"adventureStories" = "Adventure stories";
+"getOutdoorsThisWeekend" = "Get outdoors this weekend";
+"getOutdoorsThisWeekendWithNewLine" = "Get outdoors this\nweekend";
+"allAroundMe" = "All around me";
+"viewMoreItems" = "View more items";
+"all" = "All";
+"day" = "day";
+"days" = "days";
+"week" = "week";
+"weeks" = "weeks";
+"month" = "month";
+"months" = "months";
+"noDataFound" = "No data found";
+"no" = "No";
+"noResultFound" = "No result found";
+"relatedItems" = "Related items";
+
+//MARK: - Adventure Stories
+"forYou" = "For you";
+"popular" = "Popular";
+"new" = "New";
+"airhireMesPick" = "AirhireMe’s Pick";
+"shareText" = "Hey, checkout this amazing ";
+"adventureStoryWithColon" = "Adventure Story:";
+
+//MARK: - Profile
+"myProfile" = "My Profile";
+"myAccount" = "My Account";
+"viewProfile" = "View Profile";
+"personalInformation" = "Personal information";
+"paymentsDetail" = "Payments detail";
+"notificationSettings" = "Notification settings";
+"referralProgram" = "Referral program";
+"tutorial" = "Tutorial";
+"supportChat" = "Support chat";
+"editProfile" = "Edit Profile";
+
+//MARK: - View Profile
+"showAllInfo" = "Show all info";
+"about" = "About";
+"recentlyAdded" = "Recently added";
+"highlyRatedItems" = "Highly rated items";
+"mostHired" = "Most hired";
+"showAllItems" = "Show all items";
+"items" = "Items";
+"item" = "Item";
+"results" = "results";
+"result" = "result";
+"found" = "found";
+"allItems" = "All items";
+"reviews" = "Reviews";
+"questions" = "questions";
+"newQuestions" = "new questions";
+"showAll" = "Show all";
+"seeMore" = "See more";
+"seeLess" = "See less";
+
+//MARK: - Item Details
+"fastReply" = "Fast reply";
+"dayMinimum" = "day minimum";
+"daysMinimum" = "days minimum";
+"weekMinimum" = "week minimum";
+"weeksMinimum" = "weeks minimum";
+"monthMinimum" = "month minimum";
+"monthsMinimum" = "months minimum";
+"yearMinimum" = "year minimum";
+"yearsMinimum" = "years minimum";
+"instantBooking" = "Instant booking";
+"year" = "year";
+"description" = "Description";
+"location" = "Location";
+"thisItemIsAvailableForPickupFrom" = "This item is available for pickup from";
+"pickupDaysAndTimes" = "Pickup days and times";
+"monday" = "Monday";
+"tuesday" = "Tuesday";
+"wednesday" = "Wednesday";
+"thursday" = "Thursday";
+"friday" = "Friday";
+"saturday" = "Saturday";
+"sunday" = "Sunday";
+"am" = "AM";
+"pm" = "PM";
+"unavailable" = "Unavailable";
+"itemConditionNotes" = "Item condition notes";
+"supplier" = "Supplier";
+"itemForHire" = "item for hire";
+"itemsForHire" = "items for hire";
+"requestItem" = "Request Item";
+"mostHiredCaps" = "Most Hired";
+"minimumHire" = "Minimum Hire";
+"highestRated" = "Highest Rated";
+"mostFavourites" = "Most Favourites";
+"experiencesOnly" = "Experiences Only";
+"closetToMe" = "Closest To Me";
+"contactSupplier" = "Contact Supplier";
+
+//MARK: - Question
+//===============
+"question" = "Question";
+"capsQuestions" = "Questions";
+"answer" = "Answer";
+"answers" = "Answers";
+"hideAnswer" = "Hide answer";
+"showAnswer" = "Show answer";
+"edit" = "Edit";
+"delete" = "Delete";
+"allAreNewQuestions" = "All are new questions";
+"newQuestion" = "New question";
+
+//MARK: - QuestionAnswer
+//======================
+"askQuestion" = "Ask question";
+"yourQuestion" = "Your question";
+"text" = "Text";
+"yourAnswer" = "Your answer";
+"answerText" = "Answer text";
+"pleaseEnterYourQuestion" = "Please enter your question";
+"pleaseEnterYourAnswer" = "Please enter your answer";
+"answerCouldNotBeSameAsPrevious" = "Answer could not be same as previous";
+"areYouSureWantToAskAQuestion" = "Are you sure you want to ask a question?";
+"areYouSureWantToDeleteTheAnswer" = "Are you sure you want to delete the answer";
+
+//MARK: - Edit Profile
+//====================
+"change" = "Change";
+"discardIDMessage" = "Are you sure you want to update your name as you need to re-verify your ID?";
+
+//MARK: - Change Email
+//====================
+"enterYourNewEmail" = "Enter your new email";
+
+//MARK:- Change Phone Number
+//==========================
+"verifyYourPhoneNumber" = "Verify your phone\nnumber";
+"verificationCodeYourPhoneNumber" = "We have sent a verification code to your phone number. Please, check your SMS messages and  enter the 5-digit code here.";
+
+//MARK: - Change Password
+//======================
+"changePassword" = "Change Password";
+"pleaseEnterOldPassword" = "Please enter old password";
+"pleaseEnterNewPassword" = "Please enter new password";
+"pleaseEnterConfirmPassword" = "Please enter confirm password";
+"newPasswordRule" = "New password must be at least 8 characters long and include at least one upper case letter, one lower case letter, and one numeric digit";
+"newPasswordAndConfirmPasswordDoesntMatch" = "New password and confirm new password should be same";
+"enterNewPassword" = "Enter your new password";
+"enterConfirmPassword" = "Enter and confirm your password";
+"enterOldPassword" = "Enter your old password";
+
+//MARK: - Search Categories
+//========================
+"searchItem" = "Search item";
+"recentSearches" = "Recent searches";
+"noRecentSearches" = "No recent searches";
+
+//MARK: - Search Location
+//=======================
+"typeAStateCityOrSuburb" = "Type a State, city or suburb";
+"closestToMe" = "Closest to me";
+"minimumHireLower" = "Minimum hire";
+"mostFavouritesLower" = "Most favourites";
+"experiencesOnlyLower" = "Experiences only";
+"highestRatedSupplier" = "Highest rated\nsupplier";
+"verifiedBusinessOnly" = "Verified business\nonly";
+"sortBy" = "Sort by";
+"priceRange" = "Price Range";
+"category" = "Category";
+"subcategory" = "Subcategory";
+"apply" = "Apply";
+
+//MARK: - Filter screen
+//=====================
+"clearAll" = "Clear All";
+
+//MARK: - Invite Screen
+//====================
+"inviteYourFriendAndGetDollor" = "Invite your friends\nand get $";
+"credit" = "credit";
+"whenYourFriendWillDownload" = "When your friend will download tha app with your\ninvite code, get $";
+"creditForNextRent" = "credit for next rent";
+"preInviteMessage" = "Guess what? You can earn $";
+"postInviteMessage" = " on sign-up with Tickt. Just use my referral code: ";
+"codeCopied" = "Code copied";
+
+//MARK: - Payment Details
+//=======================
+"paymentDetails" = "Payment Details";
+"useCardToMakePayments" = "Use card to make payments.";
+"card" = "Card";
+"creditCard" = "Credit Card";
+"fillInBankDetailsToRecievePayment" = "Fill in bank details to recieve payment.";
+"bankDetails" = "Bank Details";
+"creditsAndDiscounts" = "Credits and discounts";
+"forNext1Rent" = "$20 for next 1 rent";
+"expDate" = "exp. date ";
+"getMoreCredit" = "Get more credit";
+"accountNumber" = "Account number";
+"bsbNumber" = "BSB number";
+"cardDetails" = "Card Details";
+"editCardDetails" = "Edit Card Details";
+"cardNumber" = "Card Number";
+"cardholderName" = "Cardholder Name";
+"expirationDate" = "Expiration Date";
+"CVV_CVC" = "CVV/CVC";
+"addAnotherCard" = "Add another card";
+"saveChanges" = "Save changes";
+
+//MARK: - Error Msg
+//=================
+"errDataLoad" = "the data couldn’t be read because it isn’t in the correct format";
+"serviceUnavailable" = "Service Unavailable";
+"errSetPropertyUndefined" = "Cannot set property 'type' of undefined";
+"userIDAndAppleIDNotSync" = "This apple id is already in subscription state with another account. Please proceed ahead with another apple id.";
+"underDevelopment" = "Under Development";
+"somethingWentWrong" = "Something went wrong";
+

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayBold.ttf">
+            <string>NeueHaasDisplay-Bold</string>
+        </array>
+        <array key="NeueHaasDisplayLight.ttf">
+            <string>NeueHaasDisplay-Light</string>
+        </array>
+        <array key="NeueHaasGroteskTextPro55Roman.ttf">
+            <string>NHaasGroteskTXPro-55Rg</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="159" id="KGk-i7-Jjw" customClass="QuestionListingAnswerTblCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKK-aa-OUK">
+                        <rect key="frame" x="30" y="0.0" width="1666" height="149"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="dTN-xY-QK3">
+                                <rect key="frame" x="32" y="16" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.8980392157" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="LGA-fK-90d"/>
+                                    <constraint firstAttribute="height" constant="40" id="hUv-Y9-iqw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheryl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39I-uY-3HK">
+                                <rect key="frame" x="84" y="16" width="1566" height="26"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="12 Aug 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbn-HD-Jin">
+                                <rect key="frame" x="84" y="42" width="1566" height="14"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Light" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4a-Sq-H3G">
+                                <rect key="frame" x="32" y="72" width="1618" height="17"/>
+                                <string key="text">Don’t usually go for Global Industries boards but my go to longboard was in the shop being repaired. Compared to my usual this one isn’t as grippy but the weight and speed really made up for it.</string>
+                                <fontDescription key="fontDescription" name="NHaasGroteskTXPro-55Rg" family="NHaasGroteskTXPro-55Rg" pointSize="14"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ypi-O7-A7u">
+                                <rect key="frame" x="32" y="99" width="1618" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hmp-RB-VEj">
+                                        <rect key="frame" x="0.0" y="0.0" width="1618" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qa-KN-hLF">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="F9L-T6-Ks6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                                <state key="normal" title="Edit">
+                                                    <color key="titleColor" red="0.070588235289999995" green="0.2470588235" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnEditTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="X2P-k9-5ot"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="314-mh-roL">
+                                                <rect key="frame" x="56" y="0.0" width="55" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="55" id="CYL-0Z-JaT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                                <state key="normal" title="Delete">
+                                                    <color key="titleColor" red="0.070588235289999995" green="0.2470588235" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnDeleteTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JGS-o5-xAT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEG-mE-n7d">
+                                                <rect key="frame" x="127" y="0.0" width="55" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="55" id="bCV-rH-eio"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                                <state key="normal" title="Reply">
+                                                    <color key="titleColor" red="0.070588235289999995" green="0.2470588235" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnReplyTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xar-uq-JNg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8x-gA-bF2">
+                                                <rect key="frame" x="198" y="0.0" width="94.5" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="55" id="g79-EP-cZk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                                <state key="normal" title="Show More">
+                                                    <color key="titleColor" red="0.070588235289999995" green="0.2470588235" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnShowMoreTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bgQ-Xg-kLt"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgt-Hy-Fgt">
+                                                <rect key="frame" x="308.5" y="0.0" width="1309.5" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="Nuw-zp-nAf"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button hidden="YES" opaque="NO" clipsSubviews="YES" tag="14" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raM-l1-1y3">
+                                        <rect key="frame" x="0.0" y="40" width="1618" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="lA4-fG-6f6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                        <state key="normal" title="Show 1 answer">
+                                            <color key="titleColor" red="0.070588235289999995" green="0.2470588235" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="-2" eventType="touchUpInside" id="cwJ-Zi-x02"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xbn-HD-Jin" firstAttribute="trailing" secondItem="39I-uY-3HK" secondAttribute="trailing" id="1XU-Y9-gks"/>
+                            <constraint firstItem="Xbn-HD-Jin" firstAttribute="bottom" secondItem="dTN-xY-QK3" secondAttribute="bottom" id="2ik-dG-Voj"/>
+                            <constraint firstAttribute="bottom" secondItem="ypi-O7-A7u" secondAttribute="bottom" constant="10" id="GZt-7w-Ke7"/>
+                            <constraint firstItem="ypi-O7-A7u" firstAttribute="top" secondItem="S4a-Sq-H3G" secondAttribute="bottom" constant="10" id="Mqe-SQ-Bo9"/>
+                            <constraint firstItem="Xbn-HD-Jin" firstAttribute="top" secondItem="39I-uY-3HK" secondAttribute="bottom" id="OIj-PS-sIl"/>
+                            <constraint firstItem="39I-uY-3HK" firstAttribute="leading" secondItem="dTN-xY-QK3" secondAttribute="trailing" constant="12" id="P4S-xZ-nXp"/>
+                            <constraint firstAttribute="trailing" secondItem="ypi-O7-A7u" secondAttribute="trailing" constant="16" id="dko-O1-Tea"/>
+                            <constraint firstAttribute="trailing" secondItem="S4a-Sq-H3G" secondAttribute="trailing" constant="16" id="dyk-AS-Afz"/>
+                            <constraint firstItem="S4a-Sq-H3G" firstAttribute="top" secondItem="dTN-xY-QK3" secondAttribute="bottom" constant="16" id="eL3-6W-Qkw"/>
+                            <constraint firstAttribute="trailing" secondItem="39I-uY-3HK" secondAttribute="trailing" constant="16" id="fBw-8N-Vk9"/>
+                            <constraint firstItem="39I-uY-3HK" firstAttribute="top" secondItem="dTN-xY-QK3" secondAttribute="top" id="fJD-tK-3uP"/>
+                            <constraint firstItem="S4a-Sq-H3G" firstAttribute="leading" secondItem="dTN-xY-QK3" secondAttribute="leading" id="m3x-7M-eK4"/>
+                            <constraint firstItem="dTN-xY-QK3" firstAttribute="top" secondItem="pKK-aa-OUK" secondAttribute="top" constant="16" id="msq-Rf-far"/>
+                            <constraint firstItem="Xbn-HD-Jin" firstAttribute="leading" secondItem="39I-uY-3HK" secondAttribute="leading" id="xFY-pm-fBl"/>
+                            <constraint firstItem="dTN-xY-QK3" firstAttribute="leading" secondItem="pKK-aa-OUK" secondAttribute="leading" constant="32" id="xzy-Yr-nte"/>
+                            <constraint firstItem="ypi-O7-A7u" firstAttribute="leading" secondItem="dTN-xY-QK3" secondAttribute="leading" id="zrN-35-gJG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pKK-aa-OUK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MXf-bV-UCz"/>
+                    <constraint firstAttribute="trailing" secondItem="pKK-aa-OUK" secondAttribute="trailing" id="k7a-QI-hLs"/>
+                    <constraint firstItem="pKK-aa-OUK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="rQo-as-poj"/>
+                    <constraint firstAttribute="bottom" secondItem="pKK-aa-OUK" secondAttribute="bottom" constant="10" id="thw-Fj-avP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnDelete" destination="314-mh-roL" id="IDk-yd-CCX"/>
+                <outlet property="btnEdit" destination="4Qa-KN-hLF" id="Qz3-Lf-7QZ"/>
+                <outlet property="btnReply" destination="TEG-mE-n7d" id="oVQ-If-Lsk"/>
+                <outlet property="btnShowMore" destination="Q8x-gA-bF2" id="lI9-8f-oQE"/>
+                <outlet property="imageUser" destination="dTN-xY-QK3" id="Ybd-1P-Rbg"/>
+                <outlet property="lblAnswer" destination="S4a-Sq-H3G" id="ofc-Pg-pO0"/>
+                <outlet property="lblDate" destination="Xbn-HD-Jin" id="GMt-pP-4Fq"/>
+                <outlet property="lblName" destination="39I-uY-3HK" id="r3t-9Q-UCy"/>
+            </connections>
+            <point key="canvasLocation" x="-316" y="-12"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Placeholder" width="40" height="40"/>
+    </resources>
+</document>

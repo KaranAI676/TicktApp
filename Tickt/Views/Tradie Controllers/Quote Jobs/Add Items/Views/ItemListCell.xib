@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="165" id="KGk-i7-Jjw" customClass="ItemListCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="465" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="465" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XwM-cK-ByY">
+                        <rect key="frame" x="15" y="10" width="435" height="145"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weG-5v-3uB">
+                                <rect key="frame" x="15" y="16" width="40" height="119"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C78-N8-dhI" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="0.0" width="36" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.19215686274509802" green="0.23921568627450979" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="16" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="751" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nq5-VX-KPD" customClass="CustomMediumLabel" customModule="Tickt" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="28.5" width="36" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="ThemeBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="C78-N8-dhI" secondAttribute="trailing" constant="2" id="3fc-GK-Svv"/>
+                                    <constraint firstItem="C78-N8-dhI" firstAttribute="top" secondItem="weG-5v-3uB" secondAttribute="top" id="L9T-ww-jrQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="nq5-VX-KPD" secondAttribute="trailing" constant="2" id="Yeq-DA-bHS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="eaR-uY-Hg7"/>
+                                    <constraint firstItem="nq5-VX-KPD" firstAttribute="top" secondItem="C78-N8-dhI" secondAttribute="bottom" constant="8" id="fQZ-X8-3P8"/>
+                                    <constraint firstItem="C78-N8-dhI" firstAttribute="leading" secondItem="weG-5v-3uB" secondAttribute="leading" constant="2" id="nMK-sJ-Rdw"/>
+                                    <constraint firstItem="nq5-VX-KPD" firstAttribute="leading" secondItem="weG-5v-3uB" secondAttribute="leading" constant="2" id="pnf-ik-6dI"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nq5-VX-KPD" secondAttribute="bottom" constant="10" id="yiT-Wj-ngD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGH-aC-17A">
+                                <rect key="frame" x="75" y="16" width="241.5" height="119"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5y-3Q-JZ3" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="0.0" width="237.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.19215686274509802" green="0.23921568627450979" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="16" contentMode="left" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="755" text="Check Font " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJ4-6q-a47" customClass="CustomMediumLabel" customModule="Tickt" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="27.5" width="237.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="ThemeBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="b5y-3Q-JZ3" firstAttribute="leading" secondItem="lGH-aC-17A" secondAttribute="leading" constant="2" id="53K-x5-dbX"/>
+                                    <constraint firstItem="b5y-3Q-JZ3" firstAttribute="top" secondItem="lGH-aC-17A" secondAttribute="top" id="MrR-zJ-bta"/>
+                                    <constraint firstAttribute="trailing" secondItem="b5y-3Q-JZ3" secondAttribute="trailing" constant="2" id="UhP-W9-tIJ"/>
+                                    <constraint firstItem="cJ4-6q-a47" firstAttribute="leading" secondItem="lGH-aC-17A" secondAttribute="leading" constant="2" id="eHs-aK-2b5"/>
+                                    <constraint firstItem="cJ4-6q-a47" firstAttribute="top" secondItem="b5y-3Q-JZ3" secondAttribute="bottom" constant="7" id="lO7-DG-zbg"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cJ4-6q-a47" secondAttribute="bottom" constant="10" id="mJg-Bj-6ba"/>
+                                    <constraint firstAttribute="trailing" secondItem="cJ4-6q-a47" secondAttribute="trailing" constant="2" id="pkP-Fr-tTs"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="753" translatesAutoresizingMaskIntoConstraints="NO" id="zcv-av-JSW">
+                                <rect key="frame" x="336.5" y="16" width="58.5" height="119"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAC-R3-Fea" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="56.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.19215686274509802" green="0.23921568627450979" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="16" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="760" verticalCompressionResistancePriority="751" text="$ 1,000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aju-MV-i2o" customClass="CustomMediumLabel" customModule="Tickt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28.5" width="56.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="ThemeBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aju-MV-i2o" secondAttribute="bottom" constant="10" id="7LR-Oz-J2Z"/>
+                                    <constraint firstItem="aju-MV-i2o" firstAttribute="top" secondItem="RAC-R3-Fea" secondAttribute="bottom" constant="8" id="MHh-k4-fLk"/>
+                                    <constraint firstItem="RAC-R3-Fea" firstAttribute="leading" secondItem="zcv-av-JSW" secondAttribute="leading" id="NcY-iC-XC9"/>
+                                    <constraint firstItem="RAC-R3-Fea" firstAttribute="top" secondItem="zcv-av-JSW" secondAttribute="top" id="PuM-nd-OO3"/>
+                                    <constraint firstItem="aju-MV-i2o" firstAttribute="leading" secondItem="zcv-av-JSW" secondAttribute="leading" id="UPo-rK-GnX"/>
+                                    <constraint firstAttribute="trailing" secondItem="aju-MV-i2o" secondAttribute="trailing" constant="2" id="dj2-kH-eSf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="50" id="huL-kr-epU"/>
+                                    <constraint firstAttribute="trailing" secondItem="RAC-R3-Fea" secondAttribute="trailing" constant="2" id="uTg-Ya-phh"/>
+                                </constraints>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87Y-lR-dvE">
+                                <rect key="frame" x="395" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2Uq-bQ-Jqf"/>
+                                    <constraint firstAttribute="height" constant="40" id="7K4-Px-qdA"/>
+                                </constraints>
+                                <state key="normal" image="edit"/>
+                                <connections>
+                                    <action selector="editButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6Fd-Zl-arg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="weG-5v-3uB" secondAttribute="bottom" constant="10" id="7ak-Rd-c8T"/>
+                            <constraint firstItem="87Y-lR-dvE" firstAttribute="top" secondItem="XwM-cK-ByY" secondAttribute="top" id="GxY-Br-Z4N"/>
+                            <constraint firstItem="zcv-av-JSW" firstAttribute="top" secondItem="XwM-cK-ByY" secondAttribute="top" constant="16" id="Ncl-nL-cuk"/>
+                            <constraint firstItem="zcv-av-JSW" firstAttribute="leading" secondItem="lGH-aC-17A" secondAttribute="trailing" constant="20" id="aZm-iU-9Rk"/>
+                            <constraint firstAttribute="bottom" secondItem="lGH-aC-17A" secondAttribute="bottom" constant="10" id="d15-sM-EEi"/>
+                            <constraint firstItem="weG-5v-3uB" firstAttribute="leading" secondItem="XwM-cK-ByY" secondAttribute="leading" constant="15" id="eGa-s5-1bd"/>
+                            <constraint firstItem="weG-5v-3uB" firstAttribute="top" secondItem="XwM-cK-ByY" secondAttribute="top" constant="16" id="eO6-zx-QKq"/>
+                            <constraint firstAttribute="trailing" secondItem="zcv-av-JSW" secondAttribute="trailing" constant="40" id="f5e-xB-32O"/>
+                            <constraint firstItem="lGH-aC-17A" firstAttribute="top" secondItem="XwM-cK-ByY" secondAttribute="top" constant="16" id="fd3-pg-H5k"/>
+                            <constraint firstItem="lGH-aC-17A" firstAttribute="leading" secondItem="weG-5v-3uB" secondAttribute="trailing" constant="20" id="lVn-j9-tJk"/>
+                            <constraint firstAttribute="trailing" secondItem="87Y-lR-dvE" secondAttribute="trailing" id="r2B-gB-yPJ"/>
+                            <constraint firstAttribute="bottom" secondItem="zcv-av-JSW" secondAttribute="bottom" constant="10" id="r8A-aO-1jn"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="XwM-cK-ByY" secondAttribute="trailing" constant="15" id="2pl-jV-c0P"/>
+                    <constraint firstItem="XwM-cK-ByY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="RwT-F2-DqZ"/>
+                    <constraint firstItem="XwM-cK-ByY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hdQ-hu-foo"/>
+                    <constraint firstAttribute="bottom" secondItem="XwM-cK-ByY" secondAttribute="bottom" constant="10" id="stA-AT-mDL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="editButton" destination="87Y-lR-dvE" id="Dc3-5v-OBD"/>
+                <outlet property="itemDescriptionLabel" destination="cJ4-6q-a47" id="t6H-8o-eMr"/>
+                <outlet property="itemNumberLabel" destination="nq5-VX-KPD" id="uin-Ys-wMg"/>
+                <outlet property="priceLabel" destination="aju-MV-i2o" id="Uza-bJ-Wbf"/>
+            </connections>
+            <point key="canvasLocation" x="113.768115942029" y="-43.191964285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edit" width="18.5" height="18.5"/>
+        <namedColor name="ThemeBlue">
+            <color red="0.086274509803921567" green="0.11372549019607843" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

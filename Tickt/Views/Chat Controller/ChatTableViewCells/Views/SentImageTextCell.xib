@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Regular.ttf">
+            <string>DMSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SentImageTextCell" rowHeight="220" id="KGk-i7-Jjw" customClass="SentImageTextCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQJ-VN-Mzm" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
+                        <rect key="frame" x="72.5" y="131" width="75" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="TXR-JU-G4U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="12"/>
+                        <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNU-ES-9OT" customClass="SentImageMessageView" customModule="Tickt" customModuleProvider="target">
+                        <rect key="frame" x="150" y="10" width="150" height="150"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WC8-Ye-vgn">
+                                <rect key="frame" x="15" y="15" width="120" height="120"/>
+                                <color key="backgroundColor" name="ThemeGray"/>
+                            </imageView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huf-K7-yoB">
+                                <rect key="frame" x="57" y="57" width="36" height="36"/>
+                                <state key="normal" image="videoPlayIcon"/>
+                                <connections>
+                                    <action selector="playButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VdX-u8-bXZ"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Cco-RV-GwD">
+                                <rect key="frame" x="65" y="65" width="20" height="20"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WC8-Ye-vgn" firstAttribute="leading" secondItem="nNU-ES-9OT" secondAttribute="leading" constant="15" id="14B-eq-AOz"/>
+                            <constraint firstItem="huf-K7-yoB" firstAttribute="centerX" secondItem="WC8-Ye-vgn" secondAttribute="centerX" id="Eo6-He-4WA"/>
+                            <constraint firstItem="WC8-Ye-vgn" firstAttribute="top" secondItem="nNU-ES-9OT" secondAttribute="top" constant="15" id="GQD-L7-gOt"/>
+                            <constraint firstAttribute="width" constant="150" id="OvO-Cf-FaY"/>
+                            <constraint firstItem="Cco-RV-GwD" firstAttribute="centerX" secondItem="WC8-Ye-vgn" secondAttribute="centerX" id="Pbm-AM-KaF"/>
+                            <constraint firstItem="huf-K7-yoB" firstAttribute="height" secondItem="WC8-Ye-vgn" secondAttribute="height" multiplier="0.3" id="XbS-Cr-9hA"/>
+                            <constraint firstItem="huf-K7-yoB" firstAttribute="centerY" secondItem="WC8-Ye-vgn" secondAttribute="centerY" id="Zaa-eg-DxH"/>
+                            <constraint firstAttribute="height" constant="150" id="baH-As-OUP"/>
+                            <constraint firstItem="huf-K7-yoB" firstAttribute="width" secondItem="WC8-Ye-vgn" secondAttribute="width" multiplier="0.3" id="kkV-6O-Q1a"/>
+                            <constraint firstAttribute="bottom" secondItem="WC8-Ye-vgn" secondAttribute="bottom" constant="15" id="v5f-Tl-3nG"/>
+                            <constraint firstAttribute="trailing" secondItem="WC8-Ye-vgn" secondAttribute="trailing" constant="15" id="voX-cy-ln4"/>
+                            <constraint firstItem="Cco-RV-GwD" firstAttribute="centerY" secondItem="WC8-Ye-vgn" secondAttribute="centerY" id="yRw-5D-N69"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="nNU-ES-9OT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="GEE-cW-C56"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nNU-ES-9OT" secondAttribute="bottom" constant="16" id="Hhk-9m-HGO"/>
+                    <constraint firstAttribute="trailing" secondItem="nNU-ES-9OT" secondAttribute="trailing" constant="20" id="ORL-Xm-2CD"/>
+                    <constraint firstItem="dQJ-VN-Mzm" firstAttribute="bottom" secondItem="WC8-Ye-vgn" secondAttribute="bottom" id="hNX-sL-OL9"/>
+                    <constraint firstItem="nNU-ES-9OT" firstAttribute="leading" secondItem="dQJ-VN-Mzm" secondAttribute="trailing" constant="2.5" id="yQn-6b-AYT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="messageContainer" destination="nNU-ES-9OT" id="18m-M1-fvC"/>
+                <outlet property="messageTimeLabel" destination="dQJ-VN-Mzm" id="8be-mF-Sen"/>
+                <outlet property="playButton" destination="huf-K7-yoB" id="BjU-dV-apF"/>
+                <outlet property="sendeImage" destination="WC8-Ye-vgn" id="vqv-uK-irM"/>
+                <outlet property="uploadingImageLoader" destination="Cco-RV-GwD" id="lkj-0u-2zO"/>
+            </connections>
+            <point key="canvasLocation" x="-17" y="77"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="videoPlayIcon" width="15.5" height="20"/>
+        <namedColor name="ThemeGray">
+            <color red="0.87450980392156863" green="0.89803921568627454" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

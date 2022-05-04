@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Review Trade PeopleVC-->
+        <scene sceneID="J2L-NU-vba">
+            <objects>
+                <viewController storyboardIdentifier="ReviewTradePeopleVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vLL-f7-K4O" customClass="ReviewTradePeopleVC" customModule="Tickt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MEn-hZ-eSb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dR8-Cd-PhD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6p-5b-sQA">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="63"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gM8-zR-y2l">
+                                                <rect key="frame" x="32" y="19.5" width="24" height="24"/>
+                                                <color key="tintColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="backDarkIcon"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="vLL-f7-K4O" eventType="touchUpInside" id="uJr-1W-Mpr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="63" id="IoD-xb-f2v"/>
+                                            <constraint firstItem="gM8-zR-y2l" firstAttribute="centerY" secondItem="y6p-5b-sQA" secondAttribute="centerY" id="YEG-6e-H2n"/>
+                                            <constraint firstItem="gM8-zR-y2l" firstAttribute="leading" secondItem="y6p-5b-sQA" secondAttribute="leading" constant="32" id="rIW-lB-EWY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="y6p-5b-sQA" firstAttribute="leading" secondItem="dR8-Cd-PhD" secondAttribute="leading" id="BoN-st-2IP"/>
+                                    <constraint firstAttribute="trailing" secondItem="y6p-5b-sQA" secondAttribute="trailing" id="JY3-7h-3WY"/>
+                                    <constraint firstAttribute="bottom" secondItem="y6p-5b-sQA" secondAttribute="bottom" id="bCA-rc-5t2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review the tradesperson " textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3M-uH-XDV">
+                                <rect key="frame" x="26" y="107" width="362" height="32"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="32"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Uw-Ip-uMX">
+                                <rect key="frame" x="24" y="769" width="366" height="58"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="WEO-rM-SPR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <state key="normal" title="Leave review">
+                                    <color key="titleColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="vLL-f7-K4O" eventType="touchUpInside" id="ahc-G3-bnm"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="B79-SC-wIu">
+                                <rect key="frame" x="0.0" y="149" width="414" height="610"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iBe-09-AsJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dR8-Cd-PhD" firstAttribute="top" secondItem="MEn-hZ-eSb" secondAttribute="top" id="0cH-F9-wTR"/>
+                            <constraint firstItem="B79-SC-wIu" firstAttribute="top" secondItem="g3M-uH-XDV" secondAttribute="bottom" constant="10" id="51H-wf-cB2"/>
+                            <constraint firstItem="iBe-09-AsJ" firstAttribute="bottom" secondItem="1Uw-Ip-uMX" secondAttribute="bottom" constant="35" id="5Eo-ia-A4G"/>
+                            <constraint firstItem="g3M-uH-XDV" firstAttribute="leading" secondItem="iBe-09-AsJ" secondAttribute="leading" constant="26" id="BLe-ct-UiM"/>
+                            <constraint firstItem="dR8-Cd-PhD" firstAttribute="leading" secondItem="iBe-09-AsJ" secondAttribute="leading" id="G1z-ok-2Rc"/>
+                            <constraint firstItem="B79-SC-wIu" firstAttribute="leading" secondItem="iBe-09-AsJ" secondAttribute="leading" id="Zwd-Qv-6Wf"/>
+                            <constraint firstItem="1Uw-Ip-uMX" firstAttribute="top" secondItem="B79-SC-wIu" secondAttribute="bottom" constant="10" id="aM3-X3-JiW"/>
+                            <constraint firstItem="y6p-5b-sQA" firstAttribute="top" secondItem="iBe-09-AsJ" secondAttribute="top" id="bXL-Yj-vdT"/>
+                            <constraint firstItem="iBe-09-AsJ" firstAttribute="trailing" secondItem="g3M-uH-XDV" secondAttribute="trailing" constant="26" id="cd0-ad-9Bk"/>
+                            <constraint firstItem="1Uw-Ip-uMX" firstAttribute="leading" secondItem="iBe-09-AsJ" secondAttribute="leading" constant="24" id="ewH-1J-8Hb"/>
+                            <constraint firstItem="iBe-09-AsJ" firstAttribute="trailing" secondItem="1Uw-Ip-uMX" secondAttribute="trailing" constant="24" id="gFm-eN-v6s"/>
+                            <constraint firstItem="iBe-09-AsJ" firstAttribute="trailing" secondItem="B79-SC-wIu" secondAttribute="trailing" id="jh4-zn-cTQ"/>
+                            <constraint firstItem="g3M-uH-XDV" firstAttribute="top" secondItem="dR8-Cd-PhD" secondAttribute="bottom" id="rMu-sh-9pR"/>
+                            <constraint firstItem="dR8-Cd-PhD" firstAttribute="trailing" secondItem="iBe-09-AsJ" secondAttribute="trailing" id="sh0-Od-OkZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="gM8-zR-y2l" id="Lsu-Lk-be6"/>
+                        <outlet property="continueButton" destination="1Uw-Ip-uMX" id="6m2-Zb-Krp"/>
+                        <outlet property="navBarView" destination="y6p-5b-sQA" id="7hs-9P-RpW"/>
+                        <outlet property="navBehindView" destination="dR8-Cd-PhD" id="sef-eR-CGZ"/>
+                        <outlet property="screenTitleLabel" destination="g3M-uH-XDV" id="mIK-9r-87G"/>
+                        <outlet property="tableViewOutlet" destination="B79-SC-wIu" id="UI9-IA-fuC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tg8-oA-y7F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="832"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backDarkIcon" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

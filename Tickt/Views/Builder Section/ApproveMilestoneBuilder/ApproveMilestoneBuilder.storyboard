@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Confirm And Pay Payment BuilderVC-->
+        <scene sceneID="HPt-xU-QbE">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmAndPayPaymentBuilderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nBN-v1-3OE" customClass="ConfirmAndPayPaymentBuilderVC" customModule="Tickt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zl1-KP-YaX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1p7-Hc-dxp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="63"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNA-f4-7bK">
+                                        <rect key="frame" x="16" y="9" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="5Px-4E-sED"/>
+                                            <constraint firstAttribute="height" constant="45" id="B7d-xv-vOf"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="backDarkIcon"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="nBN-v1-3OE" eventType="touchUpInside" id="amv-vN-JrU"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QWERTYU" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rak-xO-zKC">
+                                        <rect key="frame" x="71" y="23.5" width="77" height="16"/>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="16"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bNA-f4-7bK" firstAttribute="leading" secondItem="1p7-Hc-dxp" secondAttribute="leading" constant="16" id="HNM-Hg-y8l"/>
+                                    <constraint firstAttribute="height" constant="63" id="Kss-56-6FV"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Rak-xO-zKC" secondAttribute="trailing" id="Rak-by-7kw"/>
+                                    <constraint firstItem="Rak-xO-zKC" firstAttribute="centerY" secondItem="bNA-f4-7bK" secondAttribute="centerY" id="VuB-Lw-fxG"/>
+                                    <constraint firstItem="Rak-xO-zKC" firstAttribute="leading" secondItem="bNA-f4-7bK" secondAttribute="trailing" constant="10" id="cby-0q-cZg"/>
+                                    <constraint firstItem="bNA-f4-7bK" firstAttribute="centerY" secondItem="1p7-Hc-dxp" secondAttribute="centerY" id="iEw-l2-dUx"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="32" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm and pay" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lU1-57-7et" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="24" y="117" width="366" height="32"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="32"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="atN-Lg-4hQ">
+                                <rect key="frame" x="0.0" y="159" width="414" height="493"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="2wh-iI-gbU"/>
+                                </constraints>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="nBh-Kc-mFX">
+                                <rect key="frame" x="24" y="662" width="366" height="165"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ank-f9-UM4">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="72"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIF-c8-ukF">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="21"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank" translatesAutoresizingMaskIntoConstraints="NO" id="N4k-5T-u8y">
+                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="GvV-Z3-xN5"/>
+                                                            <constraint firstAttribute="height" constant="24" id="lRu-Kg-Y9U"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Tickt does not store your payment information." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkl-l8-mrU">
+                                                        <rect key="frame" x="34" y="3" width="332" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="N4k-5T-u8y" firstAttribute="top" secondItem="aIF-c8-ukF" secondAttribute="top" id="DWf-GS-hQL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Xkl-l8-mrU" secondAttribute="bottom" id="Nfd-hv-mfL"/>
+                                                    <constraint firstItem="Xkl-l8-mrU" firstAttribute="leading" secondItem="N4k-5T-u8y" secondAttribute="trailing" constant="10" id="YXB-Av-y3z"/>
+                                                    <constraint firstItem="N4k-5T-u8y" firstAttribute="leading" secondItem="aIF-c8-ukF" secondAttribute="leading" id="ZM6-TP-8wn"/>
+                                                    <constraint firstItem="Xkl-l8-mrU" firstAttribute="top" secondItem="N4k-5T-u8y" secondAttribute="top" constant="3" id="hEb-XR-b6v"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Xkl-l8-mrU" secondAttribute="trailing" id="xkI-xs-Yo1"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tickt does not handle payment for jobs, we only facilitate communication between tradie and builder." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d77-A4-dSU">
+                                                <rect key="frame" x="0.0" y="36" width="366" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQX-0c-puS" customClass="CustomBoldButton" customModule="Tickt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="107" width="366" height="58"/>
+                                        <color key="backgroundColor" red="0.99607843139999996" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="pGb-dQ-dFa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                        <state key="normal" title="Pay">
+                                            <color key="titleColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="nBN-v1-3OE" eventType="touchUpInside" id="BLg-Qr-Xea"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kjn-qX-Mip"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nBh-Kc-mFX" firstAttribute="top" secondItem="atN-Lg-4hQ" secondAttribute="bottom" constant="10" id="6FU-04-8Vg"/>
+                            <constraint firstItem="Kjn-qX-Mip" firstAttribute="trailing" secondItem="nBh-Kc-mFX" secondAttribute="trailing" constant="24" id="AxA-RR-YOC"/>
+                            <constraint firstItem="nBh-Kc-mFX" firstAttribute="leading" secondItem="Kjn-qX-Mip" secondAttribute="leading" constant="24" id="GYE-io-CUm"/>
+                            <constraint firstItem="atN-Lg-4hQ" firstAttribute="top" secondItem="lU1-57-7et" secondAttribute="bottom" constant="10" id="OpV-Su-AaU"/>
+                            <constraint firstItem="1p7-Hc-dxp" firstAttribute="trailing" secondItem="Kjn-qX-Mip" secondAttribute="trailing" id="PLy-SK-fMn"/>
+                            <constraint firstItem="Kjn-qX-Mip" firstAttribute="bottom" secondItem="nBh-Kc-mFX" secondAttribute="bottom" constant="35" id="RaN-6g-wmk"/>
+                            <constraint firstItem="1p7-Hc-dxp" firstAttribute="top" secondItem="Kjn-qX-Mip" secondAttribute="top" id="Rzo-i0-q67"/>
+                            <constraint firstItem="Kjn-qX-Mip" firstAttribute="trailing" secondItem="atN-Lg-4hQ" secondAttribute="trailing" id="Vfl-VZ-3pm"/>
+                            <constraint firstItem="lU1-57-7et" firstAttribute="top" secondItem="1p7-Hc-dxp" secondAttribute="bottom" constant="10" id="cnZ-95-Fh1"/>
+                            <constraint firstItem="Kjn-qX-Mip" firstAttribute="trailing" secondItem="lU1-57-7et" secondAttribute="trailing" constant="24" id="ebr-H8-22X"/>
+                            <constraint firstItem="lU1-57-7et" firstAttribute="leading" secondItem="Kjn-qX-Mip" secondAttribute="leading" constant="24" id="kAP-1X-aZA"/>
+                            <constraint firstItem="1p7-Hc-dxp" firstAttribute="leading" secondItem="Kjn-qX-Mip" secondAttribute="leading" id="nvX-6g-Ytc"/>
+                            <constraint firstItem="atN-Lg-4hQ" firstAttribute="leading" secondItem="Kjn-qX-Mip" secondAttribute="leading" id="o9y-pU-baQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="bNA-f4-7bK" id="bqp-mA-vUN"/>
+                        <outlet property="navBar" destination="1p7-Hc-dxp" id="Vyu-Dp-fWr"/>
+                        <outlet property="navTitleLabel" destination="Rak-xO-zKC" id="nfu-MH-kBn"/>
+                        <outlet property="payButton" destination="uQX-0c-puS" id="LG8-L5-Oqt"/>
+                        <outlet property="screenTitleLabel" destination="lU1-57-7et" id="8aB-JD-J7Y"/>
+                        <outlet property="tableViewOutlet" destination="atN-Lg-4hQ" id="Ig5-3S-Ghh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ufg-9f-tm8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1381.1594202898552" y="28.794642857142854"/>
+        </scene>
+        <!--Confirm And Pay Details BuilderVC-->
+        <scene sceneID="dIU-DR-Nk4">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmAndPayDetailsBuilderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vOP-aD-vKw" customClass="ConfirmAndPayDetailsBuilderVC" customModule="Tickt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2pd-8v-s5F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3yS-aq-kCP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="63"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWJ-BX-FQD">
+                                        <rect key="frame" x="16" y="9" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="2x5-zY-Ld3"/>
+                                            <constraint firstAttribute="width" constant="45" id="YZ6-WU-xIn"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="backDarkIcon"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="vOP-aD-vKw" eventType="touchUpInside" id="IeA-Qz-pcD"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QWERTYU" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNA-Cy-6Qs">
+                                        <rect key="frame" x="71" y="23.5" width="77" height="16"/>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="16"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="vNA-Cy-6Qs" firstAttribute="leading" secondItem="GWJ-BX-FQD" secondAttribute="trailing" constant="10" id="1He-h0-Ecj"/>
+                                    <constraint firstItem="vNA-Cy-6Qs" firstAttribute="centerY" secondItem="GWJ-BX-FQD" secondAttribute="centerY" id="ObL-nB-Aez"/>
+                                    <constraint firstItem="GWJ-BX-FQD" firstAttribute="leading" secondItem="3yS-aq-kCP" secondAttribute="leading" constant="16" id="cKK-Lc-moS"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vNA-Cy-6Qs" secondAttribute="trailing" id="cnS-Ug-I3w"/>
+                                    <constraint firstItem="GWJ-BX-FQD" firstAttribute="centerY" secondItem="3yS-aq-kCP" secondAttribute="centerY" id="hwe-75-V0w"/>
+                                    <constraint firstAttribute="height" constant="63" id="jbf-mF-ijA"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="32" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm and pay" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hd-Hx-yn1" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="24" y="117" width="366" height="32"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="32"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvB-Mo-hGg" customClass="CustomBoldButton" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="24" y="769" width="366" height="58"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="fUi-Qe-eIh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <state key="normal" title="Pay">
+                                    <color key="titleColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="vOP-aD-vKw" eventType="touchUpInside" id="hjq-hq-2HK"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m71-oa-6ek">
+                                <rect key="frame" x="0.0" y="179" width="414" height="580"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VUv-Mv-yIY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3yS-aq-kCP" firstAttribute="leading" secondItem="VUv-Mv-yIY" secondAttribute="leading" id="2XN-fn-2WL"/>
+                            <constraint firstItem="VUv-Mv-yIY" firstAttribute="trailing" secondItem="5Hd-Hx-yn1" secondAttribute="trailing" constant="24" id="DYJ-vK-rCD"/>
+                            <constraint firstItem="VUv-Mv-yIY" firstAttribute="trailing" secondItem="FvB-Mo-hGg" secondAttribute="trailing" constant="24" id="FKg-aH-AFm"/>
+                            <constraint firstItem="5Hd-Hx-yn1" firstAttribute="leading" secondItem="VUv-Mv-yIY" secondAttribute="leading" constant="24" id="HYA-pU-5kZ"/>
+                            <constraint firstItem="FvB-Mo-hGg" firstAttribute="top" secondItem="m71-oa-6ek" secondAttribute="bottom" constant="10" id="Ipl-zJ-dTf"/>
+                            <constraint firstItem="5Hd-Hx-yn1" firstAttribute="top" secondItem="3yS-aq-kCP" secondAttribute="bottom" constant="10" id="On2-PK-g1u"/>
+                            <constraint firstItem="VUv-Mv-yIY" firstAttribute="trailing" secondItem="m71-oa-6ek" secondAttribute="trailing" id="Vod-Hi-AnD"/>
+                            <constraint firstItem="3yS-aq-kCP" firstAttribute="top" secondItem="VUv-Mv-yIY" secondAttribute="top" id="XoM-xc-2il"/>
+                            <constraint firstItem="m71-oa-6ek" firstAttribute="leading" secondItem="VUv-Mv-yIY" secondAttribute="leading" id="dV1-Wd-1I2"/>
+                            <constraint firstItem="3yS-aq-kCP" firstAttribute="trailing" secondItem="VUv-Mv-yIY" secondAttribute="trailing" id="fcE-Rd-Kry"/>
+                            <constraint firstItem="m71-oa-6ek" firstAttribute="top" secondItem="5Hd-Hx-yn1" secondAttribute="bottom" constant="30" id="iOa-A6-hGG"/>
+                            <constraint firstItem="VUv-Mv-yIY" firstAttribute="bottom" secondItem="FvB-Mo-hGg" secondAttribute="bottom" constant="35" id="jDZ-Wh-6Aq"/>
+                            <constraint firstItem="FvB-Mo-hGg" firstAttribute="leading" secondItem="VUv-Mv-yIY" secondAttribute="leading" constant="24" id="q2X-eX-Xjo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="GWJ-BX-FQD" id="NsJ-jz-iTp"/>
+                        <outlet property="navBar" destination="3yS-aq-kCP" id="mGl-CE-BSD"/>
+                        <outlet property="navTitleLabel" destination="vNA-Cy-6Qs" id="r4H-aR-lT0"/>
+                        <outlet property="payButton" destination="FvB-Mo-hGg" id="wnJ-GQ-Zzy"/>
+                        <outlet property="screenTitleLabel" destination="5Hd-Hx-yn1" id="yap-h6-Sjm"/>
+                        <outlet property="tableViewOutlet" destination="m71-oa-6ek" id="JyE-bK-fcC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hh7-0X-dXL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2225" y="29"/>
+        </scene>
+        <!--Add Payment Details BuilderVC-->
+        <scene sceneID="M9v-Kb-cvp">
+            <objects>
+                <viewController storyboardIdentifier="AddPaymentDetailsBuilderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kPc-gz-0UD" customClass="AddPaymentDetailsBuilderVC" customModule="Tickt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KR3-oI-wlq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvi-hM-eHe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="63"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVT-MR-UUG">
+                                        <rect key="frame" x="16" y="9" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="fWS-Nh-ApF"/>
+                                            <constraint firstAttribute="width" constant="45" id="sxt-ux-Xt6"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="backDarkIcon"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="kPc-gz-0UD" eventType="touchUpInside" id="bMY-2m-JtQ"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QWERTYU" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aG4-gE-Huu">
+                                        <rect key="frame" x="71" y="23.5" width="77" height="16"/>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="16"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="oVT-MR-UUG" firstAttribute="centerY" secondItem="gvi-hM-eHe" secondAttribute="centerY" id="CcK-gB-MR1"/>
+                                    <constraint firstAttribute="height" constant="63" id="HoJ-xi-naz"/>
+                                    <constraint firstItem="oVT-MR-UUG" firstAttribute="leading" secondItem="gvi-hM-eHe" secondAttribute="leading" constant="16" id="Pcf-G8-BaJ"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aG4-gE-Huu" secondAttribute="trailing" id="bDj-7A-NiJ"/>
+                                    <constraint firstItem="aG4-gE-Huu" firstAttribute="centerY" secondItem="oVT-MR-UUG" secondAttribute="centerY" id="e04-ci-AEG"/>
+                                    <constraint firstItem="aG4-gE-Huu" firstAttribute="leading" secondItem="oVT-MR-UUG" secondAttribute="trailing" constant="10" id="vB7-OF-Gue"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="32" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment details" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cim-2d-IZZ" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="24" y="117" width="366" height="32"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="32"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQf-GU-h6M" customClass="CustomBoldButton" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="24" y="769" width="366" height="58"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="ale-Aw-9jb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="kPc-gz-0UD" eventType="touchUpInside" id="XZf-yy-34e"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="amQ-Am-YNZ">
+                                <rect key="frame" x="0.0" y="200" width="414" height="559"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your card details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mm2-B2-cOJ">
+                                <rect key="frame" x="24" y="159" width="171" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ecf-HP-oee"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ecf-HP-oee" firstAttribute="bottom" secondItem="bQf-GU-h6M" secondAttribute="bottom" constant="35" id="34V-hu-mbt"/>
+                            <constraint firstItem="bQf-GU-h6M" firstAttribute="leading" secondItem="Ecf-HP-oee" secondAttribute="leading" constant="24" id="5Sw-jP-57W"/>
+                            <constraint firstItem="gvi-hM-eHe" firstAttribute="leading" secondItem="Ecf-HP-oee" secondAttribute="leading" id="5zE-xS-qk0"/>
+                            <constraint firstItem="gvi-hM-eHe" firstAttribute="trailing" secondItem="Ecf-HP-oee" secondAttribute="trailing" id="6jc-zi-jjD"/>
+                            <constraint firstItem="Cim-2d-IZZ" firstAttribute="leading" secondItem="Ecf-HP-oee" secondAttribute="leading" constant="24" id="8TN-cB-SYq"/>
+                            <constraint firstItem="amQ-Am-YNZ" firstAttribute="top" secondItem="mm2-B2-cOJ" secondAttribute="bottom" constant="20" id="9W6-ma-OIZ"/>
+                            <constraint firstItem="Ecf-HP-oee" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mm2-B2-cOJ" secondAttribute="trailing" constant="24" id="ArK-d7-q2d"/>
+                            <constraint firstItem="gvi-hM-eHe" firstAttribute="top" secondItem="Ecf-HP-oee" secondAttribute="top" id="CWe-Dk-S7i"/>
+                            <constraint firstItem="amQ-Am-YNZ" firstAttribute="leading" secondItem="Ecf-HP-oee" secondAttribute="leading" id="JXT-bo-I99"/>
+                            <constraint firstItem="mm2-B2-cOJ" firstAttribute="top" secondItem="Cim-2d-IZZ" secondAttribute="bottom" constant="10" id="PUS-SJ-30l"/>
+                            <constraint firstItem="Ecf-HP-oee" firstAttribute="trailing" secondItem="Cim-2d-IZZ" secondAttribute="trailing" constant="24" id="aAj-oB-IfQ"/>
+                            <constraint firstItem="mm2-B2-cOJ" firstAttribute="leading" secondItem="Cim-2d-IZZ" secondAttribute="leading" id="nLg-an-Avy"/>
+                            <constraint firstItem="Cim-2d-IZZ" firstAttribute="top" secondItem="gvi-hM-eHe" secondAttribute="bottom" constant="10" id="qUB-lN-fRy"/>
+                            <constraint firstItem="bQf-GU-h6M" firstAttribute="top" secondItem="amQ-Am-YNZ" secondAttribute="bottom" constant="10" id="snb-5O-5jQ"/>
+                            <constraint firstItem="Ecf-HP-oee" firstAttribute="trailing" secondItem="bQf-GU-h6M" secondAttribute="trailing" constant="24" id="tU7-ei-VEd"/>
+                            <constraint firstItem="Ecf-HP-oee" firstAttribute="trailing" secondItem="amQ-Am-YNZ" secondAttribute="trailing" id="vbt-F8-QZg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="oVT-MR-UUG" id="Gan-Fh-X5T"/>
+                        <outlet property="navBar" destination="gvi-hM-eHe" id="3Ip-nN-A0w"/>
+                        <outlet property="navTitleLabel" destination="aG4-gE-Huu" id="4Wd-Fc-ugX"/>
+                        <outlet property="payButton" destination="bQf-GU-h6M" id="dIs-Q4-wTA"/>
+                        <outlet property="screenTitleLabel" destination="Cim-2d-IZZ" id="bqG-7h-fic"/>
+                        <outlet property="subScreenTitleLabel" destination="mm2-B2-cOJ" id="bbQ-Vk-Dto"/>
+                        <outlet property="tableViewOutlet" destination="amQ-Am-YNZ" id="3Zi-4W-bBa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oPA-k2-yTp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3060.8695652173915" y="28.794642857142854"/>
+        </scene>
+        <!--Add BankVC-->
+        <scene sceneID="bNS-o2-byw">
+            <objects>
+                <viewController storyboardIdentifier="AddBankVC" id="p69-EU-vRi" customClass="AddBankVC" customModule="Tickt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gPV-9A-J9U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A16-2h-JoN">
+                                <rect key="frame" x="0.0" y="54" width="414" height="63"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75z-tl-zKV">
+                                        <rect key="frame" x="16" y="9" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="aJc-x5-T7s"/>
+                                            <constraint firstAttribute="height" constant="45" id="xgE-7k-Jxu"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="backDarkIcon"/>
+                                        <connections>
+                                            <action selector="backTapped:" destination="p69-EU-vRi" eventType="touchUpInside" id="pct-Oy-n7I"/>
+                                            <action selector="buttonTapped:" destination="kPc-gz-0UD" eventType="touchUpInside" id="mHO-bw-pXN"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Bank" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvY-sE-aHn">
+                                        <rect key="frame" x="71" y="23.5" width="67.5" height="16"/>
+                                        <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="16"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="EW3-Xu-FjO"/>
+                                    <constraint firstItem="jvY-sE-aHn" firstAttribute="centerY" secondItem="75z-tl-zKV" secondAttribute="centerY" id="anU-Q1-dLj"/>
+                                    <constraint firstItem="jvY-sE-aHn" firstAttribute="leading" secondItem="75z-tl-zKV" secondAttribute="trailing" constant="10" id="eEX-4J-IAQ"/>
+                                    <constraint firstItem="75z-tl-zKV" firstAttribute="leading" secondItem="A16-2h-JoN" secondAttribute="leading" constant="16" id="i9I-nL-Utr"/>
+                                    <constraint firstItem="75z-tl-zKV" firstAttribute="centerY" secondItem="A16-2h-JoN" secondAttribute="centerY" id="oqq-DH-KRm"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jvY-sE-aHn" secondAttribute="trailing" id="vh8-wy-Z8Q"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1mT-Dn-Ast">
+                                <rect key="frame" x="0.0" y="117" width="414" height="745"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IsV-L9-geE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A16-2h-JoN" firstAttribute="top" secondItem="IsV-L9-geE" secondAttribute="top" constant="10" id="AU2-k6-LMz"/>
+                            <constraint firstItem="1mT-Dn-Ast" firstAttribute="leading" secondItem="IsV-L9-geE" secondAttribute="leading" id="VjU-Yl-DV8"/>
+                            <constraint firstItem="IsV-L9-geE" firstAttribute="bottom" secondItem="1mT-Dn-Ast" secondAttribute="bottom" id="crI-8d-67q"/>
+                            <constraint firstItem="IsV-L9-geE" firstAttribute="trailing" secondItem="A16-2h-JoN" secondAttribute="trailing" id="hCp-ZD-CM5"/>
+                            <constraint firstItem="A16-2h-JoN" firstAttribute="leading" secondItem="gPV-9A-J9U" secondAttribute="leading" id="pr1-MW-isW"/>
+                            <constraint firstItem="1mT-Dn-Ast" firstAttribute="top" secondItem="A16-2h-JoN" secondAttribute="bottom" id="uWz-0m-CRB"/>
+                            <constraint firstItem="IsV-L9-geE" firstAttribute="trailing" secondItem="1mT-Dn-Ast" secondAttribute="trailing" id="ytW-RU-sdb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backGroundView" destination="1mT-Dn-Ast" id="sAG-Kg-7kJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d0F-My-7eU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3738" y="29"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backDarkIcon" width="24" height="24"/>
+        <image name="bank" width="24.5" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

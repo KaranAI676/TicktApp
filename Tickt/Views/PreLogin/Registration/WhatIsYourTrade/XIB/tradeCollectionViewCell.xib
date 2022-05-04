@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="tradeCollectionViewCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="186"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="186"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJf-o5-AxU" customClass="GradientView" customModule="Tickt" customModuleProvider="target">
+                        <rect key="frame" x="55" y="20" width="80" height="80"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" red="0.043137254901960784" green="0.25490196078431371" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" red="0.070588235294117646" green="0.24705882352941178" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Exx-3G-I71">
+                        <rect key="frame" x="55" y="20" width="80" height="80"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="ZEK-55-TUZ"/>
+                            <constraint firstAttribute="height" constant="80" id="v1h-17-1Ch"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="156-gh-ti5">
+                        <rect key="frame" x="70" y="35" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="bPu-36-CCN"/>
+                            <constraint firstAttribute="width" constant="50" id="uSs-NO-Tv1"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secondaryCheckboxActive" translatesAutoresizingMaskIntoConstraints="NO" id="dAc-up-e0e">
+                        <rect key="frame" x="119" y="12" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="CnZ-rg-MCb"/>
+                            <constraint firstAttribute="height" constant="24" id="Xnu-4W-7NU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plumber" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usb-9L-XqP">
+                        <rect key="frame" x="1" y="104" width="188" height="82"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.19215686274509802" green="0.23921568627450979" blue="0.28235294117647058" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="156-gh-ti5" firstAttribute="centerX" secondItem="Exx-3G-I71" secondAttribute="centerX" id="Aeh-Ef-8bh"/>
+                <constraint firstItem="156-gh-ti5" firstAttribute="centerY" secondItem="Exx-3G-I71" secondAttribute="centerY" id="G0r-mh-kgq"/>
+                <constraint firstItem="dJf-o5-AxU" firstAttribute="trailing" secondItem="Exx-3G-I71" secondAttribute="trailing" id="Izs-Jg-yVP"/>
+                <constraint firstItem="dJf-o5-AxU" firstAttribute="bottom" secondItem="Exx-3G-I71" secondAttribute="bottom" id="KPj-4e-Nwk"/>
+                <constraint firstAttribute="trailing" secondItem="usb-9L-XqP" secondAttribute="trailing" constant="1" id="Qvm-Rb-4Sk"/>
+                <constraint firstItem="usb-9L-XqP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="bIV-1A-Nc0"/>
+                <constraint firstItem="Exx-3G-I71" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="cdq-st-BwI"/>
+                <constraint firstItem="dAc-up-e0e" firstAttribute="top" secondItem="Exx-3G-I71" secondAttribute="top" constant="-8" id="dw4-M0-opS"/>
+                <constraint firstItem="usb-9L-XqP" firstAttribute="top" secondItem="Exx-3G-I71" secondAttribute="bottom" constant="4" id="eNL-ba-NlR"/>
+                <constraint firstItem="Exx-3G-I71" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fZi-2X-yoo"/>
+                <constraint firstItem="usb-9L-XqP" firstAttribute="centerX" secondItem="Exx-3G-I71" secondAttribute="centerX" id="mMi-ge-Y6o"/>
+                <constraint firstAttribute="bottom" secondItem="usb-9L-XqP" secondAttribute="bottom" id="qC4-mJ-xbE"/>
+                <constraint firstItem="dJf-o5-AxU" firstAttribute="top" secondItem="Exx-3G-I71" secondAttribute="top" id="sbC-HB-pFP"/>
+                <constraint firstItem="dJf-o5-AxU" firstAttribute="leading" secondItem="Exx-3G-I71" secondAttribute="leading" id="tx0-Ul-CM7"/>
+                <constraint firstItem="dAc-up-e0e" firstAttribute="trailing" secondItem="Exx-3G-I71" secondAttribute="trailing" constant="8" id="whd-01-hAk"/>
+            </constraints>
+            <size key="customSize" width="190" height="186"/>
+            <connections>
+                <outlet property="iconImageView" destination="156-gh-ti5" id="11L-3u-UXp"/>
+                <outlet property="selectedImageView" destination="dAc-up-e0e" id="Ych-Z5-b0O"/>
+                <outlet property="tradeImageView" destination="Exx-3G-I71" id="Xwm-eH-dbP"/>
+                <outlet property="tradeNameLabel" destination="usb-9L-XqP" id="UG3-Eb-ZLc"/>
+            </connections>
+            <point key="canvasLocation" x="239.13043478260872" y="166.74107142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="secondaryCheckboxActive" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

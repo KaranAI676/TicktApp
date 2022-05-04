@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tradie Profilefrom BuilderVC-->
+        <scene sceneID="JTj-jw-D7G">
+            <objects>
+                <viewController storyboardIdentifier="TradieProfilefromBuilderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="X7F-M7-aO9" customClass="TradieProfilefromBuilderVC" customModule="Tickt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2yo-j1-ED1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTK-xS-mZM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJ6-IV-ZZA">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="63"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PX-tz-6IJ">
+                                                <rect key="frame" x="32" y="19.5" width="24" height="24"/>
+                                                <color key="tintColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="backDarkIcon"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="X7F-M7-aO9" eventType="touchUpInside" id="hMc-uQ-vNg"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fk-Ra-bGA">
+                                                <rect key="frame" x="330" y="22.5" width="60" height="18.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="JCq-KA-dpz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                                <state key="normal" title="Edit" image="edit">
+                                                    <color key="titleColor" red="0.086274509803921567" green="0.11372549019607843" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="X7F-M7-aO9" eventType="touchUpInside" id="yYY-Sl-aFh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="4fk-Ra-bGA" secondAttribute="trailing" constant="24" id="DY8-zm-U2T"/>
+                                            <constraint firstItem="4fk-Ra-bGA" firstAttribute="centerY" secondItem="7PX-tz-6IJ" secondAttribute="centerY" id="OKA-gR-ZxZ"/>
+                                            <constraint firstItem="7PX-tz-6IJ" firstAttribute="centerY" secondItem="hJ6-IV-ZZA" secondAttribute="centerY" id="OS9-2i-keK"/>
+                                            <constraint firstAttribute="height" constant="63" id="WTH-Sp-ehz"/>
+                                            <constraint firstItem="7PX-tz-6IJ" firstAttribute="leading" secondItem="hJ6-IV-ZZA" secondAttribute="leading" constant="32" id="aD3-27-MbC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="hJ6-IV-ZZA" firstAttribute="leading" secondItem="dTK-xS-mZM" secondAttribute="leading" id="4y4-3W-Tey"/>
+                                    <constraint firstAttribute="trailing" secondItem="hJ6-IV-ZZA" secondAttribute="trailing" id="cbP-pq-zty"/>
+                                    <constraint firstAttribute="bottom" secondItem="hJ6-IV-ZZA" secondAttribute="bottom" id="wej-m4-E0d"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUe-cG-KSK">
+                                <rect key="frame" x="0.0" y="107" width="414" height="755"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tjd-se-NHN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WUe-cG-KSK" firstAttribute="top" secondItem="dTK-xS-mZM" secondAttribute="bottom" id="5eX-Zi-Oiz"/>
+                            <constraint firstItem="hJ6-IV-ZZA" firstAttribute="top" secondItem="Tjd-se-NHN" secondAttribute="top" id="BKM-7t-A0J"/>
+                            <constraint firstItem="Tjd-se-NHN" firstAttribute="bottom" secondItem="WUe-cG-KSK" secondAttribute="bottom" id="CFv-Ct-RKx"/>
+                            <constraint firstItem="dTK-xS-mZM" firstAttribute="leading" secondItem="Tjd-se-NHN" secondAttribute="leading" id="Xjh-cx-2aK"/>
+                            <constraint firstItem="Tjd-se-NHN" firstAttribute="trailing" secondItem="WUe-cG-KSK" secondAttribute="trailing" id="jXY-61-VWB"/>
+                            <constraint firstItem="WUe-cG-KSK" firstAttribute="leading" secondItem="Tjd-se-NHN" secondAttribute="leading" id="lkx-M0-vCe"/>
+                            <constraint firstItem="dTK-xS-mZM" firstAttribute="top" secondItem="2yo-j1-ED1" secondAttribute="top" id="tJb-jx-BsQ"/>
+                            <constraint firstItem="dTK-xS-mZM" firstAttribute="trailing" secondItem="Tjd-se-NHN" secondAttribute="trailing" id="wik-wN-5hB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="7PX-tz-6IJ" id="Xrp-uQ-ffZ"/>
+                        <outlet property="editButton" destination="4fk-Ra-bGA" id="ecH-FK-tlU"/>
+                        <outlet property="navBarView" destination="hJ6-IV-ZZA" id="8IW-TE-HMi"/>
+                        <outlet property="navBehindView" destination="dTK-xS-mZM" id="ded-LD-QLh"/>
+                        <outlet property="tableViewOutlet" destination="WUe-cG-KSK" id="1xV-jw-lOC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GEG-f1-xY3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.73913043478262" y="831.69642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backDarkIcon" width="24" height="24"/>
+        <image name="edit" width="18.5" height="18.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueHaasDisplayLight.ttf">
+            <string>NeueHaasDisplay-Light</string>
+        </array>
+        <array key="NeueHaasDisplayMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JobListPopupCell" rowHeight="110" id="wZm-bX-clR" customClass="JobListPopupCell" customModule="Tickt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wZm-bX-clR" id="sFI-vP-udb">
+                <rect key="frame" x="0.0" y="0.0" width="449" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JeN-sI-JZA">
+                        <rect key="frame" x="12" y="8" width="425" height="94"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile_unselected" translatesAutoresizingMaskIntoConstraints="NO" id="vKK-6L-NOO">
+                                <rect key="frame" x="12" y="12" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.8980392157" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1xd-NL-WbD"/>
+                                    <constraint firstAttribute="width" constant="40" id="M9e-rd-rPc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheryl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhe-ja-ceh" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="64" y="12" width="349" height="27"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLg-h6-opF" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
+                                <rect key="frame" x="64" y="42" width="349" height="42"/>
+                                <string key="text">12 Aug 2020 12 Aug 2020 12 Aug 2020 12 Aug 2020 12 Aug 2020 12 Aug 2020 12 Aug 2020 12 Aug 2020 12 Aug 2020 12 Aug 202012 Aug 2020 12 Aug 2020</string>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Light" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fhe-ja-ceh" firstAttribute="leading" secondItem="vKK-6L-NOO" secondAttribute="trailing" constant="12" id="8k3-YB-RJr"/>
+                            <constraint firstAttribute="trailing" secondItem="fhe-ja-ceh" secondAttribute="trailing" constant="12" id="Eys-CG-xqF"/>
+                            <constraint firstItem="vKK-6L-NOO" firstAttribute="top" secondItem="JeN-sI-JZA" secondAttribute="top" constant="12" id="ICY-NQ-BBn"/>
+                            <constraint firstItem="KLg-h6-opF" firstAttribute="trailing" secondItem="fhe-ja-ceh" secondAttribute="trailing" id="h24-Yk-tVb"/>
+                            <constraint firstItem="KLg-h6-opF" firstAttribute="top" secondItem="fhe-ja-ceh" secondAttribute="bottom" constant="3" id="lXq-GZ-NHZ"/>
+                            <constraint firstAttribute="bottom" secondItem="KLg-h6-opF" secondAttribute="bottom" constant="10" id="reC-t0-xAM"/>
+                            <constraint firstItem="fhe-ja-ceh" firstAttribute="top" secondItem="JeN-sI-JZA" secondAttribute="top" constant="12" id="usg-S8-2Pd"/>
+                            <constraint firstItem="vKK-6L-NOO" firstAttribute="leading" secondItem="JeN-sI-JZA" secondAttribute="leading" constant="12" id="wpL-d7-LTd"/>
+                            <constraint firstItem="KLg-h6-opF" firstAttribute="leading" secondItem="fhe-ja-ceh" secondAttribute="leading" id="xsh-33-vGW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="JeN-sI-JZA" secondAttribute="trailing" constant="12" id="4h3-Sf-E2Z"/>
+                    <constraint firstAttribute="bottom" secondItem="JeN-sI-JZA" secondAttribute="bottom" constant="8" id="5vc-ar-GWZ"/>
+                    <constraint firstItem="JeN-sI-JZA" firstAttribute="top" secondItem="sFI-vP-udb" secondAttribute="top" constant="8" id="UbO-sK-DqC"/>
+                    <constraint firstItem="JeN-sI-JZA" firstAttribute="leading" secondItem="sFI-vP-udb" secondAttribute="leading" constant="12" id="yoN-47-RNf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Goa-BT-Vsn"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="jobNameLabel" destination="fhe-ja-ceh" id="KjD-nZ-ncX"/>
+                <outlet property="tradeImageView" destination="vKK-6L-NOO" id="u2G-nw-5IT"/>
+                <outlet property="tradeNameLabel" destination="KLg-h6-opF" id="FnE-2D-W1l"/>
+            </connections>
+            <point key="canvasLocation" x="110.86956521739131" y="50.223214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Profile_unselected" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Tickt {
+  umbrella header "Pods-Tickt-umbrella.h"
+
+  export *
+  module * { export * }
+}
