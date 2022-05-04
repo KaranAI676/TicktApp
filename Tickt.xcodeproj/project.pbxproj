@@ -859,6 +859,7 @@
 		84FF7ABE2612D6CE004FA3C9 /* BottomButtonTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FF7ABC2612D6CE004FA3C9 /* BottomButtonTableCell.xib */; };
 		84FF7AC6261309C0004FA3C9 /* GridInfoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FF7AC4261309C0004FA3C9 /* GridInfoTableCell.swift */; };
 		84FF7AC7261309C0004FA3C9 /* GridInfoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FF7AC5261309C0004FA3C9 /* GridInfoTableCell.xib */; };
+		BE273916949709185B642985 /* Pods_Tickt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C71D7AEC4AB133F4DDE5DB4 /* Pods_Tickt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -994,6 +995,7 @@
 		2DF95798260D217B00A3FF68 /* CreateJobUploadMediaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJobUploadMediaVC.swift; sourceTree = "<group>"; };
 		2DF9579D260D238100A3FF68 /* ImageViewCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCollectionCell.swift; sourceTree = "<group>"; };
 		2DF9579E260D238100A3FF68 /* ImageViewCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewCollectionCell.xib; sourceTree = "<group>"; };
+		5C71D7AEC4AB133F4DDE5DB4 /* Pods_Tickt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tickt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		840251B426810AB30007FB55 /* SavedTradieBuilder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SavedTradieBuilder.storyboard; sourceTree = "<group>"; };
 		840251B726810AC50007FB55 /* SavedTradieBuilderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTradieBuilderVC.swift; sourceTree = "<group>"; };
 		840251BB26810AF90007FB55 /* SavedTradieBuilderVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTradieBuilderVM.swift; sourceTree = "<group>"; };
@@ -1724,6 +1726,8 @@
 		84FF7ABC2612D6CE004FA3C9 /* BottomButtonTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomButtonTableCell.xib; sourceTree = "<group>"; };
 		84FF7AC4261309C0004FA3C9 /* GridInfoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridInfoTableCell.swift; sourceTree = "<group>"; };
 		84FF7AC5261309C0004FA3C9 /* GridInfoTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridInfoTableCell.xib; sourceTree = "<group>"; };
+		D4DE5E2B3FEA52A1E0A6513A /* Pods-Tickt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickt.release.xcconfig"; path = "Target Support Files/Pods-Tickt/Pods-Tickt.release.xcconfig"; sourceTree = "<group>"; };
+		D88B0AB5755910EC05473F4F /* Pods-Tickt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickt.debug.xcconfig"; path = "Target Support Files/Pods-Tickt/Pods-Tickt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1732,6 +1736,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84664D41261ECDC30023B804 /* CloudKit.framework in Frameworks */,
+				BE273916949709185B642985 /* Pods_Tickt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1741,6 +1746,8 @@
 		1488A2C0B505E9B328F34354 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				D88B0AB5755910EC05473F4F /* Pods-Tickt.debug.xcconfig */,
+				D4DE5E2B3FEA52A1E0A6513A /* Pods-Tickt.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -2496,6 +2503,7 @@
 				846825502678EE6000F24D3E /* IQKeyboardManagerSwift.framework */,
 				8468254E2678EDE500F24D3E /* IQKeyboardManagerSwift.framework */,
 				84664D40261ECDC30023B804 /* CloudKit.framework */,
+				5C71D7AEC4AB133F4DDE5DB4 /* Pods_Tickt.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -6603,9 +6611,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84323E1525EE70A40001ECA9 /* Build configuration list for PBXNativeTarget "Tickt" */;
 			buildPhases = (
+				5455C9C65F4F1D9F20E24C32 /* [CP] Check Pods Manifest.lock */,
 				84323DFD25EE70A30001ECA9 /* Sources */,
 				84323DFE25EE70A30001ECA9 /* Frameworks */,
 				84323DFF25EE70A30001ECA9 /* Resources */,
+				D0A8F5A341E6AFD584888582 /* [CP] Embed Pods Frameworks */,
+				89FC7520FD85B48CC2909F8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -6851,6 +6862,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5455C9C65F4F1D9F20E24C32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tickt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89FC7520FD85B48CC2909F8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tickt/Pods-Tickt-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tickt/Pods-Tickt-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tickt/Pods-Tickt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0A8F5A341E6AFD584888582 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tickt/Pods-Tickt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tickt/Pods-Tickt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tickt/Pods-Tickt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84323DFD25EE70A30001ECA9 /* Sources */ = {
@@ -7722,6 +7792,7 @@
 		};
 		84323E1625EE70A40001ECA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D88B0AB5755910EC05473F4F /* Pods-Tickt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -7801,6 +7872,7 @@
 		};
 		84323E1725EE70A40001ECA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4DE5E2B3FEA52A1E0A6513A /* Pods-Tickt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
