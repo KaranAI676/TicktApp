@@ -1,4 +1,0 @@
-${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MoEngage.framework
-${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MoEngageCore.framework
-${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MOAnalytics.framework
-${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MOMessaging.framework
