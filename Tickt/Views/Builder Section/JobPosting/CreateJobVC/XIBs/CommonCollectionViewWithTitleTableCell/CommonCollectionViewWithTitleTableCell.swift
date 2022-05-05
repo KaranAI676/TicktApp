@@ -218,11 +218,7 @@ extension CommonCollectionViewWithTitleTableCell: CollectionDelegate {
                     cell.iconImageView.image = resizedImage?.imageWithColor(.white)
                 }
             }
-            if status {
-                cell.tradeImageView.backgroundColor = UIColor(hex: "#0B41A8")
-            } else {
-                cell.tradeImageView.backgroundColor = UIColor(hex: "#0B41A8")
-            }
+            cell.tradeImageView.backgroundColor = UIColor(hex: "#0B41A8")
             
             cell.selectedImageView.isHidden = !status
             cell.tradeNameLabel.numberOfLines = 1

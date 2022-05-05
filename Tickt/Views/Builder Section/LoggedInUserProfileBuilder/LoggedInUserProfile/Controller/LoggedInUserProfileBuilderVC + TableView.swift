@@ -84,13 +84,8 @@ extension LoggedInUserProfileBuilderVC: TableDelegate {
     }
     
     func completeProfile() {
-        if kUserDefaults.isTradie() {
-            let vc = EditProfileDetailsBuilderVC.instantiate(fromAppStoryboard: .loggedInUserProfileBuilder)
-            push(vc: vc)
-        } else {
             let vc = EditProfileDetailsBuilderVC.instantiate(fromAppStoryboard: .loggedInUserProfileBuilder)
             push(vc: vc)
         }
-    }
 }
 

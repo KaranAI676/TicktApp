@@ -146,11 +146,7 @@ extension InboxVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if filteredChats.isEmpty && isSearch {
             return filteredChats.count
-        } else {
-            return filteredChats.count
-        }
     }
     
     private func chatValidation(inbox: Inbox) {

@@ -59,13 +59,7 @@ class PaymentVC: BaseVC {
     @IBAction func buttonTapped(_ sender: UIButton) {
         switch sender {
         case backButton:
-            if screenType == .creatingJob {
-//                kAppDelegate.postJobModel?.paymentAmount = ""
-//                kAppDelegate.postJobModel?.paymentType = .perHour
                 pop()
-            } else {
-                pop()
-            }
         case continueButton:
             if validate() {
                 goToCalendarVC()

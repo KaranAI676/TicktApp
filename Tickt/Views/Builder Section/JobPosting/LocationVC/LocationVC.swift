@@ -48,13 +48,7 @@ class LocationVC: BaseVC {
     @IBAction func buttonTapped(_ sender: UIButton) {
         switch sender {
         case backButton:
-            if screenType == .creatingJob {
-              //  kAppDelegate.postJobModel?.jobLocation = JobLocation()
                 self.pop()
-            }
-            else {
-                self.pop()
-            }
         case currentLocationButton:
             CommonFunctions.showActivityLoader()
             LocationManager.sharedInstance.delegate = self

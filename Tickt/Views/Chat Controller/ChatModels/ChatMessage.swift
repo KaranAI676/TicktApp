@@ -46,11 +46,7 @@ extension ChatMessage {
         isBlock  = json["isBlock"].boolValue
         isDeleted  = json["isDeleted"].boolValue
         progress  = json["progress"].intValue
-        if messageType == .text {
-            messageText = json["messageText"].stringValue
-        } else{
-            messageText = json["messageText"].stringValue
-        }
+        messageText = json["messageText"].stringValue
     }
     
     static func ==(lhs: ChatMessage, rhs: ChatMessage) -> Bool {
@@ -62,7 +58,7 @@ extension ChatMessage {
         var message = JSONDictionary()
         
         message[Message.type.rawValue] = messageType.rawValue
-        message[Message.message.rawValue] = messageType == .text ?  messageText : messageText
+        message[Message.message.rawValue] = messageText
         message[Message.sender.rawValue] = senderId //Int(senderId)
         message[Message.status.rawValue] = messageStatus.rawValue
         message[Message.mediaUrl.rawValue] = mediaURL

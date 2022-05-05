@@ -1,4 +1,3 @@
-//
 //  AddMilestoneVC.swift
 //  Tickt
 //
@@ -129,13 +128,13 @@ extension AddMilestoneVC {
         collectionViewOutlet.isHidden = true
     }
     
-    private func goToAddMilestoneVC() {
+    func goToAddMilestoneVC() {
         let vc = AddMilestoneVC.instantiate(fromAppStoryboard: .jobPosting)
         vc.milestoneCount = self.milestoneCount + 1
         self.push(vc: vc)
     }
     
-    private func goToCalendarVC(index: IndexPath) {
+    private func goToCalendarVC() {
         let vc = CalendarVC.instantiate(fromAppStoryboard: .jobPosting)
         vc.delegate = self
         vc.startDateToDisplay = self.model.fromDate.date
@@ -166,9 +165,9 @@ extension AddMilestoneVC {
             self.datePicker.reloadAllComponents()
         }
         
-        if var hours = self.recommendedHours, var minutes = self.recommendedMinutes {
-            hours = self.recommendedHours == 0 ? self.recommendedHours! : self.recommendedHours!
-            minutes = self.recommendedMinutes == 0 ? self.recommendedMinutes! : self.recommendedMinutes!
+        if let _ = self.recommendedHours, let _ = self.recommendedMinutes {
+            let hours =  self.recommendedHours!
+            let minutes = self.recommendedMinutes!
             self.datePicker.selectRow(hours, inComponent: 0, animated: false)
             self.datePicker.selectRow((minutes/5), inComponent: 1, animated: false)
         }else {
@@ -237,7 +236,7 @@ extension AddMilestoneVC: TableDelegate {
             cell.timeLabel.text = self.model.displayDateFormat.isEmpty ? "Choose" : self.model.displayDateFormat
             cell.chooseButtonClosure = { [weak self] (index) in
                 guard let self = self else { return }
-                self.goToCalendarVC(index: index)
+                self.goToCalendarVC()
             }
             return cell
         case .recommendedHours:
@@ -305,17 +304,6 @@ extension AddMilestoneVC {
             CommonFunctions.showToastWithMessage("Please enter the milestone name")
             return false
         }
-        
-//        if self.model.fromDate.backendFormat.isEmpty {
-//            CommonFunctions.showToastWithMessage("Please select the milestone duration")
-//            return false
-//        }
-        
-//        if self.model.recommendedHours.isEmpty {
-//            CommonFunctions.showToastWithMessage(Validation.errorEmptyHour)
-//            return false
-//        }
-        
         if self.model.recommendedHours == "00:00" {
             CommonFunctions.showToastWithMessage(Validation.errorInvalidHour)
             return false

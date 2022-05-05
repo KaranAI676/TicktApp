@@ -228,11 +228,7 @@ extension TradieProfilefromBuilderVC {
     
     func goToEditableOptionVC() {
         let vc = EditableOptionBuilderVC.instantiate(fromAppStoryboard: .loggedInUserProfileBuilder)
-        if kUserDefaults.isTradie() {
-            vc.loggedInBuilderModel = loggedInBuilderModel
-        } else {
-            vc.loggedInBuilderModel = loggedInBuilderModel
-        }
+        vc.loggedInBuilderModel = loggedInBuilderModel
         push(vc: vc)
     }
     

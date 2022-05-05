@@ -232,7 +232,7 @@ extension AnyQualificationsVC: TagCellLayoutDelegate {
         let widthFactor = (kScreenWidth / 320) > 1.2 ? 1.2 : (kScreenWidth / 320)
         var size = textSize(text: model[index].name, font: UIFont.kAppDefaultFontMedium(ofSize: 13 * widthFactor), collectionView: collectionViewOutlet)
         size.height += 8.0
-        size.width = self.model.count > 1 ? self.collectionViewOutlet.bounds.width : self.collectionViewOutlet.bounds.width
+        size.width = self.collectionViewOutlet.bounds.width
         return size
     }
 

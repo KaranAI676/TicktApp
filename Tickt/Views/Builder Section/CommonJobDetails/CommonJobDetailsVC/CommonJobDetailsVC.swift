@@ -109,11 +109,7 @@ class CommonJobDetailsVC: BaseVC {
             goToCreateJobVC()
         case cancelButton:
             AppRouter.showAppAlertWithCompletion(vc: self, alertType: .bothButton, alertMessage: "Are you sure you want to delete the job?", completion: {
-                if self.jobDetail?.result?.quoteJob ?? false {
-                    self.viewModel.deleteQuote(jobId: self.jobId, index: self.quoteIndex)
-                } else {
-                    self.viewModel.deleteQuote(jobId: self.jobId, index: self.quoteIndex)
-                }
+                self.viewModel.deleteQuote(jobId: self.jobId, index: self.quoteIndex)
             })
             popUpView.popOut()
         default:

@@ -46,9 +46,9 @@ class HourVC: BaseVC {
             pickerView.reloadAllComponents()
         }
         
-        if var hours = recommendedHours, var minutes = recommendedMinutes {
-            hours = recommendedHours == 0 ? recommendedHours! : recommendedHours!
-            minutes = recommendedMinutes == 0 ? recommendedMinutes! : recommendedMinutes!
+        if let _ = recommendedHours, let _ = recommendedMinutes {
+            let hours = recommendedHours!
+            let minutes = recommendedMinutes!
             pickerView.selectRow(hours, inComponent: 0, animated: false)
             pickerView.selectRow(minutes, inComponent: 1, animated: false)
         } else {

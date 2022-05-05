@@ -50,12 +50,7 @@ class GridCell: UITableViewCell {
     //===================
     func populateData(data:QuoteList){
         let time = data.createdAt
-        if !time.isEmpty {
-            timeLabel.text = CommonFunctions.getFormattedDates(fromDate: data.fromDate?.convertToDateAllowsNil(), toDate: data.toDate?.convertToDateAllowsNil())
-            //data.toDate
-        } else {
-            timeLabel.text = CommonFunctions.getFormattedDates(fromDate: data.fromDate?.convertToDateAllowsNil(), toDate: data.toDate?.convertToDateAllowsNil())
-        }
+        timeLabel.text = CommonFunctions.getFormattedDates(fromDate: data.fromDate?.convertToDateAllowsNil(), toDate: data.toDate?.convertToDateAllowsNil())
         priceLabel.text = "\(data.amount)"//.currencyFormatting()
         addressLabel.text = data.locationName
         let jobStatus = data.status

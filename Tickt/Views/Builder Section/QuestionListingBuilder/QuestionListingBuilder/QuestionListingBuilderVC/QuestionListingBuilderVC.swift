@@ -140,10 +140,10 @@ extension QuestionListingBuilderVC {
         switch screenType {
         case .questionAnswer:
             self.countLabel.isHidden = count == 0
-            self.countLabel.text = "\(count) \(count > 1 ? "question(s)" : "question(s)")"
+            self.countLabel.text = "\(count) \("question(s)")"
             count == 0 ? showWaterMarkLabel(message: "No questions found") : hideWaterMarkLabel()
         case .review, .reviewReply:
-            self.screenTitleLabel.text = "\(count)  \(count > 1 ? "review(s)" : "review(s)")"
+            self.screenTitleLabel.text = "\(count)  \("review(s)")"
         case .answereReply:
             break // ARsh
         }
