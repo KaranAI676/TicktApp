@@ -386,7 +386,7 @@ extension ChatHelper{
      */
     static func checkStatusAndSignIn() {
         if Auth.auth().currentUser == nil{
-            self.signIn(withEmail: kUserDefaults.getUserEmail(), password: "Test@123", completion: { (success) in
+            self.signIn(withEmail: kUserDefaults.getUserEmail(), password: AppConstants.firebaseAuthPass.rawValue, completion: { (success) in
                 if success{
                     printDebug("========================\n\n")
                     printDebug("User logged in firebase\n\n")

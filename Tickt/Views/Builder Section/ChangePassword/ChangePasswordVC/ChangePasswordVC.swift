@@ -178,7 +178,7 @@ extension ChangePasswordVC {
             return false
         }
         
-        if !model.newPassword.checkIfValid(.password) {
+        if !model.newPassword.checkIfValid(.passRegex) {
             CommonFunctions.showToastWithMessage("Please enter a valid password (must be at least 8 characters long & contain a special character or number)")
             return false
         }

@@ -119,7 +119,7 @@ extension CreatePasswordVC {
     
     private func validate() -> Bool {
         
-        if !passwordTextField.text!.byRemovingLeadingTrailingWhiteSpaces.checkIfValid (.password) {
+        if !passwordTextField.text!.byRemovingLeadingTrailingWhiteSpaces.checkIfValid (.passRegex) {
             if passwordTextField.text!.byRemovingLeadingTrailingWhiteSpaces.isEmpty {
                 self.passwordErrorLabel.text = Validation.errorEnterPassword
 //                CommonFunctions.showToastWithMessage(Validation.errorEnterPassword)

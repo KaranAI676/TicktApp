@@ -289,7 +289,7 @@ enum ValidityExression : String {
 //    case password = "("^(?=.*[0-9])"+ "(?=.*[a-z])(?=.*[A-Z])"+ "(?=.*[@#$%^&+=])"+ "(?=\\S+$).{8,40}$")"
 //    case password = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[A-Za-z0-9 !\"#$%&'()*+,-./:;<=>?@\\[\\\\\\]^_`{|}~]{8,40}"
 //    Minimum 8 and Maximum 40 characters at least 1 Uppercase Alphabet, 1 Lowercase Alphabet, 1 Number and 1 Special Character:
-    case password = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&#])[A-Za-z\\d$@$!%*?&#]{8,40}"
+    case passRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&#])[A-Za-z\\d$@$!%*?&#]{8,40}"
 //    case password = "^(?=.*\\d)(?=.*[$@$!%*?&#])[A-Za-z\\d$@$!%*?&#]{8,40}"
 //    case name = "^[a-zA-Z0-9\\s]{1,}"
     case name = "^[a-zA-Z\\s]{1,}"

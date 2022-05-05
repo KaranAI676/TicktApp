@@ -62,6 +62,8 @@ let kAppDelegate = UIApplication.shared.delegate as! AppDelegate
 
 enum AppConstants : String {
     case accessTokenPass = "tickt_app_123sadefss"
+    case firebaseDefaultPass = "12345678"
+    case firebaseAuthPass = "Test@123"
 //    case poolIDAWS = "us-east-1:b1f250f2-66a7-4d07-96e9-01817149a439"
 	case googleAPIKey = "AIzaSyCYVGa50KuwOcTs35CsRYUjMpHZ7zS_-VY"//"AIzaSyAB0RM8qn8nTq5p-0EoqeHEiRYmz7yRUG0" //"AIzaSyAw7-pyEPZIjisG8q4YHHjUXji3Xcfk4nw"
     case googlePlaceKey = "AIzaSyD9xVqVmWv1Z-L9WxWt4MUTwhoK5nhGI_w"
