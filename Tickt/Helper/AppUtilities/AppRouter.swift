@@ -82,19 +82,11 @@ enum AppRouter {
                     }
                 } else {
                     ChatHelper.createFirebaseUser(withEmail: kUserDefaults.getUserEmail(), password: "12345678") { status in
-                        if status {
                             ChatHelper.signIn(withEmail: kUserDefaults.getUserEmail(), password: "12345678") { status in
                                 if status {
                                     print("Logged in to Firebase Console")
                                 }
                             }
-                        } else {
-                            ChatHelper.signIn(withEmail: kUserDefaults.getUserEmail(), password: "12345678") { status in
-                                if status {
-                                    print("Logged in to Firebase Console")
-                                }
-                            }
-                        }
                     }
                 }
             }

@@ -65,8 +65,7 @@ extension MilestoneListingVC: TableDelegate {
         let image = #imageLiteral(resourceName: "delete")
         let size = CGSize(width: image.size.width, height: image.size.height + 16)
         deleteAction.image = UIGraphicsImageRenderer(size: size).image { context in
-        var centralizedRect = CGRect(origin: .zero, size: image.size)
-            centralizedRect.origin.y = centralizedRect.origin.y
+        let centralizedRect = CGRect(origin: .zero, size: image.size)
             image.draw(in: centralizedRect)
         }
         deleteAction.backgroundColor = .white
