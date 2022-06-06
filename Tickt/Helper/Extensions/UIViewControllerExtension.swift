@@ -78,7 +78,7 @@ extension UIViewController: NVActivityIndicatorViewable {
             imagePicker.delegate = controller
             let sourceType = UIImagePickerController.SourceType.photoLibrary
             imagePicker.sourceType = sourceType
-            imagePicker.allowsEditing = false
+            imagePicker.allowsEditing = croppingEnabled
             imagePicker.mediaTypes = mediaType
             imagePicker.videoMaximumDuration = 15
             

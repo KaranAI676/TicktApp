@@ -145,7 +145,11 @@ class MapController: BaseVC {
             searchModel.specializationId = filter.trade!.specialisations!.map {$0.id}
             if (filter.trade?.specialisations?.count ?? 0) > 1 {
                 let count = (filter.trade?.specialisations?.count ?? 0) - 1
+                if filter.isAllSubCatSelected {
+                    searchModel.specializationName = filter.trade?.tradeName ?? LS.allAroundMe
+                } else {
                 searchModel.specializationName = (filter.trade?.specialisations?.first?.name ?? "") + "+ \(count) others"
+                }
             } else {
                 searchModel.specializationName = filter.trade?.specialisations?.first?.name ?? LS.allAroundMe
             }

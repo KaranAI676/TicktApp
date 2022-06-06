@@ -85,6 +85,7 @@ struct NotificationListingModel {
         notificationText = json["notificationText"].stringValue
         status = json["status"].intValue
         userType = json["user_type"].intValue
+        jobId = json["jobId"].stringValue
         extraData = NotificationExtraDataModel.init(json["extra_data"])
     }
 }

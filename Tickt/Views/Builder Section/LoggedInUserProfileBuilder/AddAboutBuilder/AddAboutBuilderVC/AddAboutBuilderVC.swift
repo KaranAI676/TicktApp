@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 protocol AddAboutBuilderVCDelegate: AnyObject {
     func getUpdatedAbout(text: String)
@@ -31,7 +32,8 @@ class AddAboutBuilderVC: BaseVC {
     /// Buttons
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var textViewHeightConst: NSLayoutConstraint!
-    
+    @IBOutlet weak var bottomContraint: NSLayoutConstraint!
+
     //MARK:- Variables
     var about: String? = nil
     var maxLength: Int = 1000
@@ -53,6 +55,14 @@ class AddAboutBuilderVC: BaseVC {
         kAppDelegate.setUpKeyboardSetup(status: false)
     }
     
+//    override func viewWillAppear(_ animated: Bool) {
+//        NotificationCenter.default.addObserver(self,
+//                                               selector: #selector(self.keyboardWillShow(_:)),
+//                                               name: UIResponder.keyboardWillShowNotification,
+//                                               object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+//        }
+//
     override func viewDidDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         kAppDelegate.setUpKeyboardSetup(status: true)
@@ -107,6 +117,27 @@ extension AddAboutBuilderVC {
         }
     }
     
+//    @objc func keyboardWillShow(_ sender: Notification) {
+//
+//        if let keyboardSize = (sender.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+//
+//            UIView.animate(withDuration: 0.33, animations: {
+//                self.bottomContraint.constant = keyboardSize.height - 32
+//                self.view.layoutIfNeeded()
+//            }, completion: { _ in
+//            })
+//        }
+//    }
+//
+//    @objc func keyboardWillHide(_ sender: Notification) {
+//        UIView.animate(withDuration: 0.0, animations: {
+//            self.bottomContraint.constant = 0
+//            self.view.layoutIfNeeded()
+//        }, completion: { _ in
+//        })
+//    }
+
+    
     private func updateDescriptionCount(textCount: Int) {
         descriptionCountLabel.text = "\(textCount)/\(maxLength)"
     }
@@ -126,16 +157,28 @@ extension AddAboutBuilderVC: UITextViewDelegate {
         }
     }
     
+        func textViewDidChange(_ textView: UITextView) {
+
+            let count = textView.text.count
+
+            if count % 15 == 0 {
+                IQKeyboardManager.shared.reloadLayoutIfNeeded()
+            }
+        }
+    
     func textViewDidChangeSelection(_ textView: UITextView) {
         if detailtextView.contentSize.height > detailtextView.frame.size.height {
             if textView.contentSize.height < textView.frame.size.height {
                 textViewHeightConst.constant = 34
+                bottomContraint.constant = 0 - 30
             } else {
                 textViewHeightConst.constant = self.detailtextView.contentSize.height
                 textViewHeightConst.constant = self.detailtextView.contentSize.height
+                bottomContraint.constant = self.detailtextView.contentSize.height - 160
             }
         } else if textView.contentSize.height < textView.frame.size.height {
             textViewHeightConst.constant = self.detailtextView.contentSize.height
+            bottomContraint.constant = self.detailtextView.contentSize.height - 160
         }
     }
     
@@ -152,19 +195,32 @@ extension AddAboutBuilderVC: UITextViewDelegate {
     }
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if textView.text.count == self.maxLength {
         guard text.rangeOfCharacter(from: CharacterSet.newlines) == nil else {
             textView.resignFirstResponder()
             return false
         }
-        let txtt: NSString = textView.text as NSString
-        let newString = txtt.replacingCharacters(in: range, with: text)
+        }
+//        let txtt: NSString = textView.text as NSString
+//        let newString = txtt.replacingCharacters(in: range, with: text)
         if text == placeHolder {
             textView.text = ""
         }
+        let newText = (textView.text as NSString).replacingCharacters(in: range, with: text)
 
-        if newString.count <= self.maxLength {
-            updateDescriptionCount(textCount: newString.byRemovingLeadingTrailingWhiteSpaces.count)
+        if newText.count <= self.maxLength {
+            updateDescriptionCount(textCount: newText.byRemovingLeadingTrailingWhiteSpaces.count)
+        } else {
+//            if newText.count > self.maxLength {
+                textView.text = String(newText.prefix(1000))
+//            }
+
+//            let newText = newString.substring(to: 1000)
+//            detailtextView.text = newText
+            updateDescriptionCount(textCount: 1000)
+
         }
-        return newString.count <= self.maxLength
+        return newText.count <= self.maxLength
+
     }
 }

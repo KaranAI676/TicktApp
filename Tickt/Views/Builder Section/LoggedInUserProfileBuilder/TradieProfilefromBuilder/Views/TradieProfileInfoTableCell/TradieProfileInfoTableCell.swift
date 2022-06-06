@@ -82,7 +82,7 @@ extension TradieProfileInfoTableCell {
                 companyNameLabel.isHidden = true
             }else{
                 companyNameLabel.isHidden = false
-                companyNameLabel.text = model.areasOfSpecialization.tradeData.first?.tradeName
+                companyNameLabel.text = model.areasOfSpecialization.tradeData.first?.tradeName.capitalized
                 subLabel.text = model.businessName ?? ""
             }
         case .loggedInProfile:
@@ -96,7 +96,7 @@ extension TradieProfileInfoTableCell {
                 companyNameLabel.isHidden = true
             }else{
                 companyNameLabel.isHidden = false
-                companyNameLabel.text = model.companyName
+                companyNameLabel.text = model.companyName.capitalized
                 subLabel.text = model.position
             }
         }

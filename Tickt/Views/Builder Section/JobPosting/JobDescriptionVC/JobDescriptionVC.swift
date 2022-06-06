@@ -213,20 +213,36 @@ extension JobDescriptionVC: UITextViewDelegate {
     }
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if textView.text.count == self.maxLength {
         guard text.rangeOfCharacter(from: CharacterSet.newlines) == nil else {
             textView.resignFirstResponder()
             return false
         }
-        let txtt: NSString = textView.text as NSString
-        let newString = txtt.replacingCharacters(in: range, with: text)
-        if text == placeHolder {
-            textView.text = ""
         }
-        
-        if newString.count <= self.maxLength {
-            self.updateDescriptionCount(textCount: newString.byRemovingLeadingTrailingWhiteSpaces.count)
-        }
-        return newString.count <= self.maxLength
+        //        guard text.rangeOfCharacter(from: CharacterSet.newlines) == nil else {
+        //            textView.resignFirstResponder()
+        //            return false
+        //        }
+        //        let txtt: NSString = textView.text as NSString
+        //        let newString = txtt.replacingCharacters(in: range, with: text)
+                if text == placeHolder {
+                    textView.text = ""
+                }
+                let newText = (textView.text as NSString).replacingCharacters(in: range, with: text)
+
+                if newText.count <= self.maxLength {
+                    updateDescriptionCount(textCount: newText.byRemovingLeadingTrailingWhiteSpaces.count)
+                } else {
+        //            if newText.count > self.maxLength {
+                        textView.text = String(newText.prefix(maxLength))
+        //            }
+
+        //            let newText = newString.substring(to: 1000)
+        //            detailtextView.text = newText
+                    updateDescriptionCount(textCount: maxLength)
+
+                }
+                return newText.count <= self.maxLength
         
     }
 }

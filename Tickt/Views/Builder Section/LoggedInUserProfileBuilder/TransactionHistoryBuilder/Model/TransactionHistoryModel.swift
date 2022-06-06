@@ -24,7 +24,7 @@ struct TransactionHistoryModel  {
         message = json["message"].stringValue
         status = json["status"].boolValue
         statusCode = json["status_code"].intValue
-        result = json["list"].arrayValue.map({TransactionHistoryResultModel.init($0)})
+        result = json["result"].arrayValue.map({TransactionHistoryResultModel.init($0)})
     }
 }
 

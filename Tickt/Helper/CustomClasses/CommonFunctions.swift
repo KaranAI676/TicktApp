@@ -272,7 +272,13 @@ extension CommonFunctions {
         if let userModel = model as? LoginData {
             kUserDefaults.set(true, forKey: UserDefaultKeys.kIsLoggedIn)
             kUserDefaults.set(userModel.id, forKey: UserDefaultKeys.kUserId)
-            kUserDefaults.set(userModel.userName, forKey: UserDefaultKeys.kUsername)
+            if userModel.firstName == nil {
+                kUserDefaults.set(userModel.userName, forKey: UserDefaultKeys.kUsername)
+
+            } else {
+                kUserDefaults.set(userModel.firstName, forKey: UserDefaultKeys.kUsername)
+
+            }
             kUserDefaults.set(userModel.token, forKey: UserDefaultKeys.kAccessToken)
             kUserDefaults.set(userModel.trade?.first, forKey: UserDefaultKeys.kTrade)
             kUserDefaults.set(userModel.firstName, forKey: UserDefaultKeys.kFirstName)

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jey-VD-po1">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jey-VD-po1">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -23,11 +23,11 @@
             <objects>
                 <viewController storyboardIdentifier="IntroVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o5D-SL-gxq" customClass="IntroVC" customModule="Tickt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ORC-lW-bGn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bip-48-YWD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="sBX-eK-mwJ">
                                     <size key="itemSize" width="348" height="619"/>
@@ -37,7 +37,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IntrolCell" id="WXR-zv-gg7" customClass="IntrolCell" customModule="Tickt" customModuleProvider="target">
-                                        <rect key="frame" x="13.5" y="0.0" width="348" height="619"/>
+                                        <rect key="frame" x="13.666666666666666" y="0.0" width="348" height="619"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hun-Zx-Xn8">
                                             <rect key="frame" x="0.0" y="0.0" width="348" height="619"/>
@@ -78,21 +78,21 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpP-8n-Yhq">
-                                <rect key="frame" x="25" y="20" width="40" height="40"/>
+                                <rect key="frame" x="25" y="64" width="40" height="40"/>
                                 <state key="normal" image="back"/>
                                 <connections>
                                     <action selector="signupButtonAction:" destination="o5D-SL-gxq" eventType="touchUpInside" id="2dD-bR-SKA"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-tickt" translatesAutoresizingMaskIntoConstraints="NO" id="dz9-hF-gIo">
-                                <rect key="frame" x="35" y="55" width="70" height="35"/>
+                                <rect key="frame" x="35" y="99" width="70" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="9yv-GS-7By"/>
                                     <constraint firstAttribute="height" constant="35" id="Kf4-0q-8ju"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FE0-Qw-qLt">
-                                <rect key="frame" x="20" y="497" width="335" height="50"/>
+                                <rect key="frame" x="20" y="608" width="335" height="50"/>
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.90196078431372551" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="VLO-Yb-Qan"/>
@@ -106,7 +106,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2s-qP-qrG">
-                                <rect key="frame" x="20" y="577" width="335" height="50"/>
+                                <rect key="frame" x="20" y="688" width="335" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7N7-xB-YKt"/>
@@ -120,7 +120,7 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="nY3-oZ-3AA">
-                                <rect key="frame" x="126.5" y="429.5" width="122.5" height="27.5"/>
+                                <rect key="frame" x="131.33333333333334" y="543" width="112.66666666666666" height="25"/>
                             </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BEO-Nb-tss"/>
@@ -160,20 +160,20 @@
             <objects>
                 <viewController storyboardIdentifier="SelectUserVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jey-VD-po1" customClass="SelectUserVC" customModule="Tickt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KL1-uP-5Cl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="JNH-CM-5R7">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" tag="32" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Tickt" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8a-6S-1pS" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
-                                <rect key="frame" x="20" y="267.5" width="335" height="32"/>
+                                <rect key="frame" x="20" y="174" width="280" height="32"/>
                                 <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="18" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Australia's fastest growing network for builders and tradespeople." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCc-M3-Arr" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
-                                <rect key="frame" x="20" y="319.5" width="244" height="63"/>
+                                <rect key="frame" x="20" y="226" width="272" height="63"/>
                                 <fontDescription key="fontDescription" name="NHaasGroteskTXPro-55Rg" family="NHaasGroteskTXPro-55Rg" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -186,7 +186,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mq-NK-xwR">
-                                <rect key="frame" x="20" y="497" width="335" height="50"/>
+                                <rect key="frame" x="20" y="310" width="280" height="50"/>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="saA-Tf-P5X"/>
@@ -200,7 +200,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxc-Ra-xXi">
-                                <rect key="frame" x="20" y="577" width="335" height="50"/>
+                                <rect key="frame" x="20" y="390" width="280" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="c1T-J3-djb"/>
@@ -219,7 +219,7 @@
                         <constraints>
                             <constraint firstItem="2mq-NK-xwR" firstAttribute="leading" secondItem="9Qs-Lv-Yn7" secondAttribute="leading" constant="20" id="0NG-v3-kGE"/>
                             <constraint firstItem="JNH-CM-5R7" firstAttribute="top" secondItem="KL1-uP-5Cl" secondAttribute="top" id="5FT-Kb-qCB"/>
-                            <constraint firstItem="HCc-M3-Arr" firstAttribute="width" secondItem="KL1-uP-5Cl" secondAttribute="width" multiplier="0.65" id="5zM-Zh-f9U"/>
+                            <constraint firstItem="HCc-M3-Arr" firstAttribute="width" secondItem="KL1-uP-5Cl" secondAttribute="width" multiplier="0.85" id="5zM-Zh-f9U"/>
                             <constraint firstItem="HCc-M3-Arr" firstAttribute="leading" secondItem="9Qs-Lv-Yn7" secondAttribute="leading" constant="20" id="B29-vX-Pzd"/>
                             <constraint firstItem="9Qs-Lv-Yn7" firstAttribute="trailing" secondItem="Qxc-Ra-xXi" secondAttribute="trailing" constant="20" id="E7h-iI-kJg"/>
                             <constraint firstItem="rJc-t1-sQu" firstAttribute="leading" secondItem="9Qs-Lv-Yn7" secondAttribute="leading" constant="25" id="ItG-Qg-JaS"/>
@@ -246,9 +246,9 @@
     </scenes>
     <resources>
         <image name="back" width="40" height="40"/>
-        <image name="introBlank_1" width="187.5" height="406"/>
-        <image name="logo-tickt" width="122" height="60"/>
-        <image name="welcome" width="287" height="621"/>
+        <image name="introBlank_1" width="125" height="270.66665649414062"/>
+        <image name="logo-tickt" width="122" height="60.333332061767578"/>
+        <image name="welcome" width="375" height="812"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

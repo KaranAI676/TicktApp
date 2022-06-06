@@ -7,7 +7,7 @@
 
 enum EndPoint : String {
     
-    static let apiBaseUrl = "\(qaUrl)/"
+    static let apiBaseUrl = "\(stagingUrl)/"
     static let qaUrl = "https://ticktqaapi.appskeeper.in/v1"
     static let devUrl = "https://ticktdevapi.appskeeper.in/v1"
     static let liveUrl = "https://ticktstgapi.appskeeper.in/v1"

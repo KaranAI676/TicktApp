@@ -216,6 +216,7 @@ extension AddMilestoneVC: TableDelegate {
            // cell.textFieldTextField.autocapitalizationType = .words
             cell.textFieldTextField.text = self.model.milestoneName
             cell.textFieldTextField.keyboardType = .default
+            cell.textFieldTextField.inputView = nil
             cell.textFieldTextField.delegate = self
             cell.textFieldTextField.addTarget(self, action: #selector(textFieldDidChange(_:)) , for: .editingChanged)
             return cell
@@ -244,6 +245,7 @@ extension AddMilestoneVC: TableDelegate {
             cell.tableView = tableView
             cell.populateUI(titleName: "Estimated Hours(Optional)", placeHolder: "Estimated Hours")
             cell.textFieldTextField.text = self.model.recommendedHours
+            cell.textFieldTextField.clearButtonMode = .unlessEditing
             cell.textFieldTextField.inputView = datePicker
             cell.textFieldTextField.delegate = self
             cell.textFieldTextField.addTarget(self, action: #selector(textFieldDidChange(_:)) , for: .editingChanged)

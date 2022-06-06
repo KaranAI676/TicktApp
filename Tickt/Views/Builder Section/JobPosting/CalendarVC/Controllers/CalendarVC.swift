@@ -146,7 +146,7 @@ extension CalendarVC {
             categoryImageView.round(radius: 16)
             stackViewBottomConstraint.isActive = true
             screenTitleSecondLabel.text = "When is your job?"
-        } else if screenType == .republishJob || screenType == .editQuoteJob || screenType == .creatingJob {
+        } else if screenType == .republishJob || screenType == .editQuoteJob || screenType == .creatingJob || screenType == .addMilestone {
             startDateToDisplay = kAppDelegate.postJobModel?.fromDate.date
             endDateToDisplay = kAppDelegate.postJobModel?.toDate.date
             calendarView.selectDates(endDateToDisplay == nil ? [startDateToDisplay ?? startDate] : [startDateToDisplay ?? startDate, endDateToDisplay!])

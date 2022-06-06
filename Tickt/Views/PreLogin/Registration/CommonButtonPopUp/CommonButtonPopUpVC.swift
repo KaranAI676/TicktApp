@@ -142,6 +142,7 @@ extension CommonButtonPopUpVC {
         uploadDocumentButton.isHidden = true
         takePhotoButton.isHidden = true
         galleryButton.isHidden = true
+        dropboxButton.isHidden = true
         ///
         takeVideoButton.setTitle(takeVideo, for: .normal)
         uploadDocumentButton.setTitle(uploadDocument, for: .normal)

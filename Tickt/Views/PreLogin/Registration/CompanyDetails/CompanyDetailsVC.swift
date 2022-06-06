@@ -147,7 +147,7 @@ extension CompanyDetailsVC: UITextFieldDelegate {
         
         switch textField {
         case self.companyNameTextField:
-            return CommonFunctions.textValidation(allowedCharacters: CommonFunctions.alphabets, textField: textField.text ?? "", string: string, range: range, numberOfCharacters: 51)
+            return CommonFunctions.textValidation(allowedCharacters: CommonFunctions.alphaNumericPunctuation, textField: textField.text ?? "", string: string, range: range, numberOfCharacters: 51)
         case self.positionTextField:
             return CommonFunctions.textValidation(allowedCharacters: CommonFunctions.alphabets, textField: textField.text ?? "", string: string, range: range, numberOfCharacters: 50)
         case self.abnNumberTextField:

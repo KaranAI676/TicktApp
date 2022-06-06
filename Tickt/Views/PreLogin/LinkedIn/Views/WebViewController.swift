@@ -26,8 +26,8 @@ class WebViewController: BaseVC {
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var cancelButton: UIButton!
             
-    let linkedInKey = "78xhp3erxj0ck3"
-    let linkedInSecret = "DpV3W4GOtBdpDxOu"
+    let linkedInKey = "77dsyk40dtk8zf"
+    let linkedInSecret = "N2aYTl74IgCyoO4y"
     let authorizationEndPoint = "https://www.linkedin.com/uas/oauth2/authorization"
     let accessTokenEndPoint = "https://www.linkedin.com/uas/oauth2/accessToken"
     
@@ -65,7 +65,7 @@ class WebViewController: BaseVC {
 
     func startAuthorization() {
         let responseType = "code"
-        let redirectURL = "https://www.shift-freight.com/".addingPercentEncoding(withAllowedCharacters: .alphanumerics)!
+        let redirectURL = "https://www.shift-freight.com/auth/linkedin/callback".addingPercentEncoding(withAllowedCharacters: .alphanumerics)!
         let state = "linkedin\(Int(NSDate().timeIntervalSince1970))"
         let scope = "r_liteprofile+r_emailaddress" 
         

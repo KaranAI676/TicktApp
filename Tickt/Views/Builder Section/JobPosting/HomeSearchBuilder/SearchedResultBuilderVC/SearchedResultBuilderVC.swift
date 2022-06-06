@@ -104,7 +104,7 @@ extension SearchedResultBuilderVC {
             self.seachLabel.text = model.category.name
         } else if let model = model.trade {
             if (model.specialisations?.count ?? 0) == kAppDelegate.searchingBuilderModel?.totalSpecialisationCount {
-                self.seachLabel.text = "All"
+                self.seachLabel.text = model.tradeName
             }else {
                 if (model.specialisations?.count ?? 0) == 0 {
                     self.seachLabel.text = model.tradeName

@@ -18,8 +18,15 @@ extension ConfirmAndPayPaymentBuilderVC: TableDelegate {
         switch sectionArray[section] {
         case .cards:
             return viewModel.model?.count ?? 0
-        case .addAnother,.addBank:
+        case .addAnother:
             return 1
+            
+        case .addBank:
+            if self.canPay {
+                return 1
+            } else {
+                return 0
+            }
         }
     }
     

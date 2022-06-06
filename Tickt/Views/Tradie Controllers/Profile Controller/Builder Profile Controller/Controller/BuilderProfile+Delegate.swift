@@ -13,8 +13,8 @@ extension BuilderProfileVC: BuilderProfileDelegate {
         profileTableView.delegate = self
         profileTableView.dataSource = self
         profileModel = model
-        cellArray = [.detail, .area]
-        headerTitles = ["", "Areas of Jobs"]
+        cellArray = [.detail]
+        headerTitles = [""]
         let aboutCompany = model.result?.aboutCompany ?? ""
         if !aboutCompany.isEmpty {
             cellArray.append(.about)

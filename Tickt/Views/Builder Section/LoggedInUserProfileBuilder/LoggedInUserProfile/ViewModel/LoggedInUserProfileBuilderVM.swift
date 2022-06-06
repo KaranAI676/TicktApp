@@ -27,6 +27,7 @@ class LoggedInUserProfileBuilderVM: BaseVM {
             switch result {
             case .success(_):
                 CommonFunctions.removeUserDefaults()
+//                kUserDefaults.set(true, forKey: UserDefaultKeys.kTutorialPlayed)
                 self.delegate?.successLogout()
             case .failure(let error):
                 CommonFunctions.showToastWithMessage(error?.localizedDescription ?? "")

@@ -1693,8 +1693,8 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3B-G5-AtR">
-                                <rect key="frame" x="26" y="63" width="160.66666666666666" height="32"/>
-                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="32"/>
+                                <rect key="frame" x="26" y="63" width="154.66666666666666" height="32"/>
+                                <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="32"/>
                                 <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>

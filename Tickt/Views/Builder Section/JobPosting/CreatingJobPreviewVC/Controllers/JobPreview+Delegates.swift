@@ -110,8 +110,8 @@ extension CreatingJobPreviewVC: CreatingJobPreviewVMDelegate, JobChatDelegate, S
                 cellsArray.append(.inviteAccept)
                 cellsArray.remove(object: .applyJob)
             }
-        } else {            
-            cellsArray.remove(object: .inviteAccept)            
+        } else {
+            cellsArray.remove(object: .inviteAccept)
         }
         
         //Check weather apply button need to show

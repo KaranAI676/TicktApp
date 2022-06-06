@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bzf-rF-5l3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bzf-rF-5l3">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -103,7 +103,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" tag="16" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Updates" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qty-Ey-B2m" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
-                                        <rect key="frame" x="147.66666666666666" y="9" width="118.66666666666666" height="45"/>
+                                        <rect key="frame" x="148.66666666666666" y="9" width="116.99999999999997" height="45"/>
                                         <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="18"/>
                                         <color key="textColor" name="ThemeBlue"/>
                                         <nil key="highlightedColor"/>
@@ -136,7 +136,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="32" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review                                       completed job" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tee-oQ-Xe1" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="20" width="366" height="74.666666666666671"/>
+                                                <rect key="frame" x="24" y="20" width="366" height="64"/>
                                                 <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="32"/>
                                                 <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -233,13 +233,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" tag="32" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Your reason for cancelling" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mws-FB-7dV" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
-                                <rect key="frame" x="24" y="117" width="366" height="74.666666666666686"/>
+                                <rect key="frame" x="24" y="117" width="366" height="64"/>
                                 <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="32"/>
                                 <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Let the builder and Tickt know why you are cancelling the job." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfJ-Hf-b44" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
-                                <rect key="frame" x="24" y="199.66666666666666" width="342" height="33.666666666666657"/>
+                                <rect key="frame" x="24" y="189" width="342" height="33.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -325,7 +325,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X15-dj-Qt2">
-                                <rect key="frame" x="0.0" y="253.33333333333334" width="414" height="315.66666666666663"/>
+                                <rect key="frame" x="0.0" y="242.66666666666666" width="414" height="326.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -578,7 +578,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3YA-9I-tyZ">
-                                <rect key="frame" x="0.0" y="199.66666666666663" width="414" height="245.33333333333337"/>
+                                <rect key="frame" x="0.0" y="189" width="414" height="237"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accountActive" translatesAutoresizingMaskIntoConstraints="NO" id="3aa-kZ-fo8">
                                         <rect key="frame" x="24" y="30" width="40" height="40"/>
@@ -594,19 +594,19 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" tag="16" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electrician" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZx-Km-NSe" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
-                                        <rect key="frame" x="80" y="30" width="255" height="20"/>
+                                        <rect key="frame" x="80" y="30" width="255" height="17"/>
                                         <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="17"/>
                                         <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Wire up 2 rooms in new apartment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCX-3J-kiQ" customClass="CustomRegularLabel" customModule="Tickt" customModuleProvider="target">
-                                        <rect key="frame" x="80" y="54" width="255" height="17.666666666666671"/>
+                                        <rect key="frame" x="80" y="51" width="255" height="15"/>
                                         <fontDescription key="fontDescription" name="NeueHaasDisplay-Light" family="Neue Haas Grotesk Display Pro" pointSize="15"/>
                                         <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="May 20 - 23" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa1-DE-SaO" customClass="CustomRegularLabel" customModule="Tickt" customModuleProvider="target">
-                                        <rect key="frame" x="80" y="77.666666666666657" width="255" height="17.666666666666671"/>
+                                        <rect key="frame" x="80" y="72" width="255" height="15"/>
                                         <fontDescription key="fontDescription" name="NeueHaasDisplay-Light" family="Neue Haas Grotesk Display Pro" pointSize="15"/>
                                         <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -623,7 +623,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="OtG-xU-W9c">
-                                        <rect key="frame" x="24" y="145.33333333333334" width="366" height="80"/>
+                                        <rect key="frame" x="24" y="137" width="366" height="80"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJS-VB-DP8">
                                                 <rect key="frame" x="0.0" y="0.0" width="366" height="80"/>
@@ -753,13 +753,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0V0-oe-r4t" customClass="CustomRomanLabel" customModule="Tickt" customModuleProvider="target">
-                                <rect key="frame" x="24" y="199.66666666666666" width="366" height="0.0"/>
+                                <rect key="frame" x="24" y="189" width="366" height="0.0"/>
                                 <fontDescription key="fontDescription" name="NHaasGroteskTXPro-55Rg" family="NHaasGroteskTXPro-55Rg" pointSize="14"/>
                                 <color key="textColor" red="0.19215686269999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="32" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review                                       completed job" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njB-ub-Zen" customClass="CustomBoldLabel" customModule="Tickt" customModuleProvider="target">
-                                <rect key="frame" x="24" y="117" width="366" height="74.666666666666686"/>
+                                <rect key="frame" x="24" y="117" width="366" height="64"/>
                                 <fontDescription key="fontDescription" name="NeueHaasDisplay-Bold" family="Neue Haas Grotesk Display Pro" pointSize="32"/>
                                 <color key="textColor" red="0.086274509799999996" green="0.1137254902" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>

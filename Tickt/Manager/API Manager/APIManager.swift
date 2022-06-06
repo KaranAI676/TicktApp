@@ -65,7 +65,7 @@ class ApiManager {
         headers = ["Accept": "application/json",
                    "Content-Type": "application/json"]
         headers["timezone"] = kTimeZone
-        headers["Authorization"] = kUserDefaults.getAccessToken().isEmpty ? ApiManager.authTokenString(ofUsername: "tickt_app", password: AppConstants.accessTokenPass.rawValue) : kUserDefaults.getAccessToken()
+        headers["Authorization"] = kUserDefaults.getAccessToken().isEmpty ? ApiManager.authTokenString(ofUsername: "tickt_app", password: "tickt_app_123sadefss") : kUserDefaults.getAccessToken()
         
         Alamofire.request(methodName, method: methodType, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
             if showLoader {
@@ -119,7 +119,8 @@ class ApiManager {
         headers = ["Accept": "application/json"]
         headers["timezone"] = kTimeZone
         
-        headers["Authorization"] = kUserDefaults.getAccessToken().isEmpty ? ApiManager.authTokenString(ofUsername: "tickt_app", password: AppConstants.accessTokenPass.rawValue) : kUserDefaults.getAccessToken()
+        headers["Authorization"] = kUserDefaults.getAccessToken().isEmpty ? ApiManager.authTokenString(ofUsername: "tickt_app", password: "tickt_app_123sadefss") : kUserDefaults.getAccessToken()
+        
         Alamofire.upload(
             multipartFormData: { multipartFormData in
                 for (key, value) in parameters {

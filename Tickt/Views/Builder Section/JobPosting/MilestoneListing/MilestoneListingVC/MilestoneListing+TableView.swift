@@ -26,7 +26,7 @@ extension MilestoneListingVC: TableDelegate {
         cell.editButton.isHidden = !cell.evidenceLabel.isHidden
         cell.selectionButton.isSelected = model.isSelected
         cell.editButton.isHidden = !cell.selectionButton.isSelected
-        cell.timeLabel.text = model.recommendedHours.isEmpty ? model.displayDateFormat : "\(model.displayDateFormat), \(model.recommendedHours + " hours")"
+        cell.timeLabel.text = model.recommendedHours.isEmpty ? model.displayDateFormat : (model.displayDateFormat.isEmpty ? "\(model.recommendedHours + " hours")" : "\(model.displayDateFormat), \(model.recommendedHours + " hours")")
         ///
         if screenType == .milestoneChangeRequest {
             let statusType = MilestoneStatus.init(rawValue: milestonesArray[indexPath.row].status ?? 0) ?? .notComplete

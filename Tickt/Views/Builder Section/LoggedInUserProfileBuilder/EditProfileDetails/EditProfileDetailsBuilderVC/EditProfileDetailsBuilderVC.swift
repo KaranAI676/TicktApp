@@ -176,8 +176,11 @@ extension EditProfileDetailsBuilderVC: UITextFieldDelegate {
         
         guard let index = textField.tableViewIndexPath(tableViewOutlet) else { return true }
         switch self.sectionArray[index.section] {
-        case .fullName, .companyName, .yourPosition,.businessName:
+        case .fullName, .yourPosition,.businessName:
             return CommonFunctions.textValidation(allowedCharacters: CommonFunctions.alphabets, textField: textField.text ?? "", string: string, range: range, numberOfCharacters: 50)
+        case .companyName:
+            return CommonFunctions.textValidation(allowedCharacters: CommonFunctions.alphaNumericPunctuation, textField: textField.text ?? "", string: string, range: range, numberOfCharacters: 50)
+
         case .mobileNumber:
             return CommonFunctions.textValidation(allowedCharacters: CommonFunctions.numbers, textField: textField.text ?? "", string: string, range: range, numberOfCharacters: 9 + 2) /// 9Digits + 2Spaces
         case .email, .changePassword, .qualificationDocument:

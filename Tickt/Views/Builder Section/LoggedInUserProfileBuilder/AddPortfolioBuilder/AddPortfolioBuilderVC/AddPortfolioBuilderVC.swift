@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import AssetsPickerViewController
+import PhotosUI
 
 struct AddPortfolioBuilderModel {
     
@@ -57,7 +59,7 @@ class AddPortfolioBuilderVC: BaseVC {
         var capitalization: UITextAutocapitalizationType {
             switch self {
             case .jobName:
-                return .sentences
+                return .words
             case .jobDescription:
                 return .sentences
             default:
@@ -89,6 +91,8 @@ class AddPortfolioBuilderVC: BaseVC {
     var viewModel = AddPortfolioBuilderVM()
     var model = AddPortfolioBuilderModel()
     var sectionArray: [SectionArray] = []
+    var assets = [PHAsset]()
+    var maxImagesLimit = 6
     weak var delegate: AddPortfolioBuilderVCDelegate? = nil
     
     //MARK:- LifeCycle Methods
@@ -155,6 +159,13 @@ extension AddPortfolioBuilderVC {
            self?.navigationController?.present(vc, animated: true, completion: nil)
        }
    }
+    
+    ///To open AssetPicker
+    func showImagePicker() {
+        let picker = AssetsPickerViewController()
+        picker.pickerDelegate = self
+        present(picker, animated: true, completion: nil)
+    }
     
     private func getSectionArray() -> [SectionArray] {
         var sectionArray: [SectionArray] = []
@@ -286,10 +297,130 @@ extension AddPortfolioBuilderVC: CommonButtonDelegate {
     }
     
     func galleryButton() {
-        captureImagePopUp(delegate: self, croppingEnabled: false, openCamera: false)
+        showImagePicker()
+//        captureImagePopUp(delegate: self, croppingEnabled: false, openCamera: false)
     }
 }
 
+
+//MARK:- Extension for Image Picker
+//=================================
+extension AddPortfolioBuilderVC: AssetsPickerViewControllerDelegate {
+    
+    
+    func assetsPickerCannotAccessPhotoLibrary(controller: AssetsPickerViewController) {
+        printDebug("Need permission to access photo library.")
+    }
+    
+    func assetsPickerDidCancel(controller: AssetsPickerViewController) {
+        printDebug("Cancelled.")
+    }
+    
+    func assetsPicker(controller: AssetsPickerViewController, selected assets: [PHAsset]) {
+        self.assets = assets
+        var itemNumber = 0
+        let manager = PHImageManager.default()
+        let options = PHImageRequestOptions()
+        options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
+        options.isNetworkAccessAllowed = true
+        options.isSynchronous = false
+        
+
+        
+        for asset in self.assets {
+            printDebug(asset)
+            if asset.mediaType == .image {
+                manager.requestImage(for: asset, targetSize: PHImageManagerMaximumSize, contentMode: .aspectFit, options: options) { [weak self] (image, _) in
+                    
+                    guard let `self` = self else { return }
+                    guard let galleryImage = image else { return }
+                    self.model.images.append((nil, image))
+                    self.tableViewOutlet.reloadData()
+//
+//                    self.imageArray.append((galleryImage, .image, nil, "", .imageJpeg, nil, nil))
+//                    self.setupFlowLayout()
+//                    self.collectionViewOutlet.reloadData()
+
+//                    let imageModel = MediaModel()
+//                    imageModel.imageName = "\(Int(Date().timeIntervalSince1970))\(itemNumber).png"
+//                    imageModel.image = image
+//                    imageModel.mediaType = .image
+//                    imageModel.progress = 0.1
+//                    self.mediaModelList.append(imageModel)
+//                    DispatchQueue.main.async {
+//                        self.createPostView.mediaCollectionView.reloadData()
+//                    }
+//                    self.hitUploadImageApi(model: imageModel)
+//                    itemNumber += 1
+                }
+            } else {
+            }
+        }
+    }
+    
+    func assetsPicker(controller: AssetsPickerViewController, shouldSelect asset: PHAsset, at indexPath: IndexPath) -> Bool {
+        printDebug("shouldSelect: \(indexPath.row)")
+        if (controller.selectedAssets.count + model.images.count) + 1 > (maxImagesLimit) {
+            CommonFunctions.showToastWithMessage("Max limit reached")
+            return false
+        } else {
+            return true
+
+        }
+        /// can limit selection count
+//        if controller.selectedAssets.count > (4 - self.mediaModelList.count) {
+//            /// do your job here
+//            printDebug("You can select maximum 5 items")
+//            CommonFunctions.showToastWithMessage(StringConstant.youCanSelectMax5Items.value)
+//            return false
+//        } else {
+//            if asset.mediaType == .video {
+//                let resources = PHAssetResource.assetResources(for: asset) // your PHAsset
+//
+//                var sizeOnDisk: Int64? = 0
+//
+//                if let resource = resources.first {
+//                    let unsignedInt64 = resource.value(forKey: "fileSize") as? CLong
+//                    sizeOnDisk = Int64(bitPattern: UInt64(unsignedInt64!))
+//                    if ((sizeOnDisk ?? 0)/1000000) >= 512 {
+//                        CommonFunctions.showToastWithMessage(StringConstant.videoSizeIsTooHigh.value)
+//                        return false
+//                    }
+//                }
+//                self.maxVideoCount += 1
+//                if self.maxVideoCount > 1 {
+//                    printDebug("Max video limit reached")
+//                    CommonFunctions.showToastWithMessage(StringConstant.youCanSelectMax1Video.value)
+//                    return false
+//                } else {
+//                    return true
+//                }
+//            } else {
+//                return true
+//            }
+//        }
+    }
+    
+    func assetsPicker(controller: AssetsPickerViewController, didSelect asset: PHAsset, at indexPath: IndexPath) {
+        printDebug("didSelect: \(indexPath.row)")
+    }
+    
+    func assetsPicker(controller: AssetsPickerViewController, shouldDeselect asset: PHAsset, at indexPath: IndexPath) -> Bool {
+        printDebug("shouldDeselect: \(indexPath.row)")
+        return true
+    }
+    
+    func assetsPicker(controller: AssetsPickerViewController, didDeselect asset: PHAsset, at indexPath: IndexPath) {
+        printDebug("didDeselect: \(indexPath.row)")
+        if asset.mediaType == .video {
+//            self.maxVideoCount = 0
+        }
+    }
+    
+    func assetsPicker(controller: AssetsPickerViewController, didDismissByCancelling byCancel: Bool) {
+        printDebug("dismiss completed - byCancel: \(byCancel)")
+    }
+}
 
 extension AddPortfolioBuilderVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     

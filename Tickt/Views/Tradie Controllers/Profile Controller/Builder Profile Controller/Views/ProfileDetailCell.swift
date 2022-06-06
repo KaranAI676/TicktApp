@@ -23,7 +23,7 @@ class ProfileDetailCell: UITableViewCell {
         didSet {
             designationLabel.text = profileDetail?.position
             userNameLabel.text = profileDetail?.builderName
-            companyNameLabel.text = profileDetail?.companyName
+            companyNameLabel.text = profileDetail?.companyName.capitalized
             ratingLabel.text = "\(profileDetail?.ratings ?? 0)"
             reviewCountLabel.text = "\(profileDetail?.reviewsCount ?? 0) reviews"
             jobCountLabel.text = "\(profileDetail?.jobCompletedCount ?? 0)"

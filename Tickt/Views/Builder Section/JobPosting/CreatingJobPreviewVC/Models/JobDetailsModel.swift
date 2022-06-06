@@ -89,7 +89,7 @@ struct JobDetailsData {
         status = json["status"].stringValue
         toDate = json["toDate"].stringValue
         amount = json["amount"].stringValue
-        isInvited = json["editJob"].boolValue
+        isInvited = json["isInvited"].boolValue
         tradeId = json["tradeId"].stringValue
         details = json["details"].stringValue
         jobName = json["jobName"].stringValue

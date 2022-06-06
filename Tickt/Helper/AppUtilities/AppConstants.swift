@@ -65,14 +65,14 @@ enum AppConstants : String {
     case firebaseDefaultPass = "12345678"
     case firebaseAuthPass = "Test@123"
 //    case poolIDAWS = "us-east-1:b1f250f2-66a7-4d07-96e9-01817149a439"
-	case googleAPIKey = "AIzaSyCYVGa50KuwOcTs35CsRYUjMpHZ7zS_-VY"//"AIzaSyAB0RM8qn8nTq5p-0EoqeHEiRYmz7yRUG0" //"AIzaSyAw7-pyEPZIjisG8q4YHHjUXji3Xcfk4nw"
+    case googleAPIKey = "AIzaSyCYVGa50KuwOcTs35CsRYUjMpHZ7zS_-VY"//"AIzaSyAB0RM8qn8nTq5p-0EoqeHEiRYmz7yRUG0" //"AIzaSyAw7-pyEPZIjisG8q4YHHjUXji3Xcfk4nw"
     case googlePlaceKey = "AIzaSyD9xVqVmWv1Z-L9WxWt4MUTwhoK5nhGI_w"
-	case stripePublishableKey = "pk_test_uv7ZoexVvjjzPn1LGmqW0NGR" //ClientAccountTest
-	case stripeSecretKey = "sk_test_7mvoCTwidIgfeF3WzzLvDa2K"      //ClientAccountTest
-//	case stripePublishableKey = "pk_live_Vmjx9btQMQx8IMWuE6vXxZCf" //ClientAccountLive
-//	case stripeSecretKey = "sk_live_VtbZydLjbGy2jzzuiLlm8Hbz00UnEQebdL"      //ClientAccountLive
-	case s3AccessKey =  "AKIA6DQMUBGGY6CUWRG4"//"AKIAXKAEDW4N4CEJLK4A"//"AKIA6DQMUBGGY6CUWRG4"//"AKIA6DQMUBGG4IRED37R"//"AKIAJ3UHQTWRRT2AH3RA"
-	case s3SecretKey = "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"//"XyUo83HbFu2dJAnpM8IQTGr3S+P1AoPtqzfMeyfZ"
+    case stripePublishableKey = "pk_test_uv7ZoexVvjjzPn1LGmqW0NGR" //ClientAccountTest
+    case stripeSecretKey = "sk_test_7mvoCTwidIgfeF3WzzLvDa2K"      //ClientAccountTest
+//    case stripePublishableKey = "pk_live_Vmjx9btQMQx8IMWuE6vXxZCf" //ClientAccountLive
+//    case stripeSecretKey = "sk_live_VtbZydLjbGy2jzzuiLlm8Hbz00UnEQebdL"      //ClientAccountLive
+    case s3AccessKey =  "AKIA6DQMUBGGY6CUWRG4"//"AKIAXKAEDW4N4CEJLK4A"//"AKIA6DQMUBGGY6CUWRG4"//"AKIA6DQMUBGG4IRED37R"//"AKIAJ3UHQTWRRT2AH3RA"
+    case s3SecretKey = "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"//"XyUo83HbFu2dJAnpM8IQTGr3S+P1AoPtqzfMeyfZ"
     case mixPanelTokenKey = "680419d7d082a4a189516eb21001e636"//"0c7b46f7975446ef685fb7ef582ef7ff"
     
     //InterCom

@@ -34,10 +34,10 @@ class CalendarDayCell: JTACDayCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.nodeView.backgroundColor = AppColors.themeYellow
+        self.nodeView.backgroundColor = #colorLiteral(red: 0.6274509804, green: 0.6235294118, blue: 0.6549019608, alpha: 0.15)
         
-        self.halfLeftView.backgroundColor = #colorLiteral(red: 0.6274509804, green: 0.6235294118, blue: 0.6549019608, alpha: 0.15)
-        self.halfRightView.backgroundColor = #colorLiteral(red: 0.6274509804, green: 0.6235294118, blue: 0.6549019608, alpha: 0.15)
+//        self.halfLeftView.backgroundColor = #colorLiteral(red: 0.6274509804, green: 0.6235294118, blue: 0.6549019608, alpha: 0.15)
+//        self.halfRightView.backgroundColor = #colorLiteral(red: 0.6274509804, green: 0.6235294118, blue: 0.6549019608, alpha: 0.15)
 
         self.leftView.backgroundColor = #colorLiteral(red: 0.6274509804, green: 0.6235294118, blue: 0.6549019608, alpha: 0.15)
         self.rightView.backgroundColor = #colorLiteral(red: 0.6274509804, green: 0.6235294118, blue: 0.6549019608, alpha: 0.15)

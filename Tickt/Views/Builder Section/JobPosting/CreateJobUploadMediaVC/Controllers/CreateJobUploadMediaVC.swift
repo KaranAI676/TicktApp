@@ -11,6 +11,9 @@ import AVFoundation
 import TagCellLayout
 import MobileCoreServices
 import SwiftyDropbox
+import AssetsPickerViewController
+import PhotosUI
+
 
 class CreateJobUploadMediaVC: BaseVC {
     
@@ -27,9 +30,10 @@ class CreateJobUploadMediaVC: BaseVC {
     @IBOutlet weak var continueButton: UIButton!
     
     //MARK:- Variables
-    var maxMediaLimit: Int = 8
+    var maxMediaLimit: Int = 6
     var maxImagesLimit: Int = 6
     var maxVideosLimit: Int = 2
+    var currentVideoCount = 0
     ///
     var imageArray = [UploadMediaObject]()
     var viewModel = CreateJobUploadMediaVM()
@@ -39,6 +43,11 @@ class CreateJobUploadMediaVC: BaseVC {
     var thumbnailImages: [UIImage] = []
     var finalVideoUrl = ""
     var exportSession: AVAssetExportSession!
+    var assets = [PHAsset]()
+    lazy var imageManager = {
+        return PHCachingImageManager()
+    }()
+
 //    let client = DropboxClientsManager.authorizedClient
 //    let client = DropboxClient(accessToken: "sl.BBl_Arm50F2uXzlV0JFlVaaqeiHMDvKxk_ufOD-_i91teZ3uoxxw_F2B79UUijeJ4FS4AMhLAv6opLm0DgzMjPXlzluY0qTqV1_mR4u4JDU-8BJ4s244cHaRUF5tEl42nm4SNAk")
     
@@ -79,7 +88,7 @@ class CreateJobUploadMediaVC: BaseVC {
 extension CreateJobUploadMediaVC {
     
     private func initialSetup() {
-        maxMediaLimit = maxImagesLimit + maxVideosLimit
+        maxMediaLimit = 6
         self.viewModel.delegate = self
         if screenType == .edit || screenType == .republishJob || screenType == .editQuoteJob {
             self.imageArray = kAppDelegate.postJobModel?.mediaImages ?? []
@@ -131,6 +140,23 @@ extension CreateJobUploadMediaVC {
         return (imageCount < maxImagesLimit, videoCount < maxVideosLimit)
     }
     
+    func getImageCount() -> (Int) {
+        let videoCount = imageArray.filter({$0.type == .video}).count
+        let imageCount = abs(imageArray.count - videoCount)
+        return (imageCount)
+    }
+    
+    func getVideoCount() -> (Int) {
+        let videoCount = imageArray.filter({$0.type == .video}).count
+        return (videoCount)
+    }
+    
+    func getMediaIntCount() -> (Int) {
+        let videoCount = imageArray.filter({$0.type == .video}).count
+        let imageCount = abs(imageArray.count - videoCount)
+        return (imageCount+videoCount)
+    }
+    
     private func getMediaType() -> [String] {
         var mediaType: [String] = []
         if getMediaCount().images {
@@ -140,6 +166,13 @@ extension CreateJobUploadMediaVC {
             mediaType.append(kUTTypeMovie as String)
         }
         return mediaType
+    }
+    
+    ///To open AssetPicker
+    func showImagePicker() {
+        let picker = AssetsPickerViewController()
+        picker.pickerDelegate = self
+        present(picker, animated: true, completion: nil)
     }
     
     private func goToPreviewVC() {
@@ -248,7 +281,8 @@ extension CreateJobUploadMediaVC: CommonButtonDelegate {
     }
     
     func galleryButton() {
-        captureImagePopUp(delegate: self, croppingEnabled: false, mediaType: getMediaType(), openCamera: false)
+        self.showImagePicker()
+//        captureImagePopUp(delegate: self, croppingEnabled: false, mediaType: getMediaType(), openCamera: false)
     }
     
     func selectDocument() {
@@ -335,4 +369,156 @@ extension CreateJobUploadMediaVC: CreateJobUploadMediaDelegate {
         CommonFunctions.hideActivityLoader()
         CommonFunctions.showToastWithMessage(error)
     }
+}
+
+//MARK:- Extension for Image Picker
+//=================================
+extension CreateJobUploadMediaVC: AssetsPickerViewControllerDelegate {
+    
+    
+    func assetsPickerCannotAccessPhotoLibrary(controller: AssetsPickerViewController) {
+        printDebug("Need permission to access photo library.")
+    }
+    
+    func assetsPickerDidCancel(controller: AssetsPickerViewController) {
+        printDebug("Cancelled.")
+    }
+    
+    func assetsPicker(controller: AssetsPickerViewController, selected assets: [PHAsset]) {
+        self.assets = assets
+        var itemNumber = 0
+        let manager = PHImageManager.default()
+        let options = PHImageRequestOptions()
+        options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
+        options.isNetworkAccessAllowed = true
+        options.isSynchronous = false
+        
+        let videoOptions = PHVideoRequestOptions()
+        videoOptions.isNetworkAccessAllowed = true
+        videoOptions.deliveryMode = .highQualityFormat
+        self.currentVideoCount = 0
+        
+        for asset in self.assets {
+            printDebug(asset)
+            if asset.mediaType == .image {
+                manager.requestImage(for: asset, targetSize: PHImageManagerMaximumSize, contentMode: .aspectFit, options: options) { [weak self] (image, _) in
+                    
+                    guard let `self` = self else { return }
+                    guard let galleryImage = image else { return }
+                    self.imageArray.append((galleryImage, .image, nil, "", .imageJpeg, nil, nil))
+                    self.setupFlowLayout()
+                    self.collectionViewOutlet.reloadData()
+
+//                    let imageModel = MediaModel()
+//                    imageModel.imageName = "\(Int(Date().timeIntervalSince1970))\(itemNumber).png"
+//                    imageModel.image = image
+//                    imageModel.mediaType = .image
+//                    imageModel.progress = 0.1
+//                    self.mediaModelList.append(imageModel)
+//                    DispatchQueue.main.async {
+//                        self.createPostView.mediaCollectionView.reloadData()
+//                    }
+//                    self.hitUploadImageApi(model: imageModel)
+//                    itemNumber += 1
+                }
+            } else {
+                imageManager.requestAVAsset(forVideo: asset, options: videoOptions) {[weak self] (asset, _, _) in
+                    guard let `self` = self else { return }
+                    guard let asset = asset else { return }
+                    let assetURL = asset as! AVURLAsset
+                    let videoUrl = assetURL.url
+                    if let thumbnailImage = self.generateThumbnail(path: videoUrl, time: CMTimeMake(value: 0, timescale: 1)) {
+                        DispatchQueue.main.async {[weak self] in
+                            guard let self = self else { return }
+                            self.encodeVideo(videoURL: videoUrl, thumbnail: thumbnailImage)
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    
+    func assetsPicker(controller: AssetsPickerViewController, shouldSelect asset: PHAsset, at indexPath: IndexPath) -> Bool {
+        printDebug("shouldSelect: \(indexPath.row)")
+        if asset.mediaType == .video {
+            let duration = asset.duration
+            if duration > 30 {
+                CommonFunctions.showToastWithMessage("Video cannot be of more than 30 seconds")
+                return false
+            }
+            if (controller.selectedAssets.count + getMediaIntCount()) + 1 > maxMediaLimit {
+                CommonFunctions.showToastWithMessage("Max limit reached")
+                return false
+            } else if currentVideoCount + getVideoCount() + 1 > maxVideosLimit {
+                CommonFunctions.showToastWithMessage("You cannot add more than 2 videos")
+                return false
+            } else {
+                self.currentVideoCount += 1
+                return true
+            }
+        } else {
+            if (controller.selectedAssets.count + getMediaIntCount()) + 1 > maxMediaLimit {
+            CommonFunctions.showToastWithMessage("Max limit reached")
+            return false
+        } else {
+            return true
+
+        }
+        }
+        /// can limit selection count
+//        if controller.selectedAssets.count > (4 - self.mediaModelList.count) {
+//            /// do your job here
+//            printDebug("You can select maximum 5 items")
+//            CommonFunctions.showToastWithMessage(StringConstant.youCanSelectMax5Items.value)
+//            return false
+//        } else {
+//            if asset.mediaType == .video {
+//                let resources = PHAssetResource.assetResources(for: asset) // your PHAsset
+//
+//                var sizeOnDisk: Int64? = 0
+//
+//                if let resource = resources.first {
+//                    let unsignedInt64 = resource.value(forKey: "fileSize") as? CLong
+//                    sizeOnDisk = Int64(bitPattern: UInt64(unsignedInt64!))
+//                    if ((sizeOnDisk ?? 0)/1000000) >= 512 {
+//                        CommonFunctions.showToastWithMessage(StringConstant.videoSizeIsTooHigh.value)
+//                        return false
+//                    }
+//                }
+//                self.maxVideoCount += 1
+//                if self.maxVideoCount > 1 {
+//                    printDebug("Max video limit reached")
+//                    CommonFunctions.showToastWithMessage(StringConstant.youCanSelectMax1Video.value)
+//                    return false
+//                } else {
+//                    return true
+//                }
+//            } else {
+//                return true
+//            }
+//        }
+    }
+    
+    func assetsPicker(controller: AssetsPickerViewController, didSelect asset: PHAsset, at indexPath: IndexPath) {
+        printDebug("didSelect: \(indexPath.row)")
+    }
+    
+    func assetsPicker(controller: AssetsPickerViewController, shouldDeselect asset: PHAsset, at indexPath: IndexPath) -> Bool {
+        printDebug("shouldDeselect: \(indexPath.row)")
+        return true
+    }
+    
+    func assetsPicker(controller: AssetsPickerViewController, didDeselect asset: PHAsset, at indexPath: IndexPath) {
+        printDebug("didDeselect: \(indexPath.row)")
+        if asset.mediaType == .video {
+            self.currentVideoCount -= 1
+        }
+    }
+    
+    func assetsPicker(controller: AssetsPickerViewController, didDismissByCancelling byCancel: Bool) {
+        printDebug("dismiss completed - byCancel: \(byCancel)")
+        self.currentVideoCount = 0
+    }
+    
 }

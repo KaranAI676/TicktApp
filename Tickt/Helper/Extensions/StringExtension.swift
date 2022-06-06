@@ -36,12 +36,12 @@ extension String {
         return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
     
-	subscript(_ range: CountableRange<Int>) -> String {
-		let idx1 = index(startIndex, offsetBy: max(0, range.lowerBound))
-		let idx2 = index(startIndex, offsetBy: min(self.count, range.upperBound))
-		return String(self[idx1..<idx2])
-	}
-	
+    subscript(_ range: CountableRange<Int>) -> String {
+        let idx1 = index(startIndex, offsetBy: max(0, range.lowerBound))
+        let idx2 = index(startIndex, offsetBy: min(self.count, range.upperBound))
+        return String(self[idx1..<idx2])
+    }
+    
     ///Removes all spaces from the string
     var removeSpaces:String{
         return self.replacingOccurrences(of: " ", with: "")
@@ -77,14 +77,14 @@ extension String {
 //            return self.localizedString(lang: "en")
 //        }
 //    }
-	
-	var decodedUnicode : String {
-		if let charAsInt = Int(self, radix: 16),
-			let uScalar = UnicodeScalar(charAsInt) {
-			return "\(uScalar)"
-		}
-		return ""
-	}
+    
+    var decodedUnicode : String {
+        if let charAsInt = Int(self, radix: 16),
+            let uScalar = UnicodeScalar(charAsInt) {
+            return "\(uScalar)"
+        }
+        return ""
+    }
     
     ///Returns a localized string
     var localized: String {
@@ -185,6 +185,15 @@ extension String {
         } else {
             return ""
         }
+    }
+    
+    func index(from: Int) -> Index {
+        return self.index(startIndex, offsetBy: from)
+    }
+    
+    func substring(to: Int) -> String {
+        let toIndex = index(from: to)
+        return substring(to: toIndex)
     }
 
     func checkIfValid(_ validityExression : ValidityExression) -> Bool {
