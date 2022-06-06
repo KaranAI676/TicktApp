@@ -57,7 +57,7 @@ class AddPortfolioBuilderVC: BaseVC {
         var capitalization: UITextAutocapitalizationType {
             switch self {
             case .jobName:
-                return .words
+                return .sentences
             case .jobDescription:
                 return .sentences
             default:
