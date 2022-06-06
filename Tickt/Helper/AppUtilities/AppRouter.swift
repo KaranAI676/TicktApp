@@ -75,21 +75,21 @@ enum AppRouter {
             if true || FirebaseAuth.Auth.auth().currentUser.isNotNil {
                 if kUserDefaults.getUserEmail().isEmpty { return }
                 if kUserDefaults.isFirebaseCreated() {
-                    ChatHelper.signIn(withEmail: kUserDefaults.getUserEmail(), password: "12345678") { status in
+                    ChatHelper.signIn(withEmail: kUserDefaults.getUserEmail(), password: AppConstants.firebaseDefaultPass) { status in
                         if status {
                             print("Logged in to Firebase Console")
                         }
                     }
                 } else {
-                    ChatHelper.createFirebaseUser(withEmail: kUserDefaults.getUserEmail(), password: "12345678") { status in
+                    ChatHelper.createFirebaseUser(withEmail: kUserDefaults.getUserEmail(), password: AppConstants.firebaseDefaultPass) { status in
                         if status {
-                            ChatHelper.signIn(withEmail: kUserDefaults.getUserEmail(), password: "12345678") { status in
+                            ChatHelper.signIn(withEmail: kUserDefaults.getUserEmail(), password: AppConstants.firebaseDefaultPass) { status in
                                 if status {
                                     print("Logged in to Firebase Console")
                                 }
                             }
                         } else {
-                            ChatHelper.signIn(withEmail: kUserDefaults.getUserEmail(), password: "12345678") { status in
+                            ChatHelper.signIn(withEmail: kUserDefaults.getUserEmail(), password: AppConstants.firebaseDefaultPass) { status in
                                 if status {
                                     print("Logged in to Firebase Console")
                                 }
