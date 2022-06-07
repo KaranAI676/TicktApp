@@ -14,19 +14,16 @@ extension BuilderProfileVC: TableDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        switch cellArray[section] {
-        case .detail:
+        if cellArray[section] == .detail {
             return CGFloat.leastNormalMagnitude
-        default:
-            return 50
         }
+            return 50
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        switch cellArray[section] {
-        case .detail:
+        if cellArray[section] == .detail {
             return nil
-        default:
+        }
             let headerView = tableView.dequeueHeaderFooter(with: SearchHeaderView.self)
             headerView.backView.backgroundColor = .white
             headerView.headerLabel.text = headerTitles[section]
@@ -80,12 +77,10 @@ extension BuilderProfileVC: TableDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        switch cellArray[indexPath.section] {
-        case .portfolio:
+        if cellArray[indexPath.section] == .portfolio {
             return (kScreenWidth - 68) / 3
-        default:
-            return UITableView.automaticDimension
         }
+            return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -145,7 +140,7 @@ extension BuilderProfileVC: TableDelegate {
         case .review:
             let cell = tableView.dequeueCell(with: ReviewCell.self)
             cell.review = profileModel?.result?.reviewData![indexPath.row]
-            cell.replyButtonClosure = {}
+            cell.replyButtonClosure = {} // no operation needed
             return cell
         }
     }
